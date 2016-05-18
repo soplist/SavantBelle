@@ -1,0 +1,523 @@
+/**
+ * 
+ */
+package com.flextronics.cn.activity.symboltraining;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Random;
+
+import android.app.AlertDialog;
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.media.MediaPlayer;
+import android.os.Bundle;
+import android.os.CountDownTimer;
+import android.util.Log;
+import android.view.MotionEvent;
+import android.view.View;
+import android.view.ViewGroup;
+import android.view.animation.AlphaAnimation;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.ImageView;
+import android.widget.RelativeLayout;
+import android.widget.Toast;
+import android.widget.RemoteViews.ActionException;
+
+import com.flextronics.cn.activity.BaseActivity;
+import com.flextronics.cn.activity.MainMenuActivity;
+import com.flextronics.cn.activity.R;
+import com.flextronics.cn.activity.TestReportActivity;
+import com.flextronics.cn.exception.LackOfParametersException;
+import com.flextronics.cn.model.symbol.SymbolMemeryTrainingReport;
+import com.flextronics.cn.model.symbol.SymbolMemoryTrainingParameter;
+import com.flextronics.cn.model.symbol.SymbolResponseTrainingParameter;
+import com.flextronics.cn.model.symbol.SymbolResponseTrainingReport;
+import com.flextronics.cn.service.symbol.SymbolMemeryTrainingService;
+import com.flextronics.cn.service.symbol.SymbolMemeryTrainingServiceImpl;
+import com.flextronics.cn.service.symbol.SymbolResponseTrainingService;
+import com.flextronics.cn.service.symbol.SymbolResponseTrainingServiceImpl;
+import com.flextronics.cn.ui.StartFlagImageView;
+import com.flextronics.cn.util.ActivityUtil;
+import com.flextronics.cn.util.ArrayOperations;
+import com.flextronics.cn.util.CommonUtil;
+import com.flextronics.cn.util.Constants;
+
+/**
+ * 符号辨识反映训练
+ * 
+ * @author Zhaohe.Guo
+ * 
+ *         2010-12-3 上午09:47:33
+ */
+public class SymbolResponseTrainingActivity extends BaseActivity {
+	private SymbolResponseTrainingService service;
+	private int questionCount;
+	private Bundle bundle;
+	private static final String TAG = SymbolResponseTrainingActivity.class
+			.getCanonicalName();
+
+	ViewGroup trainingPanel = null;
+	ImageView questionImageView = null;
+	MediaPlayer player = null;
+	CountDownTimer timer = null;
+
+	private StartFlagImageView startFlagImageView;
+	
+	int sampleSet = 0;// 样本集
+	// int sampleElement = 0;// 样本元素
+
+	TrainingLogic logic;
+	int[] position2image;// 位置到样本元素的映射
+
+	long startMoment;
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		bundle = this.getIntent().getExtras();
+		this.sampleSet = bundle
+				.getInt(Constants.SymbolTraingParam.Key.SAMPLE_SET);
+		int sampleElement = bundle
+				.getInt(Constants.SymbolTraingParam.Key.SAMPLE_ELEMENT);
+		questionCount = bundle
+				.getInt(Constants.SymbolTraingParam.Key.QUESTION_COUNT);
+		debug("sampleSet=" + sampleSet);
+		debug("sampleElement=" + sampleElement);
+		debug("questionCount=" + questionCount);
+		
+		SymbolResponseTrainingParameter parameter = new SymbolResponseTrainingParameter();
+		parameter.setQuestionCount(questionCount);
+		//创建参数键值对
+		Map<String, Object> parameters = new HashMap<String, Object>();
+		//添加ColorMemoryTrainingParameter
+		parameters.put(Constants.PARAMETER, parameter);
+		parameters.put(Constants.CONTEXT, SymbolResponseTrainingActivity.this);
+		service = new SymbolResponseTrainingServiceImpl();
+		try {
+			service.init(parameters);
+			Log.d(TAG, "service init");
+		}catch (LackOfParametersException e) {
+			e.printStackTrace();
+			ActivityUtil.finish(SymbolResponseTrainingActivity.this);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			ActivityUtil.finish(SymbolResponseTrainingActivity.this);
+		}
+		
+		int settingQuestion = sampleElement;
+		if (sampleElement > 0) {
+			// 用户指定了要显示的符号
+			settingQuestion = ArrayOperations.indexInElement(CommonUtil
+					.getSampleElementsInSample(sampleSet), String
+					.valueOf(sampleElement));
+		}
+		logic = new TrainingLogicImpl(questionCount, settingQuestion);
+		position2image = new int[CommonUtil
+				.getSampleElementsInSample(sampleSet).length];
+		for (int i = 0; i < position2image.length; i++) {
+			position2image[i] = i;
+		}
+		setupViews();
+		player = createMediaPlayer();
+		timer = createCountdownTimer();
+		
+		this.setOkButtonEnable(false);
+		// 显示用户名
+		setUserNameEnabled(true);
+		// 显示用户头像
+		setUserIconEnable(true);
+		setTrainingTitle("符号辨识|反应训练");
+		setupListeners();
+	}
+
+	private void setupListeners() {
+		this.setOnBackButtonTouchListener(new GoToActivityListener(this,
+				SymbolResponseTrainingChooseParamsActivity.class));
+		this.setOnCancelButtonTouchListener(new GoToActivityListener(this,
+				SymbolResponseTrainingChooseParamsActivity.class));
+		this.setOnHomeButtonTouchListener(new GoToActivityListener(this,
+				MainMenuActivity.class));
+	}
+
+	private Helper.OperationPanelListener getOperationPanelListener() {
+		return new Helper.OperationPanelListener() {
+			@Override
+			public void onClick(View view, int i) {
+				timer.cancel();
+				if (logic.onAnswer(position2image[i])) {
+					// 回答正确,继续
+					
+					if (logic.trainingOver()) {
+						displayTrainingOver();
+					} else {
+						displayQuestion();
+						timer.start();
+					}
+				} else {
+					// 回答错误
+					playErrorMusic();
+					displayQuestion();
+					timer.start();
+				}
+			}
+		};
+	}
+
+	private void setupViews() {
+		//从BaseActivity中取得父布局
+		RelativeLayout layout = getBaseRelativeLayout();
+		//将R.layout.color_memory_training中定义的布局添加到父布局中，并显示出来
+		layout.addView((RelativeLayout)getBaseLayoutInflater().inflate(
+				R.layout.symbol_response_training, null), getBaseLayoutParams());
+		setContentView(layout);
+		
+		startFlagImageView = (StartFlagImageView)findViewById(R.id.StartFlagImageView18);
+		
+		RelativeLayout.LayoutParams centerLayoutParam = new RelativeLayout.LayoutParams(
+				android.view.ViewGroup.LayoutParams.WRAP_CONTENT,
+				android.view.ViewGroup.LayoutParams.WRAP_CONTENT);
+		centerLayoutParam.addRule(RelativeLayout.CENTER_IN_PARENT);
+		trainingPanel = (ViewGroup) getBaseLayoutInflater().inflate(
+				R.layout.symbol_response_training_display_panel, null);
+		trainingPanel.addView(Helper.getOperationPanel(sampleSet, this,
+				getOperationPanelListener()));
+		layout.addView(trainingPanel, centerLayoutParam);
+
+		questionImageView = (ImageView) trainingPanel
+				.findViewById(R.id.Displaying);
+
+		// questionImageView.setImageResource(CommonUtil
+		// .getImageResourceIdBySampleElementCode(sampleElement));
+
+	}
+
+	@Override
+	protected void onStart() {
+		super.onStart();
+		service.start();
+		//切换答题状态至STATE_TIME_UP
+		startFlagImageView.setState(StartFlagImageView.STATE_TIME_UP);
+		//切换答题状态灯至绿色
+		startFlagImageView.setImageResource(R.drawable.green);
+		displayQuestion();
+		startMoment = System.currentTimeMillis();
+	}
+
+	@Override
+	protected void onDestroy() {
+		super.onDestroy();
+		if (player != null) {
+			player.release();
+		}
+		timer.cancel();
+	}
+
+	private void displayQuestion() {
+		timer.start();
+		Animation anim = getFadeOutAnimation(20);
+		trainingPanel.startAnimation(anim);
+		shuffleOperationPanel();
+		int question = logic.nextQuestion(CommonUtil
+				.getSampleElementImageResBySampleCode(sampleSet).length);
+		questionImageView.setImageResource(CommonUtil
+				.getSampleElementImageResBySampleCode(sampleSet)[question]);
+		
+	}
+
+	/**
+	 * 打乱答题时要按的参数面板
+	 */
+	private void shuffleOperationPanel() {
+		shuffle(position2image);
+		for (int i = 0; i < position2image.length; i++) {
+			int id = this.getResources().getIdentifier("ImageView" + i, "id",
+					this.getPackageName());
+			int imageID = CommonUtil
+					.getSampleElementImageResBySampleCode(sampleSet)[position2image[i]];
+			((ImageView) trainingPanel.findViewById(id))
+					.setImageResource(imageID);
+		}	}
+
+	/**
+	 * 对指定数组进行洗牌
+	 * 
+	 * @param position2image2
+	 */
+	private void shuffle(int[] position2image2) {
+		int length = position2image2.length;
+		for (int i = 0; i < length; i++) {
+			int switchIndex = Math.abs(random.nextInt()) % (length - i) + i;
+			int temp = position2image2[i];
+			position2image2[i] = position2image2[switchIndex];
+			position2image[switchIndex] = temp;
+		}
+	}
+
+	private void playErrorMusic() {
+		if (player == null) {
+			player = createMediaPlayer();
+			player.start();
+		} else {
+			player.seekTo(0);
+			player.start();
+		}
+	}
+
+	private MediaPlayer createMediaPlayer() {
+		MediaPlayer p = MediaPlayer.create(this, R.raw.error);
+		p.setOnErrorListener(new MediaPlayer.OnErrorListener() {
+			@Override
+			public boolean onError(MediaPlayer mp, int what, int extra) {
+				Log.d(TAG, "PlayErrorMusic onError()what=" + what + " extra="
+						+ extra);
+				mp.release();
+				player = null;
+				return false;
+			}
+		});
+		return p;
+	}
+
+	private CountDownTimer createCountdownTimer() {
+		
+		
+		return new CountDownTimer(5000, 5000) {
+			
+			@Override
+			public void onTick(long millisUntilFinished) {
+				// do nothing...
+			}
+			
+			
+			@Override
+			public void onFinish() {
+				if (logic.trainingOver()) {
+						service.stop();
+						startFlagImageView.setImageResource(R.drawable.red);
+						startFlagImageView.setState(StartFlagImageView.STATE_INIT);
+						SymbolResponseTrainingActivity.this.displayTrainingOver();
+				}else{
+					// 超时
+				    logic.timeOut();
+				    Toast.makeText(SymbolResponseTrainingActivity.this, "超时",
+				    		Toast.LENGTH_SHORT).show();
+				    SymbolResponseTrainingActivity.this.playErrorMusic();
+					SymbolResponseTrainingActivity.this.displayQuestion();
+					this.start();
+				}
+			}
+		};
+	}
+
+	/**
+	 * 训练逻辑
+	 * @author Zhaohe.Guo
+	 *
+	 * 2011-2-28 下午02:03:14
+	 */
+	interface TrainingLogic {
+
+		/**
+		 * 用户进行按键回应
+		 * 
+		 * @param i
+		 *            用户按下的键的位置
+		 */
+		boolean onAnswer(int i);
+
+		/**
+		 * 返回下一个问题
+		 * 
+		 * @return 应该显示的图片在用户操作面板上的对应位置
+		 */
+		int nextQuestion(int randomRange);
+
+		/**
+		 * 判断训练是否结束
+		 * 
+		 * @return
+		 */
+		boolean trainingOver();
+
+		/**
+		 * 返回正确回答的个数
+		 * 
+		 * @return
+		 */
+		int getRightAnswers();
+		int getQuestionTotal();
+
+		/**
+		 * 响应问题时超时
+		 */
+		void timeOut();
+
+	}
+
+	class TrainingLogicImpl implements TrainingLogic {
+
+		/**
+		 * 当前的问题
+		 */
+		int currentQuestion;
+
+		/**
+		 * 问题总数
+		 */
+		int questionTotal;
+
+		public int getQuestionTotal() {
+			return questionTotal;
+		}
+
+		public void setQuestionTotal(int questionTotal) {
+			this.questionTotal = questionTotal;
+		}
+
+		public void setRightAnswers(int rightAnswers) {
+			this.rightAnswers = rightAnswers;
+		}
+
+		/**
+		 * 已经回答过的问题数目
+		 */
+		int questionAnswered = 0;
+
+		/**
+		 * 用户指定的问题(指定的样本元素)
+		 */
+		int settingQuestion;
+
+		/**
+		 * 回答正确的个数
+		 */
+		int rightAnswers = 0;
+
+		/**
+		 * 响应超时的个数
+		 */
+		int timeOutCount = 0;
+
+		public TrainingLogicImpl(int questionTotal, int settingQuestion) {
+			this.questionTotal = questionTotal;
+			this.settingQuestion = settingQuestion;
+		}
+
+		@Override
+		public int nextQuestion(int randomRange) {
+			questionAnswered++;
+			if (settingQuestion > 0) {
+				this.currentQuestion = settingQuestion;
+			} else if (settingQuestion == Constants.SymbolTraingParam.SAMPLE_ELEMENT_SETTING) {
+				// 机器默认的样本元素
+				this.currentQuestion = 0;
+			} else if (settingQuestion == Constants.SymbolTraingParam.SAMPLE_ELEMENT_RANDOM) {
+				this.currentQuestion = Math.abs(random.nextInt()) % randomRange;
+			}
+			debug("currentQuestion=" + currentQuestion);
+			return currentQuestion;
+		}
+
+		@Override
+		public boolean onAnswer(int i) {
+			debug("position " + i + " is pressed!");
+			service.startAnswer();
+			if (i == currentQuestion) {
+				debug("right.next...");
+				service.answerQuestion(questionAnswered,true);
+				Log.d(TAG,"a");
+				rightAnswers++;
+				return true;
+			} else {
+				debug("wrong");
+                service.answerQuestion(questionAnswered,false);
+				Log.d(TAG,"b");
+				return false;
+			}
+		}
+
+		@Override
+		public boolean trainingOver() {
+			return questionAnswered > questionTotal;
+		}
+
+		@Override
+		public int getRightAnswers() {
+			return rightAnswers;
+		}
+
+		@Override
+		public void timeOut() {
+			service.answerQuestion(questionAnswered,false);
+			Log.d(TAG,"c");
+			timeOutCount++;
+		}
+
+	}
+
+	private void debug(String msg) {
+		Log.d(TAG, msg);
+	}
+
+	/**
+	 * 训练结束
+	 */
+	private void displayTrainingOver() {
+		// 测试结束
+		debug("test over!");
+		long timeSpent = (System.currentTimeMillis() - startMoment) / 1000;
+		// TODO 显示测试结束的界面
+		/*new AlertDialog.Builder(SymbolResponseTrainingActivity.this).setTitle(
+				"测试结果").setMessage("测试结束!总共花费的时间为:" + timeSpent + "秒.")
+				.setPositiveButton("确定", new DialogInterface.OnClickListener() {
+					@Override
+					public void onClick(DialogInterface dialog, int which) {
+						// SymbolResponseTrainingActivity.this
+						// .startActivity(SymbolResponseTrainingActivity.this
+						// .getIntent());
+						Log.d(TAG, "finsh");
+						//startActivity(new Intent(
+								//getApplicationContext(),
+								//SymbolResponseTrainingChooseParamsActivity.class));
+						//finish();
+					}
+				}).show();*/
+		showTestReport(service.generateReport(logic.getQuestionTotal(),logic.getQuestionTotal()-logic.getRightAnswers()));
+	}
+
+	private Animation getFadeOutAnimation(long duration) {
+		Animation animation = new AlphaAnimation(1f, 0f);
+		animation.setDuration(duration);
+		// animation.setFillAfter(true);
+		return animation;
+	}
+
+	private Random random = new Random();
+	private void showTestReport(final SymbolResponseTrainingReport testReport){		
+
+		new AlertDialog.Builder(SymbolResponseTrainingActivity.this)
+		.setTitle(R.string.tips)
+		.setMessage(R.string.test_over)
+		.setCancelable(false)	//此alertDialog不允许被取消
+		.setPositiveButton(R.string.ok, new DialogInterface.OnClickListener(){
+			public void onClick(DialogInterface dialog, int which) {
+				    Intent intent = new Intent();
+					//如果不是连续位元,跳转至TestReportActivity显示report
+					intent.setClass(SymbolResponseTrainingActivity.this, TestReportActivity.class);
+				if(null==bundle){
+					Log.d(TAG,"null==bundle");
+				}
+				bundle.putSerializable(Constants.TEST_REPORT, testReport);
+				bundle.putString(Constants.CLASS_NAME, SymbolResponseTrainingActivity.class.getName());
+				bundle.putString(Constants.PREVIOUS_ACTIVITY, SymbolResponseTrainingChooseParamsActivity.class.getName());
+				intent.putExtras(bundle);
+				startActivity(intent);
+				finish();				
+			}
+		})
+		.show();
+	}
+}
