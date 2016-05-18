@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 此文件用于保存公用字符串的定义， 其余模块均定义在相应的strings_x.xml文件中。
+	 字符串的命名请严格遵循以下约定:
+		1.尽量用英文命名; 2.所有单词均小写; 3.单词之间用下划线相隔; 4.所有字符串请按首字母(仅限首字母)升序排列。
+	如下所示：
+		<string name="an_qing">安庆</string>
+		<string name="an_hui">安徽</string>
+		<string name="an_yang">安阳</string>
+		<string name="bei_jing">北京</string>
+		<string name="bei_fang">北方</string>
+		<string name="cheng_du">成都</string>
+		<string name="chong_qing">重庆</string>
+		<string name="hello_world">你好，世界！</string>
+-->
+<resources>
+
+	<string name="login">请登录！</string>
+	<string name="user1">用户A</string>
+	<string name="user2">用户B</string>
+	<string name="newuser">或重新建立用户资料</string>
+	<string name="back">返回</string>
+	<string name="begin">开始</string>
+
+	<string name="text">训练类别选择</string>
+	<string name="A_module">A 视觉、听觉、触觉综合训练</string>
+	<string name="B_module">B 听觉系统广度训练</string>
+	<string name="C_module">C 颜色辨识深度训练</string>
+	<string name="D_module">D 符号形象强度训练</string>
+	<string name="E_module">E 空间位置记忆训练</string>
+	<string name="F_module">F 手眼协调度训练</string>
+	<string name="G_module">G 手指稳定度训练</string>
+	<string name="H_module">H 双手调节度训练</string>
+
+	<string name="text1">视觉、听觉、触觉整合训练</string>
+	<string name="view_touch">视觉+触觉</string>
+	<string name="listen_touch">听觉+触觉</string>
+	<string name="vlt">视觉+听觉+触觉</string>
+	<string name="reaction">反应训练</string>
+	<string name="memory">记忆训练</string>
+	<string name="touch">触摸屏操作</string>
+	<string name="control">控制键操作</string>
+	<string name="touch_control">触摸屏+控制键操作</string>
+
+
+	<string name="text2">受测样本选择</string>
+	<string name="text3">视觉+触觉，反应训练，触摸屏操作</string>
+	<string name="reflect">反射回应</string>
+	<string name="point">定点回应</string>
+	<string name="substitute">替代回应</string>
+	<string name="set">设定</string>
+	<string name="optional">自选</string>
+	<string name="single">单一样本</string>
+	<string name="various">多种样本</string>
+	<string name="whitelight">白光</string>
+	<string name="colour">颜色</string>
+	<string name="Arabic">阿拉伯数字</string>
+	<string name="Roma">罗马数字</string>
+	<string name="English">英文字母</string>
+	<string name="shape">形状</string>
+	<string name="general_mark">一般记号</string>
+	<string name="music_mark">音乐记号</string>
+	<string name="instrument">乐器</string>
+	<string name="star">星座</string>
+
+	<string name="set_second">设定30秒</string>
+	<string name="optional_set">自选？秒</string>
+	<string name="original">原始键反应</string>
+	<string name="correspond">对应键反应</string>
+
+
+	<string name="text4">请确认你选择的训练条件</string>
+	<string name="text5">开始训练</string>
+	<string name="text6">重新选择</string>
+
+	<string name="can_del">跳转下一页用，可删除键</string>
+
+
+	<string name="text7">训练结束，以下是你的测试结果</string>
+	<string name="text8">相同训练再做一次</string>
+	<string name="text9">储存并回到训练方式选择页</string>
+	<string name="text10">储存 并回到主菜单</string>
+	<string name="text11">储存 并回到主菜单</string>
+
+	<string name="text12">视觉+触觉，反应训练，控制键操作</string>
+	<string name="two_sample">两种样本</string>
+
+
+	<string name="text13">视觉+触觉，记忆训练，触摸屏操作</string>
+	<string name="set_bit">设定受测样本位元数</string>
+	<string name="customize_bit">自选受测样本位元数</string>
+	<string name="sequence_bit">连续受测样本位元数</string>
+	<string name="random">随机样本</string>
+	<string name="position">接受测样本位置出现顺序回应！</string>
+	<string name="element">接受测样本元素出现顺序回应！</string>
+	<string name="set_test">设定测试10题</string>
+	<string name="optional_test">自选测试？题</string>
+	<string name="lefthand">左手</string>
+	<string name="righthand">右手</string>
+	<string name="text14">操作</string>
+
+
+	<string name="text15">视觉+触觉，记忆训练，控制键操作</string>
+
+	<string name="text16">听觉+触觉，反应训练，控制键操作</string>
+	<string name="scale">音阶</string>
+	<string name="western_music">西洋乐</string>
+	<string name="percussion_music">打击乐</string>
+	<string name="two_music">两种乐器</string>
+	<string name="three_music">三种乐器</string>
+	<string name="signle_scale">单一音阶</string>
+	<string name="various_scale">多种音阶</string>
+	<string name="random_scale">随机音阶</string>
+
+
+	<string name="text17">听觉+触觉，记忆训练，控制键操作</string>
+	<string name="random1">随机</string>
+	<string name="four_or_more">4-15种乐器</string>
+
+	<string name="text18">视觉+听觉+触觉整合训练，触摸屏 +控制键操作</string>
+	<string name="number1">设定三种音阶．设定单一乐器</string>
+	<string name="number2">设定三种音阶．自选单一乐器</string>
+	<string name="number3">设定三种音阶．设定多种乐器</string>
+	<string name="number4">设定三种音阶．自选多种乐器</string>
+	<string name="number5">自选三种音阶．设定单一乐器</string>
+	<string name="number6">自选三种音阶．自选单一乐器</string>
+	<string name="number7">自选三种音阶．设定多种乐器</string>
+	<string name="number8">自选三种音阶．自选多种乐器</string>
+	<string name="number9">设定多种打击乐器</string>
+	<string name="number0">自选多种打击乐器</string>
+	
+	<!-- owner: Zhang Guo-Yin -->
+	
+	<string name="foreign_music">西洋乐</string>
+	<string name="piano">钢琴</string>
+	<string name="trument">小号</string>
+	<string name="violin">小提琴</string>
+	<string name="shu_qin">竖琴</string>
+	<string name="chang_hao">长号</string>	
+	<string name="zhong_ti_qin">中提琴</string>
+	<string name="jiao_tang_qin">教堂风琴</string>
+	<string name="fa_guo_hao">法国号</string>
+	<string name="da_ti_qin">大提琴</string>
+	<string name="mu_ji_ta">木吉他</string>
+	<string name="chang_di">长笛</string>
+	<string name="shou_feng_qin">手风琴</string>
+	<string name="dian_ji_ta">电吉他</string>
+	<string name="sa_ke_si">萨克斯风</string>
+	<string name="tie_qin">铁琴</string>
+	
+	<string name="folk_music">民族乐</string>
+	<string name="pi_pa">琵琶</string>
+	<string name="er_hu">二胡</string>
+	<string name="suo_na">唢呐</string>
+	<string name="gu_zheng">古筝</string>
+	<string name="ma_tou_qin">马头琴</string>
+	<string name="er_ai_lan_feng_qin">爱尔兰风琴</string>
+	<string name="yang_qin">扬琴</string>
+	<string name="xi_ta_qin">西塔琴</string>
+	<string name="chi_ba">尺八</string>
+	<string name="liu_qin">柳琴</string>
+	<string name="ban_jiu_qin">斑鸠琴</string>
+	<string name="di">笛</string>
+	<string name="ruan">阮</string>
+	<string name="san_wei_xian">三味线</string>
+	<string name="sheng">笙</string>
+		
+	<string name="percussion_instrument">打击乐</string>
+	<string name="drum">大鼓</string>
+	<string name="temple_block">木鱼</string>
+	<string name="triangle">三角铁</string>
+	<string name="xiao_gu">小鼓</string>
+	<string name="lin_gu">铃鼓</string>
+	<string name="luo">锣</string>
+	<string name="tai_gu">太鼓</string>
+	<string name="bang_ge_gu">邦哥鼓</string>
+	<string name="bo">钹</string>
+	<string name="ding_yin_gu">定音鼓</string>
+	<string name="yan_ba_gu">延巴鼓</string>
+	<string name="sha_lin">沙铃</string>
+	<string name="zhong_guo_gu">中国鼓</string>
+	<string name="kang_jia_gu">康加鼓</string>
+	<string name="niu_lin">牛玲</string>			
+		
+	<string name="yue_qi">乐器</string>
+	<string name="yin_jie">音阶</string>
+	<string name="jie_zou">节奏</string>
+	<string name="bian_shi_xun_lian">辨识训练</string>
+	<string name="fan_ying_xun_lian">反应训练</string>
+	<string name="ji_yi_xun_lian">记忆训练</string>
+	<string name="bian_shi_fan_ying_ji_yi">辨识训练;反应训练;记忆训练</string>
+	<string name="yue_qi_yin_jie_jie_zou">乐器;音阶;节奏</string>
+	<string name="code_bian_shi_fan_ying_ji_yi">1001;1002;1003</string>
+	<string name="code_yue_qi_yin_jie_jie_zou">2001;2002;2003</string>
+	<string name="pls_choose_training">请选择训练类型</string>
+	<string name="foreign_folk_percussion_music">西洋乐;民族乐;打击乐</string>
+	<string name="code_foreign_folk_percussion_music">130000;140000;150000</string>
+	
+	<string name="yourTestReport">您的测试结果：</string>
+	<string name="rightCount">正确次数：</string>
+	<string name="wrongCount">错误次数：</string>
+	<string name="score">分数：</string>
+	<string name="_rightCount">正确次数</string>
+	<string name="_wrongCount">错误次数</string>
+	<string name="rightCount2">正确题数：</string>
+	<string name="wrongCount2">错误题数：</string>
+	<string name="_rightCount2">正确题数</string>
+	<string name="_wrongCount2">错误题数</string>
+	<string name="period1">-前 期-</string>
+	<string name="period2">-中 期-</string>
+	<string name="period3">-后 期-</string>
+	<string name="testPeriod">测试阶段</string>
+	<string name="testResult">测试结果</string>
+	<string name="doAgain">再做一次</string>
+	<string name="touched_screen_error">触碰到屏幕非按键部分</string>
+	<string name="answerIsError">回答错误</string>
+	<string name="time_out">超时</string>
+	<string name="press_out">手指压倒按键外圈</string>
+	<string name="premature">过早反应</string>
+	<string name="test_over">测试结束</string>
+	<string name="foreFinger">食指</string>
+	<string name="middleFinger">中指</string>
+	<string name="thirdFinger">无名指</string>
+	<string name="answers">答案是：</string>
+	<string name="visionTouchResult">视觉触觉部分</string>
+	<string name="hearingTouchResult">听觉触觉部分</string>
+	<string name="vtrtTimeOut">视觉触觉超时</string>
+	<string name="htrtTimeOut">听觉触觉超时</string>
+	<string name="questionId">题号：</string>
+	<string name="questionResult">结果：</string>
+
+
+
+    <string name="hello">Hello World, LoadingActivity!</string>
+    <string name="app_name">Savant Belle 莎凡贝尔</string>
+    <string name="loading">Loading</string>
+    <string name="load">用户登录</string>
+    <string name="newUser">新建用户</string>
+    <string name="about">关    于</string>
+    <string name="userName">用   户   名：</string>
+    <string name="password">密           码：</string>
+    <string name="password2">确认密码：</string>
+    <string name="email">E-mail：</string>
+    <string name="chooseIcon">头像选择：</string>
+    <string name="chooseBackground">背景色选择：</string>
+    <string name="plsInputUserName">请输入用户名</string>
+    <string name="plsInputPassword">请输入密码</string>
+    <string name="plsInputPassword2">请再一次输入密码</string>
+    <string name="plsInputEmail">请输入邮箱地址</string>
+    <string name="createNewUser">建立新的用户</string>
+    <string name="plsCheck">输入错误！请重新输入以下选项：</string>
+    <string name="_userName">用   户   名</string>
+    <string name="_password">密           码</string>
+    <string name="_password2">确认密码</string>
+    <string name="_email">E-mail</string>
+    <string name="_userIcon">头像</string>
+    <string name="_background">背景色</string>
+	<string name="tips">温馨提示</string>
+	<string name="userNameIsExist">用户名已存在，请重新输入用户名</string>
+	<string name="testTime">测试时间</string>
+	<string name="cerateNewUserSuccess">建立新的用户成功！</string>
+	<string name="cerateNewUserFailed">建立新的用户失败！</string>
+	<string name="userLoad">用户登录</string>
+	<string name="ok">确定</string>
+	<string name="no">取消</string>
+	<string name="passwordError">密码错误！</string>
+	
+	<string name="Menu_A">视觉、听觉、触觉综合训练</string>
+	<string name="Menu_B">听觉系统广度训练</string>
+	<string name="Menu_C">颜色辨识深度训练</string>
+	<string name="Menu_D">符号形象强度训练</string>
+	<string name="Menu_E">空间位置记忆训练</string>
+	<string name="Menu_F">手眼协调度训练</string>
+	<string name="Menu_G">手指稳定度训练</string>
+	<string name="Menu_H">双手调节度训练</string>	
+	<string name="menuOptionsChoose">训练类别选择</string>
+    <string name="menuTraChoose">训练轨迹选择</string>
+    <string name="traResultShow">训练结果显示</string>
+	<string name="plsChoose">请选择</string>
+	<string name="updateUserInfo">修改个人信息</string>
+	<string name="exit">退出登录</string>
+	<string name="isSureExit">确定退出登录？</string>
+	<string name="vision_hearing_touch_1">视觉+触觉;听觉+触觉;视觉+听觉+触觉</string>
+	<string name="response_memory_training">反应训练;记忆训练</string>
+	<string name="touch_screen_key_stoke">触摸屏操作;控制键操作;触摸屏+控制键操作</string>
+	<string name="original_opposite_key">原始键反应;对应键反应</string>
+	<string name="reflect_fixed_point_instead">反射回应;定点回应;替代回应</string>
+	<string name="setting_choose_self">设定;自选</string>
+	<string name="single_multi">单一样本;多种样本</string>
+	<string name="single_double">单一样本;2种样本</string>
+	<string name="single_choose_self_time">设定30秒;自选?秒</string>
+	<string name="samples">白光;颜色;阿拉伯数字;罗马数字;英文字母;形状;一般记号;音乐记号;西洋乐;民族乐;打击乐</string>
+	<string name="seconds">秒</string>
+	<string name="selfChooseSomeTime">自选?秒</string>
+	<string name="selfChoose">自选</string>
+	<string name="selfChooseTime">自选时间</string>
+	<string name="plsChooseSampleElements">请选择元素</string>
+	<string name="needChoose">共需要选择</string>
+	<string name="elements">元素</string>
+	<string name="need">还差</string>
+	<string name="sampleChoose">受测样本选择</string>
+	<string name="trainingType">训练方式</string>
+	<string name="trainingSample">受测样本</string>
+	<string name="dominantHands">优势手-左;优势手-右</string>
+	<string name="dominantHandLeft">优势手-左</string>
+	<string name="dominantHandRight">优势手-右</string>
+	<string name="music_scale">乐器;音阶</string>
+	<string name="foreign_folk_press">西洋乐;民族乐;打击乐</string>
+	
+	
+	
+	<string name="colorResponseTraining">颜色辨识 ¦ 反应训练</string>
+	<string name="leftBottomLine4Color">───────────────────────────</string>
+	<string name="colorMemoryTraining">颜色辨识 ¦ 记忆训练</string>
+	
+	<string name="spatial_memory_training">空间位置 ¦ 记忆训练</string>
+	<string name="left_bottom_line_spatial">───────────────────────────</string>
+	
+	
+	
+	
+	<string name="iknown">OK,我知道了</string>
+	<string name="internal_error">对不起，发生内部错误。点击”确定“以结束</string>
+	<string name="is_doing">训练正在进行中,确定要离开?</string>
+	<string name="warning">警告</string>
+</resources>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.flextronics.cn.activity" android:versionCode="1"
+	android:versionName="1.0">
+	<application android:icon="@drawable/icon" android:label="@string/app_name"
+		android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+		<!--
+			Tips: Please mark your activity and service with your name, so that
+			we can distinguish the owners of the following activity declaration
+		-->
+		
+		<receiver android:name=".StartupReceiver">
+			<intent-filter>
+				<action android:name="android.intent.action.BOOT_COMPLETED"/>
+				<category android:name="android.intent.category.HOME"/>
+			</intent-filter>
+		</receiver>
+
+		<!-- owner: Zhang Guo-Yin -->		
+		<activity android:name=".LoadingActivity" android:label="@string/app_name">
+			<intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+		</activity>
+		<!-- 视觉触觉-反应训练-触摸屏操作-训练页面-->
+		<activity android:name=".visiontouch.VtrtTouchScreenOperationActivity" />
+		<!-- 视觉触觉-反应训练-按键操作-训练页面-->
+		<activity android:name=".visiontouch.VtrtKeyStokeOperationActivity" />
+		<activity android:name=".visiontouch.VtmtTouchScreenOperationActivity" />
+		<activity android:name=".visiontouch.VtmtTouchScreenSampleElementOrderActivity" />
+		<activity android:name=".visiontouch.VtmtTouchScreenSampleLocationOrderActivity" />
+		<activity android:name=".visiontouch.VtmtTouchScreenChooseParametersActivity" />
+		<activity android:name=".visiontouch.VtmtKeyStokeOperationActivity" />
+		<activity android:name=".visiontouch.VtmtKeyStokeChooseParametersActivity" />
+		<!-- 听觉触觉-反应训练-按键操作-选择参数页面-->
+		<activity android:name=".hearingtouch.ChooseParams4HtrtActivity" />
+		<activity android:name=".hearingtouch.ChooseParams4HtrtScaleActivity" />
+		<activity android:name=".hearingtouch.ChooseParams4HtrtMusicActivity" />
+		<activity android:name=".hearingtouch.ChooseParams4HtmtActivity"/>
+		<activity android:name=".hearingtouch.ChooseParams4HtmtMusicActivity"/>
+		<activity android:name=".hearingtouch.ChooseParams4HtmtScaleActivity"/>
+		<!-- 听觉触觉-反应训练-按键操作-训练页面-->
+
+		<activity android:name=".hearingtouch.HtrtSampleActivity" />
+		<activity android:name=".hearingtouch.HtmtSampleActivity" />
+		<activity android:name=".visionhearingtouch.VhtIntegrationOperationActivity" />
+		<activity android:name="TestReportActivity" />
+		<activity android:name="VHTTestReportActivity" />
+		<activity android:name="TestReportWithTableActivity" />
+		<activity android:name=".user.UserManagementActivity" />
+		<activity android:name=".user.NewUserActivity" />
+		<activity android:name=".user.NewUserSuccessActivity" />
+		<activity android:name=".user.UserLoadActivity" />
+		<activity android:name="MainMenuActivity" />
+		<activity android:name=".visionhearingtouch.VhtChooseTrainingActivity" />
+		<activity android:name=".visionhearingtouch.VhtChooseParametersActivity" />
+		<activity
+			android:name=".visionhearingtouch.VhtVisionTouchRespTrainingKeyChooseParametersActivity" />
+		<activity
+			android:name=".visionhearingtouch.VhtIntegrationOperationChooseParametersActivity1" />
+		<activity
+			android:name=".visionhearingtouch.VhtIntegrationOperationChooseParametersActivity2" />
+
+		<!-- 颜色辨识-反应训练-游戏页面-->
+		<activity android:name=".color.ColorResponseTrainingActivity" />
+		<!-- 颜色辨识-记忆训练-游戏页面-->
+		<activity android:name=".color.ColorMemoryTrainingActivity" />
+		<!-- 颜色辨识-反应训练-选择参数页面-->
+		<activity android:name=".color.ColorResponseTrainingChooseParamsActivity" />
+		<!-- 颜色辨识-记忆训练-选择参数页面-->
+		<activity android:name=".color.ColorMemoryTrainingChooseParamsActivity" />
+		<!-- 颜色辨识-选择训练类型页面-->
+
+		<activity android:name=".color.ColorTrainingChooseActivity" />
+		<activity android:name=".spatial.SpatialMemoryTrainingActivity" />
+		<activity android:name=".spatial.ChooseParams4SpatialMemoryTrainingActivity" />
+
+
+		<!-- owner: Dai Shu-Chen -->
+		<activity android:name=".hearing.HearingActivity"></activity>
+		<!-- 辨识训练 ——乐器——选择参数-->
+		<activity
+			android:name=".hearing.identification.MusicalInstrumentsIdentificationActivity"></activity>
+		<!-- 辨识训练 ——乐器——西洋乐器训练页面-->
+		<activity
+			android:name=".hearing.identification.musicalinstruments.ForeignMusicActivity"></activity>
+		<!-- 辨识训练 ——乐器——民族乐器训练页面-->
+		<activity
+			android:name=".hearing.identification.musicalinstruments.FolkMusicActivity"></activity>
+		<!-- 辨识训练 ——乐器——打击乐器训练页面-->
+		<activity
+			android:name=".hearing.identification.musicalinstruments.PercussionActivity"></activity>
+		<!-- 辨识训练 ——音阶——选择参数-->
+		<activity android:name=".hearing.identification.ScaleIdentificationActivity"></activity>
+		<!-- 辨识训练 ——音阶——西洋乐器训练页面 -->
+		<activity android:name=".hearing.identification.scale.ForeignMusicActivity"></activity>
+		<!-- 辨识训练 ——音阶——民族乐器训练页面 -->
+		<activity android:name=".hearing.identification.scale.FolkMusicActivity"></activity>
+		<!-- 辨识训练 ——节奏——选择参数-->
+		<activity android:name=".hearing.identification.RhythmIdentificationActivity"></activity>
+		<!-- 辨识训练 ——节奏——打击乐器训练页面-->
+		<activity android:name=".hearing.identification.rhythm.PercussionActivity"></activity>
+		<!-- 反应训练 ——乐器——选择参数页面-->
+		<activity android:name=".hearing.response.MusicalInstrumentsResponseActivity"></activity>
+		<!-- 反应训练 ——乐器——答题页面 -->
+		<activity
+			android:name=".hearing.response.answer.MusicalInstrumentsResponseAnswerActivity"></activity>
+		<!-- 反应训练 ——音阶——选择参数页面-->
+		<activity android:name=".hearing.response.ScaleResponseActivity"></activity>
+		<!-- 反应训练 ——音阶——答题页面 -->
+		<activity android:name=".hearing.response.answer.ScaleResponseAnswerActivity"></activity>
+		<!-- 反应训练 ——节奏——选择参数页面 -->
+		<activity android:name=".hearing.response.RhythmReponseActivity"></activity>
+		<!-- 反应训练 ——节奏——答题页面 -->
+		<activity android:name=".hearing.response.answer.RhythmResponseAnswerActivity"></activity>
+		<!-- 记忆训练 ——乐器——选择参数页面 -->
+		<activity android:name=".hearing.memory.MusicalInstrumentsMemoryActivity"></activity>
+		<!-- 记忆训练 ——乐器——答题页面 -->
+		<activity
+			android:name=".hearing.memory.answer.MusicalInstrumentsMemoryAnswerActivity"></activity>
+		<!-- 记忆训练 ——音阶——选择参数页面 -->
+		<activity android:name=".hearing.memory.ScaleMemoryActivity"></activity>
+		<!-- 记忆训练 ——音阶——答题页面 -->
+		<activity android:name=".hearing.memory.answer.ScaleMemoryAnswerActivity"></activity>
+		<!-- 记忆训练 ——节奏——选择参数页面 -->
+		<activity android:name=".hearing.memory.RhythmMemoryActivity"></activity>
+		<!-- 记忆训练 ——节奏——答题页面 -->
+		<activity android:name=".hearing.memory.answer.RhythmMemoryAnswerActivity"></activity>
+
+
+		<!-- owner: Damon Guo -->
+		<activity android:name=".symboltraining.Main" android:label="@string/app_name">
+		</activity>
+		<activity android:name=".symboltraining.SymbolMemoryTrainingChooseParamsActivity"
+			android:label="@string/app_name">
+		</activity>
+		<activity android:name=".symboltraining.SymbolResponseTrainingChooseParamsActivity"
+			android:label="@string/app_name">
+		</activity>
+
+
+		<activity android:name=".symboltraining.SymbolResponseTrainingActivity" />
+		<activity android:name=".symboltraining.SymbolMemeryTrainingActivity" />
+		<activity android:name=".symboltraining.SymbolResponseTrainingActivity" />
+		<activity android:name=".symboltraining.SymbolMemeryTrainingActivity" />
+
+		<activity android:name=".symboltraining.TempSymbolTrainingGuideActivity">
+		</activity>
+		<activity android:name=".coordination.CoordinationActivity">
+		</activity>
+		
+		<!-- end of Damon Guo's activity -->
+		<activity android:name=".stabilitytraining.FingerStabilityTrainingActivity"></activity>
+		<activity android:name=".stabilitytraining.TrajectorySelectMenuActivity"></activity>
+		<activity android:name=".stabilitytraining.TrainingResultActivity"></activity>
+		<activity android:name=".rockertraining.RockerTestActivity"></activity>
+		<activity android:name=".rockertraining.ModeSelectActivity"></activity>
+		<activity android:name=".rockertraining.CooperativeControlActivity"></activity>
+		<activity android:name=".rockertraining.SeparateControlActivity"></activity>
+	</application>
+
+
+	<uses-permission android:name="android.permission.VIBRATE" />
+	<uses-sdk android:minSdkVersion="8" />
+
+</manifest>

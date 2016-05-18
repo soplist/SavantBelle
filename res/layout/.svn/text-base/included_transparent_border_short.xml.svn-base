@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/included_transparent_border_layout"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+  	<RelativeLayout
+		android:layout_width="840dip" 
+		android:layout_height="450dip"
+  		android:layout_alignParentTop="true"
+  		android:layout_centerHorizontal="true"
+  		android:layout_marginTop="148dip"
+  		android:background="@drawable/transparent_border_1"/>
+  	<RelativeLayout
+		android:layout_width="840dip" 
+		android:layout_height="450dip"
+  		android:layout_alignParentTop="true"
+  		android:layout_centerHorizontal="true"
+  		android:layout_marginTop="148dip"
+  		android:background="@drawable/white_border_2"/>
+	<!--<ImageView 
+		android:id="@+id/ImageView_Transparent_Border_1"
+		android:layout_width="840dip" 
+		android:layout_height="500dip"
+		android:src="@drawable/transparent_border_1"		
+  		android:layout_alignParentTop="true"
+  		android:layout_centerHorizontal="true"
+  		android:layout_marginTop="145dip"/>
+	<ImageView 
+		android:id="@+id/ImageView_White_Border_2"
+		android:layout_width="840dip" 
+		android:layout_height="500dip"
+		android:src="@drawable/white_border_2"		
+  		android:layout_alignParentTop="true"
+  		android:layout_centerHorizontal="true"
+  		android:layout_marginTop="145dip"
+  		/>
+--></RelativeLayout>

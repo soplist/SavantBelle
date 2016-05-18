@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+ 	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content"
+   	android:layout_height="wrap_content">
+	<RelativeLayout
+		android:layout_width="400dip"
+	   	android:layout_height="400dip"
+	   	android:layout_centerInParent="true">
+	   	<ImageView 			
+			android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"	
+		   	android:layout_centerInParent="true"
+	   		android:src="@drawable/cs_tuyang_board_8_1_6"/>
+	   	<TextView 
+	    	android:id="@+id/TextView01"
+			android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_centerInParent="true"/>
+	    	
+	    	
+	   	<ImageView 
+	    	android:id="@+id/ImageView01"
+			android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_above="@+id/TextView01"
+	    	android:layout_toRightOf="@+id/TextView01"
+	    	android:layout_marginBottom="-7dip"
+	    	android:background="@drawable/cs_tuyang_item_8_1_1"/>
+	    <ImageView 
+	    	android:id="@+id/ImageView02"   		
+			android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_above="@+id/TextView01"
+	    	android:layout_toRightOf="@+id/TextView01"
+	    	android:layout_marginBottom="-7dip"
+	    	android:layout_marginLeft="3dip"
+	    	android:background="@drawable/cs_tuyang_item_8_1_2"/>
+	    <ImageView 
+	    	android:id="@+id/ImageView03"   		
+			android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_above="@+id/TextView01"
+	    	android:layout_toRightOf="@+id/TextView01"
+	    	android:layout_marginBottom="-10dip"
+	    	android:layout_marginLeft="3dip"
+	    	android:src="@drawable/cs_tuyang_item_8_1_3"/>
+	    	
+	    	
+	   	<ImageView 
+	    	android:id="@+id/ImageView04"
+			android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_below="@+id/TextView01"
+	    	android:layout_toRightOf="@+id/TextView01"
+	    	android:layout_marginTop="-10dip"
+	    	android:layout_marginLeft="2dip"
+	    	android:background="@drawable/cs_tuyang_item_8_1_4"/>	    	
+	   	<ImageView 
+	    	android:id="@+id/ImageView05"
+			android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_below="@+id/TextView01"
+	    	android:layout_toRightOf="@+id/TextView01"
+	    	android:layout_marginTop="-7dip"
+	    	android:layout_marginLeft="3dip"
+	    	android:background="@drawable/cs_tuyang_item_8_1_5"/>
+	   	<ImageView 
+	    	android:id="@+id/ImageView06"
+			android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_below="@+id/TextView01"
+	    	android:layout_toRightOf="@+id/TextView01"
+	    	android:layout_marginTop="-7dip"
+	    	android:layout_marginLeft="0dip"
+	    	android:background="@drawable/cs_tuyang_item_8_1_6"/>
+	    	
+	
+		
+	</RelativeLayout>
+</RelativeLayout>

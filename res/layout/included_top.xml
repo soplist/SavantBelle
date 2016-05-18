@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:flex="http://schemas.android.com/apk/res/com.flextronics.cn.activity"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"> 
+		<ImageView 
+			android:id="@+id/ImageView_Back"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+	  		android:layout_alignParentTop="true"
+	  		android:layout_alignParentLeft="true"
+	  		android:layout_marginTop="90dip"
+	  		android:layout_marginLeft="90dip"
+			android:src="@drawable/button_back"
+			android:clickable="true"/>
+		<ImageView 
+			android:id="@+id/ImageView_Home"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:layout_toRightOf="@+id/ImageView_Back"
+			android:layout_alignBottom="@+id/ImageView_Back"
+	  		android:layout_marginLeft="30dip"
+			android:src="@drawable/button_home"
+			android:clickable="true"/>
+			
+		<TextView 
+			android:id="@+id/TextView_LeftTag"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:layout_toRightOf="@+id/ImageView_Home"
+			android:layout_alignTop="@+id/ImageView_Home"
+			android:layout_marginLeft="20dip"
+			android:text="｜"
+			android:textColor="#fff"/>
+			
+		<TextView 
+			android:id="@+id/TextView1_TrainingTitle" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:layout_toRightOf="@+id/TextView_LeftTag"
+			android:layout_alignTop="@+id/TextView_LeftTag"
+			android:textColor="#fff"/>
+			
+		<TextView 
+			android:id="@+id/TextView_RightTag"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:layout_toRightOf="@+id/TextView1_TrainingTitle"
+			android:layout_alignTop="@+id/TextView1_TrainingTitle"
+			android:text=" ｜"
+			android:textColor="#fff"/>		
+		
+		<TextView 
+			android:id="@+id/TextView_UserName"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:layout_toLeftOf="@+id/ImageView_UserIcon"
+			android:layout_alignBottom="@+id/DigitalClock102"
+			android:textColor="#fff"
+	  		android:textSize="10sp"
+			android:layout_marginBottom="-3dip"/>	
+		
+		<ImageView 
+			android:id="@+id/ImageView_UserIcon"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:layout_toLeftOf="@+id/DigitalClock102"
+			android:layout_alignBottom="@+id/DigitalClock102"
+			android:clickable="true"
+			android:layout_marginBottom="-16dip"/>
+			
+	  	<com.flextronics.cn.ui.MyDigitalClock
+	  		android:layout_width="wrap_content" 
+	  		android:layout_height="wrap_content" 
+	  		android:id="@+id/DigitalClock101" 
+	  		android:text="@+id/DigitalClock101" 
+	  		android:layout_alignParentTop="true"
+	  		android:layout_alignParentRight="true"
+	  		flex:m12="hh:mm:ss aa"
+	  		flex:m24="hh:mm"
+	  		android:textSize="23sp"
+	  		android:textColor="#fff"
+	  		android:layout_marginTop="90dip"
+	  		android:layout_marginRight="90dip"/>
+	  		
+	  	<com.flextronics.cn.ui.MyDigitalClock
+	  		android:layout_width="wrap_content" 
+	  		android:layout_height="wrap_content" 
+	  		android:id="@+id/DigitalClock102" 
+	  		android:text="@+id/DigitalClock101" 
+	  		android:layout_below="@+id/DigitalClock101"
+	  		android:layout_alignLeft="@+id/DigitalClock101"
+	  		flex:m12="dd.MM.yyyy"
+	  		flex:m24="dd.MM.yyyy"
+	  		android:textSize="10sp"
+	  		android:textColor="#fff"
+	  		android:layout_marginLeft="2dip"/>
+</RelativeLayout>

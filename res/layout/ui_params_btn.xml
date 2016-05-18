@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content">
+  	<ImageView
+  	  android:id="@+id/ImageViewParamBtn"
+	  android:layout_width="wrap_content"
+	  android:layout_height="wrap_content"
+	  android:src="@drawable/ui_params_btn_normal"/>
+	<TextView
+  	  android:id="@+id/TextViewParamBtnText"
+	  android:layout_width="wrap_content"
+	  android:layout_height="wrap_content"
+	  android:textColor="#58595B"
+	  android:textSize="24sp"
+	  android:layout_centerVertical="true"
+	  android:layout_marginLeft="20dip"
+	  android:textStyle="bold"/>
+	<TextView
+  	  android:id="@+id/TextViewParamBtnResult"
+	  android:layout_width="593dip"
+	  android:layout_height="wrap_content"
+	  android:layout_alignRight="@+id/ImageViewParamBtn"
+	  android:textColor="#2d791f"
+	  android:textSize="20sp"
+	  android:layout_centerVertical="true"
+	  android:gravity="center"
+	  android:textStyle="bold"/>
+  	<ImageView
+  	  android:id="@+id/ImageViewParamEnvelop"
+	  android:layout_width="wrap_content"
+	  android:layout_height="wrap_content"
+	  android:visibility="gone"
+	  android:src="@drawable/ui_params_btn_lock"/>
+</RelativeLayout>

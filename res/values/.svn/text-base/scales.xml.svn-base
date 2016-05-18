@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources><!--
+
+	西洋乐乐器八种音阶音乐文件路径
+	<string-array name="scalePianoFilePath">
+		<item>hearing_system_music/foreign_music_scale/piano/piano_scale_01.mp3</item>
+		<item>hearing_system_music/foreign_music_scale/piano/piano_scale_02.mp3</item>
+		<item>hearing_system_music/foreign_music_scale/piano/piano_scale_03.mp3</item>
+		<item>hearing_system_music/foreign_music_scale/piano/piano_scale_04.mp3</item>
+		<item>hearing_system_music/foreign_music_scale/piano/piano_scale_05.mp3</item>
+		<item>hearing_system_music/foreign_music_scale/piano/piano_scale_06.mp3</item>
+		<item>hearing_system_music/foreign_music_scale/piano/piano_scale_07.mp3</item>
+		<item>hearing_system_music/foreign_music_scale/piano/piano_scale_08.mp3</item>
+	</string-array>
+	
+	<string-array name="scaleTrumpetFilePath">
+		<item>hearing_system_music/foreign_music_scale/trumpet/trumpet_scale_01.mp3</item>
+		<item>hearing_system_music/foreign_music_scale/trumpet/trumpet_scale_02.mp3</item>
+		<item>hearing_system_music/foreign_music_scale/trumpet/trumpet_scale_03.mp3</item>
+		<item>hearing_system_music/foreign_music_scale/trumpet/trumpet_scale_04.mp3</item>
+		<item>hearing_system_music/foreign_music_scale/trumpet/trumpet_scale_05.mp3</item>
+		<item>hearing_system_music/foreign_music_scale/trumpet/trumpet_scale_06.mp3</item>
+		<item>hearing_system_music/foreign_music_scale/trumpet/trumpet_scale_07.mp3</item>
+		<item>hearing_system_music/foreign_music_scale/trumpet/trumpet_scale_08.mp3</item>
+	</string-array>
+	
+	<string-array name="scaleViolinFilePath">
+		<item>hearing_system_music/foreign_music_scale/violin/violin_scale_01.mp3</item>
+		<item>hearing_system_music/foreign_music_scale/violin/violin_scale_02.mp3</item>
+		<item>hearing_system_music/foreign_music_scale/violin/violin_scale_03.mp3</item>
+		<item>hearing_system_music/foreign_music_scale/violin/violin_scale_04.mp3</item>
+		<item>hearing_system_music/foreign_music_scale/violin/violin_scale_05.mp3</item>
+		<item>hearing_system_music/foreign_music_scale/violin/violin_scale_06.mp3</item>
+		<item>hearing_system_music/foreign_music_scale/violin/violin_scale_07.mp3</item>
+		<item>hearing_system_music/foreign_music_scale/violin/violin_scale_08.mp3</item>
+	</string-array>
+	
+	<string-array name="scaleShuQinFilePath">
+		<item>hearing_system_music/foreign_music_scale/harp/harp_scale_01.mp3</item>
+		<item>hearing_system_music/foreign_music_scale/harp/harp_scale_02.mp3</item>
+		<item>hearing_system_music/foreign_music_scale/harp/harp_scale_03.mp3</item>
+		<item>hearing_system_music/foreign_music_scale/harp/harp_scale_04.mp3</item>
+		<item>hearing_system_music/foreign_music_scale/harp/harp_scale_05.mp3</item>
+		<item>hearing_system_music/foreign_music_scale/harp/harp_scale_06.mp3</item>
+		<item>hearing_system_music/foreign_music_scale/harp/harp_scale_07.mp3</item>
+		<item>hearing_system_music/foreign_music_scale/harp/harp_scale_08.mp3</item>
+	</string-array>
+	
+	<string-array name="scaleChangHaoFilePath">
+		<item>hearing_system_music/foreign_music_scale/trombone/trombone_scale_01.mp3</item>
+		<item>hearing_system_music/foreign_music_scale/trombone/trombone_scale_02.mp3</item>
+		<item>hearing_system_music/foreign_music_scale/trombone/trombone_scale_03.mp3</item>
+		<item>hearing_system_music/foreign_music_scale/trombone/trombone_scale_04.mp3</item>
+		<item>hearing_system_music/foreign_music_scale/trombone/trombone_scale_05.mp3</item>
+		<item>hearing_system_music/foreign_music_scale/trombone/trombone_scale_06.mp3</item>
+		<item>hearing_system_music/foreign_music_scale/trombone/trombone_scale_07.mp3</item>
+		<item>hearing_system_music/foreign_music_scale/trombone/trombone_scale_08.mp3</item>
+	</string-array>
+	
+	<string-array name="scaleZhongTiQinFilePath">
+		<item>hearing_system_music/foreign_music_scale/viola/viola_scale_01.mp3</item>
+		<item>hearing_system_music/foreign_music_scale/viola/viola_scale_02.mp3</item>
+		<item>hearing_system_music/foreign_music_scale/viola/viola_scale_03.mp3</item>
+		<item>hearing_system_music/foreign_music_scale/viola/viola_scale_04.mp3</item>
+		<item>hearing_system_music/foreign_music_scale/viola/viola_scale_05.mp3</item>
+		<item>hearing_system_music/foreign_music_scale/viola/viola_scale_06.mp3</item>
+		<item>hearing_system_music/foreign_music_scale/viola/viola_scale_07.mp3</item>
+		<item>hearing_system_music/foreign_music_scale/viola/viola_scale_08.mp3</item>
+	</string-array>
+	
+	<string-array name="scaleJiaoTangQinFilePath">
+		<item>hearing_system_music/foreign_music_scale/church_organ/church_organ_scale_01.mp3</item>
+		<item>hearing_system_music/foreign_music_scale/church_organ/church_organ_scale_02.mp3</item>
+		<item>hearing_system_music/foreign_music_scale/church_organ/church_organ_scale_03.mp3</item>
+		<item>hearing_system_music/foreign_music_scale/church_organ/church_organ_scale_04.mp3</item>
+		<item>hearing_system_music/foreign_music_scale/church_organ/church_organ_scale_05.mp3</item>
+		<item>hearing_system_music/foreign_music_scale/church_organ/church_organ_scale_06.mp3</item>
+		<item>hearing_system_music/foreign_music_scale/church_organ/church_organ_scale_07.mp3</item>
+		<item>hearing_system_music/foreign_music_scale/church_organ/church_organ_scale_08.mp3</item>
+	</string-array>
+	
+	<string-array name="scaleFaGuoHaoFilePath">
+		<item>hearing_system_music/foreign_music_scale/french_horn/french_horn_scale_01.mp3</item>
+		<item>hearing_system_music/foreign_music_scale/french_horn/french_horn_scale_02.mp3</item>
+		<item>hearing_system_music/foreign_music_scale/french_horn/french_horn_scale_03.mp3</item>
+		<item>hearing_system_music/foreign_music_scale/french_horn/french_horn_scale_04.mp3</item>
+		<item>hearing_system_music/foreign_music_scale/french_horn/french_horn_scale_05.mp3</item>
+		<item>hearing_system_music/foreign_music_scale/french_horn/french_horn_scale_06.mp3</item>
+		<item>hearing_system_music/foreign_music_scale/french_horn/french_horn_scale_07.mp3</item>
+		<item>hearing_system_music/foreign_music_scale/french_horn/french_horn_scale_08.mp3</item>
+	</string-array>
+	
+	<string-array name="scaleDaTiQinFilePath">
+		<item>music/foreign_music/da_ti_qin/da_ti_qin_scale_01.mp3</item>
+		<item>music/foreign_music/da_ti_qin/da_ti_qin_scale_02.mp3</item>
+		<item>music/foreign_music/da_ti_qin/da_ti_qin_scale_03.mp3</item>
+		<item>music/foreign_music/da_ti_qin/da_ti_qin_scale_04.mp3</item>
+		<item>music/foreign_music/da_ti_qin/da_ti_qin_scale_05.mp3</item>
+		<item>music/foreign_music/da_ti_qin/da_ti_qin_scale_06.mp3</item>
+		<item>music/foreign_music/da_ti_qin/da_ti_qin_scale_07.mp3</item>
+		<item>music/foreign_music/da_ti_qin/da_ti_qin_scale_08.mp3</item>
+	</string-array>
+	
+	<string-array name="scaleMuJiTaFilePath">
+		<item>music/foreign_music/mu_ji_ta/mu_ji_ta_scale_01.mp3</item>
+		<item>music/foreign_music/mu_ji_ta/mu_ji_ta_scale_02.mp3</item>
+		<item>music/foreign_music/mu_ji_ta/mu_ji_ta_scale_03.mp3</item>
+		<item>music/foreign_music/mu_ji_ta/mu_ji_ta_scale_04.mp3</item>
+		<item>music/foreign_music/mu_ji_ta/mu_ji_ta_scale_05.mp3</item>
+		<item>music/foreign_music/mu_ji_ta/mu_ji_ta_scale_06.mp3</item>
+		<item>music/foreign_music/mu_ji_ta/mu_ji_ta_scale_07.mp3</item>
+		<item>music/foreign_music/mu_ji_ta/mu_ji_ta_scale_08.mp3</item>
+	</string-array>
+	
+	<string-array name="scaleChangDiFilePath">
+		<item>music/foreign_music/chang_di/chang_di_scale_01.mp3</item>
+		<item>music/foreign_music/chang_di/chang_di_scale_02.mp3</item>
+		<item>music/foreign_music/chang_di/chang_di_scale_03.mp3</item>
+		<item>music/foreign_music/chang_di/chang_di_scale_04.mp3</item>
+		<item>music/foreign_music/chang_di/chang_di_scale_05.mp3</item>
+		<item>music/foreign_music/chang_di/chang_di_scale_06.mp3</item>
+		<item>music/foreign_music/chang_di/chang_di_scale_07.mp3</item>
+		<item>music/foreign_music/chang_di/chang_di_scale_08.mp3</item>
+	</string-array>
+	
+	<string-array name="scaleShouFengQinFilePath">
+		<item>music/foreign_music/shou_feng_qin/shou_feng_qin_scale_01.mp3</item>
+		<item>music/foreign_music/shou_feng_qin/shou_feng_qin_scale_02.mp3</item>
+		<item>music/foreign_music/shou_feng_qin/shou_feng_qin_scale_03.mp3</item>
+		<item>music/foreign_music/shou_feng_qin/shou_feng_qin_scale_04.mp3</item>
+		<item>music/foreign_music/shou_feng_qin/shou_feng_qin_scale_05.mp3</item>
+		<item>music/foreign_music/shou_feng_qin/shou_feng_qin_scale_06.mp3</item>
+		<item>music/foreign_music/shou_feng_qin/shou_feng_qin_scale_07.mp3</item>
+		<item>music/foreign_music/shou_feng_qin/shou_feng_qin_scale_08.mp3</item>
+	</string-array>
+	
+	<string-array name="scaleDianJiTaFilePath">
+		<item>music/foreign_music/dian_ji_ta/dian_ji_ta_scale_01.mp3</item>
+		<item>music/foreign_music/dian_ji_ta/dian_ji_ta_scale_02.mp3</item>
+		<item>music/foreign_music/dian_ji_ta/dian_ji_ta_scale_03.mp3</item>
+		<item>music/foreign_music/dian_ji_ta/dian_ji_ta_scale_04.mp3</item>
+		<item>music/foreign_music/dian_ji_ta/dian_ji_ta_scale_05.mp3</item>
+		<item>music/foreign_music/dian_ji_ta/dian_ji_ta_scale_06.mp3</item>
+		<item>music/foreign_music/dian_ji_ta/dian_ji_ta_scale_07.mp3</item>
+		<item>music/foreign_music/dian_ji_ta/dian_ji_ta_scale_08.mp3</item>
+	</string-array>
+	
+	<string-array name="scaleSaKeSiFilePath">
+		<item>music/foreign_music/sa_ke_si/sa_ke_si_scale_01.mp3</item>
+		<item>music/foreign_music/sa_ke_si/sa_ke_si_scale_02.mp3</item>
+		<item>music/foreign_music/sa_ke_si/sa_ke_si_scale_03.mp3</item>
+		<item>music/foreign_music/sa_ke_si/sa_ke_si_scale_04.mp3</item>
+		<item>music/foreign_music/sa_ke_si/sa_ke_si_scale_05.mp3</item>
+		<item>music/foreign_music/sa_ke_si/sa_ke_si_scale_06.mp3</item>
+		<item>music/foreign_music/sa_ke_si/sa_ke_si_scale_07.mp3</item>
+		<item>music/foreign_music/sa_ke_si/sa_ke_si_scale_08.mp3</item>
+	</string-array>
+	
+	<string-array name="scaleTieQinFilePath">
+		<item>music/foreign_music/tie_qin/tie_qin_scale_01.mp3</item>
+		<item>music/foreign_music/tie_qin/tie_qin_scale_02.mp3</item>
+		<item>music/foreign_music/tie_qin/tie_qin_scale_03.mp3</item>
+		<item>music/foreign_music/tie_qin/tie_qin_scale_04.mp3</item>
+		<item>music/foreign_music/tie_qin/tie_qin_scale_05.mp3</item>
+		<item>music/foreign_music/tie_qin/tie_qin_scale_06.mp3</item>
+		<item>music/foreign_music/tie_qin/tie_qin_scale_07.mp3</item>
+		<item>music/foreign_music/tie_qin/tie_qin_scale_08.mp3</item>
+	</string-array>
+		
+	
+	民族乐乐器八种音阶音乐文件路径
+	<string-array name="scalePiPaFilePath">
+		<item>music/folk_music/pi_pa/pi_pa_scale_01.mp3</item>
+		<item>music/folk_music/pi_pa/pi_pa_scale_02.mp3</item>
+		<item>music/folk_music/pi_pa/pi_pa_scale_03.mp3</item>
+		<item>music/folk_music/pi_pa/pi_pa_scale_04.mp3</item>
+		<item>music/folk_music/pi_pa/pi_pa_scale_05.mp3</item>
+		<item>music/folk_music/pi_pa/pi_pa_scale_06.mp3</item>
+		<item>music/folk_music/pi_pa/pi_pa_scale_07.mp3</item>
+		<item>music/folk_music/pi_pa/pi_pa_scale_08.mp3</item>
+	</string-array>
+	
+	<string-array name="scaleErHuFilePath">
+		<item>music/folk_music/er_hu/er_hu_scale_01.mp3</item>
+		<item>music/folk_music/er_hu/er_hu_scale_02.mp3</item>
+		<item>music/folk_music/er_hu/er_hu_scale_03.mp3</item>
+		<item>music/folk_music/er_hu/er_hu_scale_04.mp3</item>
+		<item>music/folk_music/er_hu/er_hu_scale_05.mp3</item>
+		<item>music/folk_music/er_hu/er_hu_scale_06.mp3</item>
+		<item>music/folk_music/er_hu/er_hu_scale_07.mp3</item>
+		<item>music/folk_music/er_hu/er_hu_scale_08.mp3</item>
+	</string-array>
+	
+	<string-array name="scaleSuoNaFilePath">
+		<item>music/folk_music/suo_na/suo_na_scale_01.mp3</item>
+		<item>music/folk_music/suo_na/suo_na_scale_02.mp3</item>
+		<item>music/folk_music/suo_na/suo_na_scale_03.mp3</item>
+		<item>music/folk_music/suo_na/suo_na_scale_04.mp3</item>
+		<item>music/folk_music/suo_na/suo_na_scale_05.mp3</item>
+		<item>music/folk_music/suo_na/suo_na_scale_06.mp3</item>
+		<item>music/folk_music/suo_na/suo_na_scale_07.mp3</item>
+		<item>music/folk_music/suo_na/suo_na_scale_08.mp3</item>
+	</string-array>
+	
+	<string-array name="scaleGuZhengFilePath">
+		<item>music/folk_music/gu_zheng/gu_zheng_scale_01.mp3</item>
+		<item>music/folk_music/gu_zheng/gu_zheng_scale_02.mp3</item>
+		<item>music/folk_music/gu_zheng/gu_zheng_scale_03.mp3</item>
+		<item>music/folk_music/gu_zheng/gu_zheng_scale_04.mp3</item>
+		<item>music/folk_music/gu_zheng/gu_zheng_scale_05.mp3</item>
+		<item>music/folk_music/gu_zheng/gu_zheng_scale_06.mp3</item>
+		<item>music/folk_music/gu_zheng/gu_zheng_scale_07.mp3</item>
+		<item>music/folk_music/gu_zheng/gu_zheng_scale_08.mp3</item>
+	</string-array>
+	
+	<string-array name="scaleMaTouQinFilePath">
+		<item>music/folk_music/ma_tou_qin/ma_tou_qin_scale_01.mp3</item>
+		<item>music/folk_music/ma_tou_qin/ma_tou_qin_scale_02.mp3</item>
+		<item>music/folk_music/ma_tou_qin/ma_tou_qin_scale_03.mp3</item>
+		<item>music/folk_music/ma_tou_qin/ma_tou_qin_scale_04.mp3</item>
+		<item>music/folk_music/ma_tou_qin/ma_tou_qin_scale_05.mp3</item>
+		<item>music/folk_music/ma_tou_qin/ma_tou_qin_scale_06.mp3</item>
+		<item>music/folk_music/ma_tou_qin/ma_tou_qin_scale_07.mp3</item>
+		<item>music/folk_music/ma_tou_qin/ma_tou_qin_scale_08.mp3</item>
+	</string-array>
+	
+	<string-array name="scaleErAiLanFengQinFilePath">
+		<item>music/folk_music/er_ai_lan_feng_qin/er_ai_lan_feng_qin_scale_01.mp3</item>
+		<item>music/folk_music/er_ai_lan_feng_qin/er_ai_lan_feng_qin_scale_02.mp3</item>
+		<item>music/folk_music/er_ai_lan_feng_qin/er_ai_lan_feng_qin_scale_03.mp3</item>
+		<item>music/folk_music/er_ai_lan_feng_qin/er_ai_lan_feng_qin_scale_04.mp3</item>
+		<item>music/folk_music/er_ai_lan_feng_qin/er_ai_lan_feng_qin_scale_05.mp3</item>
+		<item>music/folk_music/er_ai_lan_feng_qin/er_ai_lan_feng_qin_scale_06.mp3</item>
+		<item>music/folk_music/er_ai_lan_feng_qin/er_ai_lan_feng_qin_scale_07.mp3</item>
+		<item>music/folk_music/er_ai_lan_feng_qin/er_ai_lan_feng_qin_scale_08.mp3</item>
+	</string-array>
+	
+	<string-array name="scaleYangQinFilePath">
+		<item>music/folk_music/yang_qin/yang_qin_scale_01.mp3</item>
+		<item>music/folk_music/yang_qin/yang_qin_scale_02.mp3</item>
+		<item>music/folk_music/yang_qin/yang_qin_scale_03.mp3</item>
+		<item>music/folk_music/yang_qin/yang_qin_scale_04.mp3</item>
+		<item>music/folk_music/yang_qin/yang_qin_scale_05.mp3</item>
+		<item>music/folk_music/yang_qin/yang_qin_scale_06.mp3</item>
+		<item>music/folk_music/yang_qin/yang_qin_scale_07.mp3</item>
+		<item>music/folk_music/yang_qin/yang_qin_scale_08.mp3</item>
+	</string-array>
+	
+	<string-array name="scaleXiTaQinFilePath">
+		<item>music/folk_music/xi_ta_qin/xi_ta_qin_scale_01.mp3</item>
+		<item>music/folk_music/xi_ta_qin/xi_ta_qin_scale_02.mp3</item>
+		<item>music/folk_music/xi_ta_qin/xi_ta_qin_scale_03.mp3</item>
+		<item>music/folk_music/xi_ta_qin/xi_ta_qin_scale_04.mp3</item>
+		<item>music/folk_music/xi_ta_qin/xi_ta_qin_scale_05.mp3</item>
+		<item>music/folk_music/xi_ta_qin/xi_ta_qin_scale_06.mp3</item>
+		<item>music/folk_music/xi_ta_qin/xi_ta_qin_scale_07.mp3</item>
+		<item>music/folk_music/xi_ta_qin/xi_ta_qin_scale_08.mp3</item>
+	</string-array>
+	
+	<string-array name="scaleChiBaFilePath">
+		<item>music/folk_music/chi_ba/chi_ba_scale_01.mp3</item>
+		<item>music/folk_music/chi_ba/chi_ba_scale_02.mp3</item>
+		<item>music/folk_music/chi_ba/chi_ba_scale_03.mp3</item>
+		<item>music/folk_music/chi_ba/chi_ba_scale_04.mp3</item>
+		<item>music/folk_music/chi_ba/chi_ba_scale_05.mp3</item>
+		<item>music/folk_music/chi_ba/chi_ba_scale_06.mp3</item>
+		<item>music/folk_music/chi_ba/chi_ba_scale_07.mp3</item>
+		<item>music/folk_music/chi_ba/chi_ba_scale_08.mp3</item>
+	</string-array>
+	
+	<string-array name="scaleLiuQinFilePath">
+		<item>music/folk_music/liu_qin/liu_qin_scale_01.mp3</item>
+		<item>music/folk_music/liu_qin/liu_qin_scale_02.mp3</item>
+		<item>music/folk_music/liu_qin/liu_qin_scale_03.mp3</item>
+		<item>music/folk_music/liu_qin/liu_qin_scale_04.mp3</item>
+		<item>music/folk_music/liu_qin/liu_qin_scale_05.mp3</item>
+		<item>music/folk_music/liu_qin/liu_qin_scale_06.mp3</item>
+		<item>music/folk_music/liu_qin/liu_qin_scale_07.mp3</item>
+		<item>music/folk_music/liu_qin/liu_qin_scale_08.mp3</item>
+	</string-array>
+	
+	<string-array name="scaleBanJiuQinFilePath">
+		<item>music/folk_music/ban_jiu_qin/ban_jiu_qin_scale_01.mp3</item>
+		<item>music/folk_music/ban_jiu_qin/ban_jiu_qin_scale_02.mp3</item>
+		<item>music/folk_music/ban_jiu_qin/ban_jiu_qin_scale_03.mp3</item>
+		<item>music/folk_music/ban_jiu_qin/ban_jiu_qin_scale_04.mp3</item>
+		<item>music/folk_music/ban_jiu_qin/ban_jiu_qin_scale_05.mp3</item>
+		<item>music/folk_music/ban_jiu_qin/ban_jiu_qin_scale_06.mp3</item>
+		<item>music/folk_music/ban_jiu_qin/ban_jiu_qin_scale_07.mp3</item>
+		<item>music/folk_music/ban_jiu_qin/ban_jiu_qin_scale_08.mp3</item>
+	</string-array>
+	
+	<string-array name="scaleDiFilePath">
+		<item>music/folk_music/di/di_scale_01.mp3</item>
+		<item>music/folk_music/di/di_scale_02.mp3</item>
+		<item>music/folk_music/di/di_scale_03.mp3</item>
+		<item>music/folk_music/di/di_scale_04.mp3</item>
+		<item>music/folk_music/di/di_scale_05.mp3</item>
+		<item>music/folk_music/di/di_scale_06.mp3</item>
+		<item>music/folk_music/di/di_scale_07.mp3</item>
+		<item>music/folk_music/di/di_scale_08.mp3</item>
+	</string-array>
+	
+	<string-array name="scaleRuanFilePath">
+		<item>music/folk_music/ruan/ruan_scale_01.mp3</item>
+		<item>music/folk_music/ruan/ruan_scale_02.mp3</item>
+		<item>music/folk_music/ruan/ruan_scale_03.mp3</item>
+		<item>music/folk_music/ruan/ruan_scale_04.mp3</item>
+		<item>music/folk_music/ruan/ruan_scale_05.mp3</item>
+		<item>music/folk_music/ruan/ruan_scale_06.mp3</item>
+		<item>music/folk_music/ruan/ruan_scale_07.mp3</item>
+		<item>music/folk_music/ruan/ruan_scale_08.mp3</item>
+	</string-array>
+	
+	<string-array name="scaleSanWeiXianFilePath">
+		<item>music/folk_music/san_wei_xian/san_wei_xian_scale_01.mp3</item>
+		<item>music/folk_music/san_wei_xian/san_wei_xian_scale_02.mp3</item>
+		<item>music/folk_music/san_wei_xian/san_wei_xian_scale_03.mp3</item>
+		<item>music/folk_music/san_wei_xian/san_wei_xian_scale_04.mp3</item>
+		<item>music/folk_music/san_wei_xian/san_wei_xian_scale_05.mp3</item>
+		<item>music/folk_music/san_wei_xian/san_wei_xian_scale_06.mp3</item>
+		<item>music/folk_music/san_wei_xian/san_wei_xian_scale_07.mp3</item>
+		<item>music/folk_music/san_wei_xian/san_wei_xian_scale_08.mp3</item>
+	</string-array>
+	
+	<string-array name="scaleShengFilePath">
+		<item>music/folk_music/sheng/sheng_scale_01.mp3</item>
+		<item>music/folk_music/sheng/sheng_scale_02.mp3</item>
+		<item>music/folk_music/sheng/sheng_scale_03.mp3</item>
+		<item>music/folk_music/sheng/sheng_scale_04.mp3</item>
+		<item>music/folk_music/sheng/sheng_scale_05.mp3</item>
+		<item>music/folk_music/sheng/sheng_scale_06.mp3</item>
+		<item>music/folk_music/sheng/sheng_scale_07.mp3</item>
+		<item>music/folk_music/sheng/sheng_scale_08.mp3</item>
+	</string-array>
+	
+	
+	
+	打击乐乐器单一音阶音乐文件路径
+	<string-array name="scaleDrumFilePath">
+		<item>music/percussion_instrument/drum/drum_scale_01.mp3</item>
+	</string-array>
+	
+	<string-array name="scaleTempleBlockFilePath">
+		<item>music/percussion_instrument/temple_block/temple_block_scale_01.mp3</item>
+	</string-array>
+	
+	<string-array name="scaleTriangleFilePath">
+		<item>music/percussion_instrument/triangle/triangle_scale_01.mp3</item>
+	</string-array>
+	
+	<string-array name="scaleXiaoGuFilePath">
+		<item>music/percussion_instrument/xiao_gu/xiao_gu_scale_01.mp3</item>
+	</string-array>
+	
+	<string-array name="scaleLinGuFilePath">
+		<item>music/percussion_instrument/lin_gu/lin_gu_scale_01.mp3</item>
+	</string-array>
+	
+	<string-array name="scaleLuoFilePath">
+		<item>music/percussion_instrument/luo/luo_scale_01.mp3</item>
+	</string-array>
+	
+	<string-array name="scaleTaiGuFilePath">
+		<item>music/percussion_instrument/tai_gu/tai_gu_scale_01.mp3</item>
+	</string-array>
+	
+	<string-array name="scaleBangGeGuFilePath">
+		<item>music/percussion_instrument/bang_ge_gu/bang_ge_gu_scale_01.mp3</item>
+	</string-array>
+	
+	<string-array name="scaleBoFilePath">
+		<item>music/percussion_instrument/bo/bo_scale_01.mp3</item>
+	</string-array>
+	
+	<string-array name="scaleDingYinGuFilePath">
+		<item>music/percussion_instrument/ding_yin_gu/ding_yin_gu_scale_01.mp3</item>
+	</string-array>
+	
+	<string-array name="scaleYanBaGuFilePath">
+		<item>music/percussion_instrument/yan_ba_gu/yan_ba_gu_scale_01.mp3</item>
+	</string-array>
+	
+	<string-array name="scaleShaLinFilePath">
+		<item>music/percussion_instrument/sha_lin/sha_lin_scale_01.mp3</item>
+	</string-array>
+	
+	<string-array name="scaleZhongGuoGuFilePath">
+		<item>music/percussion_instrument/zhong_guo_gu/zhong_guo_gu_scale_01.mp3</item>
+	</string-array>
+	
+	<string-array name="scaleKangJiaGuFilePath">
+		<item>music/percussion_instrument/kang_jia_gu/kang_jia_gu_scale_01.mp3</item>
+	</string-array>
+	
+	<string-array name="scaleNiuLinFilePath">
+		<item>music/percussion_instrument/niu_lin/niu_lin_scale_01.mp3</item>
+	</string-array>
+--></resources>

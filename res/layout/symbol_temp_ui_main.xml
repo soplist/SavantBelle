@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content" android:layout_height="wrap_content"
+	android:orientation="vertical">
+	<TextView android:text="选择受测样本 :" android:id="@+id/TextView01"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+
+	<RadioGroup android:id="@+id/radio_group_sample_set"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:orientation="horizontal">
+		<RadioButton android:text="阿拉伯数字." android:id="@+id/radio_button_number"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:checked="true"></RadioButton>
+		<RadioButton android:text="罗马数字." android:id="@+id/radio_button_roma_number"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"></RadioButton>
+		<RadioButton android:text="英文字母." android:id="@+id/radio_button_english"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"></RadioButton>
+		<RadioButton android:text="一般符号." android:id="@+id/radio_button_common_mark"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"></RadioButton>
+		<RadioButton android:text="音乐符号." android:id="@+id/radio_button_music_mark"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"></RadioButton>
+	</RadioGroup>
+	<TextView android:text="选择题目个数 :" android:id="@+id/TextView01"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+	<Spinner android:id="@+id/spinner_question_count"
+		android:layout_width="wrap_content" android:layout_height="wrap_content" />
+	<TextView android:text="选择训练类型:" android:id="@+id/TextView01"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+	<RadioGroup android:id="@+id/radio_group_training_type"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:orientation="horizontal">
+		<RadioButton android:text="反应训练." android:id="@+id/radio_button_response"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:checked="true"></RadioButton>
+		<RadioButton android:text="记忆训练." android:id="@+id/radio_button_mermory"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"></RadioButton>
+	</RadioGroup>
+
+	<LinearLayout android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+		<Button android:id="@+id/enterButton" android:text="确定."
+			android:layout_width="fill_parent" android:layout_height="wrap_content" />
+		<Button android:id="@+id/cancelButton" android:text="取消."
+			android:layout_width="fill_parent" android:layout_height="wrap_content" />
+	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 此文件用于保存C模块的所用到的字符串 ，公用字符串在strings.xml中定义， 其余模块均定义在相应的strings_x.xml文件中。
+	 字符串的命名请严格遵循以下约定:
+		1.尽量用英文命名; 2.所有单词均小写; 3.单词之间用下划线相隔; 4.所有字符串请按首字母(仅限首字母)升序排列。
+	如下所示：
+		<string name="an_qing">安庆</string>
+		<string name="an_hui">安徽</string>
+		<string name="an_yang">安阳</string>
+		<string name="bei_jing">北京</string>
+		<string name="bei_fang">北方</string>
+		<string name="cheng_du">成都</string>
+		<string name="chong_qing">重庆</string>
+		<string name="hello_world">你好，世界！</string>
+-->
+<resources>
+	<string name="pls_do_other_training">棒极了，你可以选择其他内容进行训练啦！</string>
+    <string name="display_mode">显示形体</string>
+    <string name="bit">显示位元</string>
+    <string name="display_type">显示方式</string>
+    <string name="question_count">题目数</string>
+    <string name="setting_bit">设定位元数</string>
+    <string name="self_choose_bit">自选位元数</string>
+    <string name="continued_bit">连续位元数</string>
+    <string name="show_hold">显示后保留</string>
+    <string name="show_disappear">显示后消失</string>
+    <string name="show_disappear_together">同步显示同时消失</string>
+    <string name="question_count_unit">题</string>
+    <string name="space_mark_1">:  </string>
+    <string name="space_mark_2">｜</string>
+    <string name="space_mark_3">、 </string>
+    <string name="start_bit">开始位元</string>
+    <string name="point">点状</string>
+    <string name="tu_yang">图样</string>
+    <string name="self_choose">自选</string>
+    <string name="redom">随机</string>
+    <string name="is_order_by_index">依序号</string>
+    <string name="is_not_order_by_index">不依序号</string>
+    
+	<string name="line">直线</string>
+	<string name="curve">曲线</string>
+	<string name="circle">圆形</string>
+	<string name="trigon">三角形</string>
+	<string name="square">正方形</string>
+	<string name="hexagon">六边形</string>
+	<string name="rectangle">长方形</string>
+	<string name="sector">扇形</string>
+	<string name="parallelogram">平行四边形</string>
+	<string name="diamond">菱形</string>
+	<string name="pentagon">五边形</string>
+	<string name="color">颜色</string>
+    <string name="self_choose_single">自选单一</string>
+    <string name="redom_single">随机单一</string>
+    <string name="setting_single_color">设定单一颜色</string>
+    <string name="self_choose_single_color">自选单一颜色</string>
+    <string name="redom_single_color">随机单一颜色</string>
+    
+	<string name="red">红色</string>
+	<string name="orange">橙色</string>
+	<string name="yellow">黄色</string>
+	<string name="green">绿色</string>
+	<string name="blue">蓝色</string>
+	<string name="indigo">靛色</string>
+	<string name="purple">紫色</string>
+	<string name="black">黑色</string>
+	<string name="coffee">咖啡色</string>
+</resources>

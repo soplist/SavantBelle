@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:flex="http://schemas.android.com/apk/res/com.flextronics.cn.activity"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<include android:id="@+id/background" layout="@layout/included_transparent_border" />
+	<ScrollView android:layout_width="wrap_content"
+		android:layout_height="450dip" android:layout_centerInParent="true">
+		<LinearLayout android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:orientation="vertical"
+			android:layout_gravity="top">
+			<!-- 选择受测样本集-->
+			<com.flextronics.cn.ui.ParamPanel
+				android:id="@+id/ParamPanel01" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" flex:content="@+id/Content01"
+				flex:text="受测符号" flex:animation_on_click="false">
+				<LinearLayout android:id="@+id/Content01"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:background="@drawable/ui_param_panel_content_backgd"
+					android:orientation="vertical" android:layout_marginTop="-8dip"
+					android:layout_marginLeft="6dip" android:layout_marginRight="8dip">
+					<com.flextronics.cn.ui.ImageViewBtnGroup
+						android:id="@+id/ImageViewBtnGroup01" android:layout_width="fill_parent"
+						android:layout_height="wrap_content" flex:selected_child_index="0"
+						flex:animation_on_click="false">
+						<TextView android:layout_width="20dip"
+							android:layout_height="wrap_content" android:visibility="invisible" />
+						<com.flextronics.cn.ui.ImageViewBtn
+							android:layout_width="wrap_content" android:layout_height="wrap_content"
+							android:layout_weight="1" flex:normal_src="@drawable/cs_choose_params_btn1_1"
+							flex:pressing_src="@drawable/cs_choose_params_btn1_2"
+							flex:pressed_src="@drawable/cs_choose_params_btn1_3" flex:value="70000"
+							flex:img_text_color_normal="#3B3D4E" flex:img_text_color_pressed="#FFFFFF"
+							flex:img_text_color_pressing="#636472" flex:img_text="阿拉伯数字"
+							flex:img_text_normal_size="18" />
+						<com.flextronics.cn.ui.ImageViewBtn
+							android:layout_width="wrap_content" android:layout_height="wrap_content"
+							android:layout_weight="1" flex:normal_src="@drawable/cs_choose_params_btn1_1"
+							flex:pressing_src="@drawable/cs_choose_params_btn1_2"
+							flex:pressed_src="@drawable/cs_choose_params_btn1_3" flex:value="80000"
+							flex:img_text_color_normal="#3B3D4E" flex:img_text_color_pressed="#FFFFFF"
+							flex:img_text_color_pressing="#636472" flex:img_text="罗马数字"
+							flex:img_text_normal_size="18" />
+						<com.flextronics.cn.ui.ImageViewBtn
+							android:layout_width="wrap_content" android:layout_height="wrap_content"
+							android:layout_weight="1" flex:normal_src="@drawable/cs_choose_params_btn1_1"
+							flex:pressing_src="@drawable/cs_choose_params_btn1_2"
+							flex:pressed_src="@drawable/cs_choose_params_btn1_3" flex:value="90000"
+							flex:img_text_color_normal="#3B3D4E" flex:img_text_color_pressed="#FFFFFF"
+							flex:img_text_color_pressing="#636472" flex:img_text="英文字母"
+							flex:img_text_normal_size="18" />
+						<com.flextronics.cn.ui.ImageViewBtn
+							android:layout_width="wrap_content" android:layout_height="wrap_content"
+							android:layout_weight="1" flex:normal_src="@drawable/cs_choose_params_btn1_1"
+							flex:pressing_src="@drawable/cs_choose_params_btn1_2"
+							flex:pressed_src="@drawable/cs_choose_params_btn1_3" flex:value="110000"
+							flex:img_text_color_normal="#3B3D4E" flex:img_text_color_pressed="#FFFFFF"
+							flex:img_text_color_pressing="#636472" flex:img_text="一般符号"
+							flex:img_text_normal_size="18" />
+						<!--
+							<com.flextronics.cn.ui.ImageViewBtn
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:layout_weight="1"
+							flex:normal_src="@drawable/cs_choose_params_btn1_1"
+							flex:pressing_src="@drawable/cs_choose_params_btn1_2"
+							flex:pressed_src="@drawable/cs_choose_params_btn1_3"
+							flex:value="120000" flex:img_text_color_normal="#3B3D4E"
+							flex:img_text_color_pressed="#FFFFFF"
+							flex:img_text_color_pressing="#636472" flex:img_text="音乐记号"
+							flex:img_text_normal_size="18" />
+						-->
+						<TextView android:layout_width="20dip"
+							android:layout_height="wrap_content" android:visibility="invisible" />
+					</com.flextronics.cn.ui.ImageViewBtnGroup>
+				</LinearLayout>
+			</com.flextronics.cn.ui.ParamPanel>
+
+
+			<!-- 选择具体的受测符号 -->
+			<com.flextronics.cn.ui.ParamPanel
+				android:id="@+id/ParamPanel02" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_marginTop="40dip"
+				flex:content="@+id/Content00" flex:text="选择符号"
+				flex:animation_on_click="false">
+				<LinearLayout android:id="@+id/Content00"
+					android:orientation="vertical" android:layout_width="wrap_content"
+					android:layout_height="wrap_content">
+					<LinearLayout android:id="@+id/Content02"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:background="@drawable/ui_param_panel_content_backgd"
+						android:orientation="vertical" android:layout_marginTop="-8dip"
+						android:layout_marginLeft="6dip" android:layout_marginRight="8dip">
+						<com.flextronics.cn.ui.ImageViewBtnGroup
+							android:id="@+id/ImageViewBtnGroup02" android:layout_width="fill_parent"
+							android:layout_height="wrap_content" flex:selected_child_index="0"
+							flex:animation_on_click="false">
+							<TextView android:layout_width="30dip"
+								android:layout_height="wrap_content" android:visibility="invisible" />
+							<com.flextronics.cn.ui.ImageViewBtn
+								android:layout_width="wrap_content" android:layout_height="wrap_content"
+								android:layout_weight="1" flex:normal_src="@drawable/cs_choose_params_btn1_1"
+								flex:pressing_src="@drawable/cs_choose_params_btn1_2"
+								flex:pressed_src="@drawable/cs_choose_params_btn1_3" flex:value="-2"
+								flex:img_text_color_normal="#3B3D4E"
+								flex:img_text_color_pressed="#FFFFFF"
+								flex:img_text_color_pressing="#636472" flex:img_text="设定符号"
+								flex:img_text_normal_size="18" />
+							<com.flextronics.cn.ui.ImageViewBtn
+								android:layout_width="wrap_content" android:layout_height="wrap_content"
+								android:layout_weight="1" flex:normal_src="@drawable/cs_choose_params_btn1_1"
+								flex:pressing_src="@drawable/cs_choose_params_btn1_2"
+								flex:pressed_src="@drawable/cs_choose_params_btn1_3" flex:value="-1"
+								flex:img_text_color_normal="#3B3D4E"
+								flex:img_text_color_pressed="#FFFFFF"
+								flex:img_text_color_pressing="#636472" flex:img_text="随机符号"
+								flex:img_text_normal_size="18" />
+							<com.flextronics.cn.ui.ImageViewBtn
+								android:layout_width="wrap_content" android:layout_height="wrap_content"
+								android:layout_weight="1" flex:normal_src="@drawable/cs_choose_params_btn1_1"
+								flex:pressing_src="@drawable/cs_choose_params_btn1_2"
+								flex:pressed_src="@drawable/cs_choose_params_btn1_3" flex:value="0"
+								flex:img_text_color_normal="#3B3D4E"
+								flex:img_text_color_pressed="#FFFFFF"
+								flex:img_text_color_pressing="#636472" flex:img_text="自选符号"
+								flex:img_text_normal_size="18" />
+							<TextView android:layout_width="30dip"
+								android:layout_height="wrap_content" android:visibility="invisible" />
+						</com.flextronics.cn.ui.ImageViewBtnGroup>
+
+						<HorizontalScrollView android:layout_width="780dip"
+							android:layout_height="wrap_content" android:scrollbars="horizontal">
+							<!-- 具体形状 -->
+							<LinearLayout android:orientation="vertical"
+								android:layout_width="wrap_content" android:layout_height="wrap_content">
+								<!-- 阿拉伯数字 -->
+								<com.flextronics.cn.ui.LinearLayoutBtnGroup
+									android:id="@+id/symbolSelfSelector_number"
+									android:layout_width="wrap_content" android:layout_height="wrap_content"
+									flex:selected_index="0">
+									<com.flextronics.cn.ui.LinearLayoutBtn
+										android:layout_width="wrap_content" android:layout_height="wrap_content"
+										flex:image_normal_src="@drawable/btn_number_0"
+										flex:image_pressed_src="@drawable/btn_number_0_2"
+										flex:btn_value="70001" />
+									<com.flextronics.cn.ui.LinearLayoutBtn
+										android:layout_width="wrap_content" android:layout_height="wrap_content"
+										flex:image_normal_src="@drawable/btn_number_1"
+										flex:image_pressed_src="@drawable/btn_number_1_2"
+										flex:btn_value="70002" />
+									<com.flextronics.cn.ui.LinearLayoutBtn
+										android:layout_width="wrap_content" android:layout_height="wrap_content"
+										flex:image_normal_src="@drawable/btn_number_2"
+										flex:image_pressed_src="@drawable/btn_number_2_2"
+										flex:btn_value="70003" />
+									<com.flextronics.cn.ui.LinearLayoutBtn
+										android:layout_width="wrap_content" android:layout_height="wrap_content"
+										flex:image_normal_src="@drawable/btn_number_3"
+										flex:image_pressed_src="@drawable/btn_number_3_2"
+										flex:btn_value="70004" />
+									<com.flextronics.cn.ui.LinearLayoutBtn
+										android:layout_width="wrap_content" android:layout_height="wrap_content"
+										flex:image_normal_src="@drawable/btn_number_4"
+										flex:image_pressed_src="@drawable/btn_number_4_2"
+										flex:btn_value="70005" />
+									<com.flextronics.cn.ui.LinearLayoutBtn
+										android:layout_width="wrap_content" android:layout_height="wrap_content"
+										flex:image_normal_src="@drawable/btn_number_5"
+										flex:image_pressed_src="@drawable/btn_number_5_2"
+										flex:btn_value="70006" />
+									<com.flextronics.cn.ui.LinearLayoutBtn
+										android:layout_width="wrap_content" android:layout_height="wrap_content"
+										flex:image_normal_src="@drawable/btn_number_6"
+										flex:image_pressed_src="@drawable/btn_number_6_2"
+										flex:btn_value="70007" />
+									<com.flextronics.cn.ui.LinearLayoutBtn
+										android:layout_width="wrap_content" android:layout_height="wrap_content"
+										flex:image_normal_src="@drawable/btn_number_7"
+										flex:image_pressed_src="@drawable/btn_number_7_2"
+										flex:btn_value="70008" />
+									<com.flextronics.cn.ui.LinearLayoutBtn
+										android:layout_width="wrap_content" android:layout_height="wrap_content"
+										flex:image_normal_src="@drawable/btn_number_8"
+										flex:image_pressed_src="@drawable/btn_number_8_2"
+										flex:btn_value="70009" />
+									<com.flextronics.cn.ui.LinearLayoutBtn
+										android:layout_width="wrap_content" android:layout_height="wrap_content"
+										flex:image_normal_src="@drawable/btn_number_9"
+										flex:image_pressed_src="@drawable/btn_number_9_2"
+										flex:btn_value="70010" />
+								</com.flextronics.cn.ui.LinearLayoutBtnGroup>
+								<!--end of 阿拉伯数字 -->
+								<!-- 罗马数字 -->
+								<com.flextronics.cn.ui.LinearLayoutBtnGroup
+									android:id="@+id/symbolSelfSelector_roma_number"
+									android:layout_width="wrap_content" android:layout_height="wrap_content"
+									flex:selected_index="0">
+									<com.flextronics.cn.ui.LinearLayoutBtn
+										android:layout_width="wrap_content" android:layout_height="wrap_content"
+										flex:image_normal_src="@drawable/btn_rome_number_01"
+										flex:image_pressed_src="@drawable/btn_rome_number_01_2"
+										flex:btn_value="80001" />
+									<com.flextronics.cn.ui.LinearLayoutBtn
+										android:layout_width="wrap_content" android:layout_height="wrap_content"
+										flex:image_normal_src="@drawable/btn_rome_number_02"
+										flex:image_pressed_src="@drawable/btn_rome_number_02_2"
+										flex:btn_value="80002" />
+									<com.flextronics.cn.ui.LinearLayoutBtn
+										android:layout_width="wrap_content" android:layout_height="wrap_content"
+										flex:image_normal_src="@drawable/btn_rome_number_03"
+										flex:image_pressed_src="@drawable/btn_rome_number_03_2"
+										flex:btn_value="80003" />
+									<com.flextronics.cn.ui.LinearLayoutBtn
+										android:layout_width="wrap_content" android:layout_height="wrap_content"
+										flex:image_normal_src="@drawable/btn_rome_number_04"
+										flex:image_pressed_src="@drawable/btn_rome_number_04_2"
+										flex:btn_value="80004" />
+									<com.flextronics.cn.ui.LinearLayoutBtn
+										android:layout_width="wrap_content" android:layout_height="wrap_content"
+										flex:image_normal_src="@drawable/btn_rome_number_05"
+										flex:image_pressed_src="@drawable/btn_rome_number_05_2"
+										flex:btn_value="80005" />
+									<com.flextronics.cn.ui.LinearLayoutBtn
+										android:layout_width="wrap_content" android:layout_height="wrap_content"
+										flex:image_normal_src="@drawable/btn_rome_number_06"
+										flex:image_pressed_src="@drawable/btn_rome_number_06_2"
+										flex:btn_value="80006" />
+									<com.flextronics.cn.ui.LinearLayoutBtn
+										android:layout_width="wrap_content" android:layout_height="wrap_content"
+										flex:image_normal_src="@drawable/btn_rome_number_07"
+										flex:image_pressed_src="@drawable/btn_rome_number_07_2"
+										flex:btn_value="80007" />
+									<com.flextronics.cn.ui.LinearLayoutBtn
+										android:layout_width="wrap_content" android:layout_height="wrap_content"
+										flex:image_normal_src="@drawable/btn_rome_number_08"
+										flex:image_pressed_src="@drawable/btn_rome_number_08_2"
+										flex:btn_value="80008" />
+									<com.flextronics.cn.ui.LinearLayoutBtn
+										android:layout_width="wrap_content" android:layout_height="wrap_content"
+										flex:image_normal_src="@drawable/btn_rome_number_09"
+										flex:image_pressed_src="@drawable/btn_rome_number_09_2"
+										flex:btn_value="80009" />
+									<com.flextronics.cn.ui.LinearLayoutBtn
+										android:layout_width="wrap_content" android:layout_height="wrap_content"
+										flex:image_normal_src="@drawable/btn_rome_number_10"
+										flex:image_pressed_src="@drawable/btn_rome_number_10_2"
+										flex:btn_value="80010" />
+								</com.flextronics.cn.ui.LinearLayoutBtnGroup>
+								<!-- end of 罗马数字 -->
+								<!-- LETTERS -->
+								<com.flextronics.cn.ui.LinearLayoutBtnGroup
+									android:id="@+id/symbolSelfSelector_letter"
+									android:layout_width="wrap_content" android:layout_height="wrap_content"
+									flex:selected_index="0">
+									<com.flextronics.cn.ui.LinearLayoutBtn
+										android:layout_width="wrap_content" android:layout_height="wrap_content"
+										flex:image_normal_src="@drawable/btn_english_letter_a"
+										flex:image_pressed_src="@drawable/btn_english_letter_a_2"
+										flex:btn_value="90001" />
+									<com.flextronics.cn.ui.LinearLayoutBtn
+										android:layout_width="wrap_content" android:layout_height="wrap_content"
+										flex:image_normal_src="@drawable/btn_english_letter_b"
+										flex:image_pressed_src="@drawable/btn_english_letter_b_2"
+										flex:btn_value="90002" />
+									<com.flextronics.cn.ui.LinearLayoutBtn
+										android:layout_width="wrap_content" android:layout_height="wrap_content"
+										flex:image_normal_src="@drawable/btn_english_letter_c"
+										flex:image_pressed_src="@drawable/btn_english_letter_c_2"
+										flex:btn_value="90003" />
+									<com.flextronics.cn.ui.LinearLayoutBtn
+										android:layout_width="wrap_content" android:layout_height="wrap_content"
+										flex:image_normal_src="@drawable/btn_english_letter_d"
+										flex:image_pressed_src="@drawable/btn_english_letter_d_2"
+										flex:btn_value="90004" />
+									<com.flextronics.cn.ui.LinearLayoutBtn
+										android:layout_width="wrap_content" android:layout_height="wrap_content"
+										flex:image_normal_src="@drawable/btn_english_letter_e"
+										flex:image_pressed_src="@drawable/btn_english_letter_e_2"
+										flex:btn_value="90005" />
+									<com.flextronics.cn.ui.LinearLayoutBtn
+										android:layout_width="wrap_content" android:layout_height="wrap_content"
+										flex:image_normal_src="@drawable/btn_english_letter_f"
+										flex:image_pressed_src="@drawable/btn_english_letter_f_2"
+										flex:btn_value="90006" />
+									<com.flextronics.cn.ui.LinearLayoutBtn
+										android:layout_width="wrap_content" android:layout_height="wrap_content"
+										flex:image_normal_src="@drawable/btn_english_letter_g"
+										flex:image_pressed_src="@drawable/btn_english_letter_g_2"
+										flex:btn_value="90007" />
+									<com.flextronics.cn.ui.LinearLayoutBtn
+										android:layout_width="wrap_content" android:layout_height="wrap_content"
+										flex:image_normal_src="@drawable/btn_english_letter_h"
+										flex:image_pressed_src="@drawable/btn_english_letter_h_2"
+										flex:btn_value="90008" />
+									<com.flextronics.cn.ui.LinearLayoutBtn
+										android:layout_width="wrap_content" android:layout_height="wrap_content"
+										flex:image_normal_src="@drawable/btn_english_letter_i"
+										flex:image_pressed_src="@drawable/btn_english_letter_i_2"
+										flex:btn_value="90009" />
+									<com.flextronics.cn.ui.LinearLayoutBtn
+										android:layout_width="wrap_content" android:layout_height="wrap_content"
+										flex:image_normal_src="@drawable/btn_english_letter_j"
+										flex:image_pressed_src="@drawable/btn_english_letter_j_2"
+										flex:btn_value="90010" />
+									<com.flextronics.cn.ui.LinearLayoutBtn
+										android:layout_width="wrap_content" android:layout_height="wrap_content"
+										flex:image_normal_src="@drawable/btn_english_letter_k"
+										flex:image_pressed_src="@drawable/btn_english_letter_k_2"
+										flex:btn_value="90011" />
+									<com.flextronics.cn.ui.LinearLayoutBtn
+										android:layout_width="wrap_content" android:layout_height="wrap_content"
+										flex:image_normal_src="@drawable/btn_english_letter_l"
+										flex:image_pressed_src="@drawable/btn_english_letter_l_2"
+										flex:btn_value="90012" />
+									<com.flextronics.cn.ui.LinearLayoutBtn
+										android:layout_width="wrap_content" android:layout_height="wrap_content"
+										flex:image_normal_src="@drawable/btn_english_letter_m"
+										flex:image_pressed_src="@drawable/btn_english_letter_m_2"
+										flex:btn_value="90013" />
+									<com.flextronics.cn.ui.LinearLayoutBtn
+										android:layout_width="wrap_content" android:layout_height="wrap_content"
+										flex:image_normal_src="@drawable/btn_english_letter_n"
+										flex:image_pressed_src="@drawable/btn_english_letter_n_2"
+										flex:btn_value="90014" />
+									<com.flextronics.cn.ui.LinearLayoutBtn
+										android:layout_width="wrap_content" android:layout_height="wrap_content"
+										flex:image_normal_src="@drawable/btn_english_letter_o"
+										flex:image_pressed_src="@drawable/btn_english_letter_o_2"
+										flex:btn_value="90015" />
+									<com.flextronics.cn.ui.LinearLayoutBtn
+										android:layout_width="wrap_content" android:layout_height="wrap_content"
+										flex:image_normal_src="@drawable/btn_english_letter_p"
+										flex:image_pressed_src="@drawable/btn_english_letter_p_2"
+										flex:btn_value="90016" />
+									<com.flextronics.cn.ui.LinearLayoutBtn
+										android:layout_width="wrap_content" android:layout_height="wrap_content"
+										flex:image_normal_src="@drawable/btn_english_letter_q"
+										flex:image_pressed_src="@drawable/btn_english_letter_q_2"
+										flex:btn_value="90017" />
+									<com.flextronics.cn.ui.LinearLayoutBtn
+										android:layout_width="wrap_content" android:layout_height="wrap_content"
+										flex:image_normal_src="@drawable/btn_english_letter_r"
+										flex:image_pressed_src="@drawable/btn_english_letter_r_2"
+										flex:btn_value="90018" />
+									<com.flextronics.cn.ui.LinearLayoutBtn
+										android:layout_width="wrap_content" android:layout_height="wrap_content"
+										flex:image_normal_src="@drawable/btn_english_letter_s"
+										flex:image_pressed_src="@drawable/btn_english_letter_s_2"
+										flex:btn_value="90019" />
+									<com.flextronics.cn.ui.LinearLayoutBtn
+										android:layout_width="wrap_content" android:layout_height="wrap_content"
+										flex:image_normal_src="@drawable/btn_english_letter_t"
+										flex:image_pressed_src="@drawable/btn_english_letter_t_2"
+										flex:btn_value="90020" />
+									<com.flextronics.cn.ui.LinearLayoutBtn
+										android:layout_width="wrap_content" android:layout_height="wrap_content"
+										flex:image_normal_src="@drawable/btn_english_letter_u"
+										flex:image_pressed_src="@drawable/btn_english_letter_u_2"
+										flex:btn_value="90021" />
+									<com.flextronics.cn.ui.LinearLayoutBtn
+										android:layout_width="wrap_content" android:layout_height="wrap_content"
+										flex:image_normal_src="@drawable/btn_english_letter_v"
+										flex:image_pressed_src="@drawable/btn_english_letter_v_2"
+										flex:btn_value="90022" />
+									<com.flextronics.cn.ui.LinearLayoutBtn
+										android:layout_width="wrap_content" android:layout_height="wrap_content"
+										flex:image_normal_src="@drawable/btn_english_letter_w"
+										flex:image_pressed_src="@drawable/btn_english_letter_w_2"
+										flex:btn_value="90023" />
+									<com.flextronics.cn.ui.LinearLayoutBtn
+										android:layout_width="wrap_content" android:layout_height="wrap_content"
+										flex:image_normal_src="@drawable/btn_english_letter_x"
+										flex:image_pressed_src="@drawable/btn_english_letter_x_2"
+										flex:btn_value="90024" />
+									<com.flextronics.cn.ui.LinearLayoutBtn
+										android:layout_width="wrap_content" android:layout_height="wrap_content"
+										flex:image_normal_src="@drawable/btn_english_letter_y"
+										flex:image_pressed_src="@drawable/btn_english_letter_y_2"
+										flex:btn_value="90025" />
+									<com.flextronics.cn.ui.LinearLayoutBtn
+										android:layout_width="wrap_content" android:layout_height="wrap_content"
+										flex:image_normal_src="@drawable/btn_english_letter_z"
+										flex:image_pressed_src="@drawable/btn_english_letter_z_2"
+										flex:btn_value="90026" />
+								</com.flextronics.cn.ui.LinearLayoutBtnGroup>
+								<!-- end of letters -->
+								<!-- COMMON MARKS -->
+								<com.flextronics.cn.ui.LinearLayoutBtnGroup
+									android:id="@+id/symbolSelfSelector_common_mark"
+									android:layout_width="wrap_content" android:layout_height="wrap_content"
+									flex:selected_index="0">
+									<com.flextronics.cn.ui.LinearLayoutBtn
+										android:layout_width="wrap_content" android:layout_height="wrap_content"
+										flex:image_normal_src="@drawable/btn_common_mark_1"
+										flex:image_pressed_src="@drawable/btn_common_mark_1_2"
+										flex:btn_value="110001" />
+									<com.flextronics.cn.ui.LinearLayoutBtn
+										android:layout_width="wrap_content" android:layout_height="wrap_content"
+										flex:image_normal_src="@drawable/btn_common_mark_2"
+										flex:image_pressed_src="@drawable/btn_common_mark_2_2"
+										flex:btn_value="110002" />
+									<com.flextronics.cn.ui.LinearLayoutBtn
+										android:layout_width="wrap_content" android:layout_height="wrap_content"
+										flex:image_normal_src="@drawable/btn_common_mark_3"
+										flex:image_pressed_src="@drawable/btn_common_mark_3_2"
+										flex:btn_value="110003" />
+									<com.flextronics.cn.ui.LinearLayoutBtn
+										android:layout_width="wrap_content" android:layout_height="wrap_content"
+										flex:image_normal_src="@drawable/btn_common_mark_4"
+										flex:image_pressed_src="@drawable/btn_common_mark_4_2"
+										flex:btn_value="110004" />
+									<com.flextronics.cn.ui.LinearLayoutBtn
+										android:layout_width="wrap_content" android:layout_height="wrap_content"
+										flex:image_normal_src="@drawable/btn_common_mark_5"
+										flex:image_pressed_src="@drawable/btn_common_mark_5_2"
+										flex:btn_value="110005" />
+									<com.flextronics.cn.ui.LinearLayoutBtn
+										android:layout_width="wrap_content" android:layout_height="wrap_content"
+										flex:image_normal_src="@drawable/btn_common_mark_6"
+										flex:image_pressed_src="@drawable/btn_common_mark_6_2"
+										flex:btn_value="110006" />
+									<com.flextronics.cn.ui.LinearLayoutBtn
+										android:layout_width="wrap_content" android:layout_height="wrap_content"
+										flex:image_normal_src="@drawable/btn_common_mark_7"
+										flex:image_pressed_src="@drawable/btn_common_mark_7_2"
+										flex:btn_value="110007" />
+									<com.flextronics.cn.ui.LinearLayoutBtn
+										android:layout_width="wrap_content" android:layout_height="wrap_content"
+										flex:image_normal_src="@drawable/btn_common_mark_8"
+										flex:image_pressed_src="@drawable/btn_common_mark_8_2"
+										flex:btn_value="110008" />
+									<com.flextronics.cn.ui.LinearLayoutBtn
+										android:layout_width="wrap_content" android:layout_height="wrap_content"
+										flex:image_normal_src="@drawable/btn_common_mark_9"
+										flex:image_pressed_src="@drawable/btn_common_mark_9_2"
+										flex:btn_value="110009" />
+									<com.flextronics.cn.ui.LinearLayoutBtn
+										android:layout_width="wrap_content" android:layout_height="wrap_content"
+										flex:image_normal_src="@drawable/btn_common_mark_10"
+										flex:image_pressed_src="@drawable/btn_common_mark_10_2"
+										flex:btn_value="110010" />
+									<com.flextronics.cn.ui.LinearLayoutBtn
+										android:layout_width="wrap_content" android:layout_height="wrap_content"
+										flex:image_normal_src="@drawable/btn_common_mark_11"
+										flex:image_pressed_src="@drawable/btn_common_mark_11_2"
+										flex:btn_value="110011" />
+									<com.flextronics.cn.ui.LinearLayoutBtn
+										android:layout_width="wrap_content" android:layout_height="wrap_content"
+										flex:image_normal_src="@drawable/btn_common_mark_12"
+										flex:image_pressed_src="@drawable/btn_common_mark_12_2"
+										flex:btn_value="110012" />
+									<com.flextronics.cn.ui.LinearLayoutBtn
+										android:layout_width="wrap_content" android:layout_height="wrap_content"
+										flex:image_normal_src="@drawable/btn_common_mark_13"
+										flex:image_pressed_src="@drawable/btn_common_mark_13_2"
+										flex:btn_value="110013" />
+									<com.flextronics.cn.ui.LinearLayoutBtn
+										android:layout_width="wrap_content" android:layout_height="wrap_content"
+										flex:image_normal_src="@drawable/btn_common_mark_14"
+										flex:image_pressed_src="@drawable/btn_common_mark_14_2"
+										flex:btn_value="110014" />
+									<com.flextronics.cn.ui.LinearLayoutBtn
+										android:layout_width="wrap_content" android:layout_height="wrap_content"
+										flex:image_normal_src="@drawable/btn_common_mark_15"
+										flex:image_pressed_src="@drawable/btn_common_mark_15_2"
+										flex:btn_value="110015" />
+									<com.flextronics.cn.ui.LinearLayoutBtn
+										android:layout_width="wrap_content" android:layout_height="wrap_content"
+										flex:image_normal_src="@drawable/btn_common_mark_16"
+										flex:image_pressed_src="@drawable/btn_common_mark_16_2"
+										flex:btn_value="110016" />
+									<com.flextronics.cn.ui.LinearLayoutBtn
+										android:layout_width="wrap_content" android:layout_height="wrap_content"
+										flex:image_normal_src="@drawable/btn_common_mark_17"
+										flex:image_pressed_src="@drawable/btn_common_mark_17_2"
+										flex:btn_value="110017" />
+									<com.flextronics.cn.ui.LinearLayoutBtn
+										android:layout_width="wrap_content" android:layout_height="wrap_content"
+										flex:image_normal_src="@drawable/btn_common_mark_18"
+										flex:image_pressed_src="@drawable/btn_common_mark_18_2"
+										flex:btn_value="110018" />
+									<com.flextronics.cn.ui.LinearLayoutBtn
+										android:layout_width="wrap_content" android:layout_height="wrap_content"
+										flex:image_normal_src="@drawable/btn_common_mark_19"
+										flex:image_pressed_src="@drawable/btn_common_mark_19_2"
+										flex:btn_value="110019" />
+									<com.flextronics.cn.ui.LinearLayoutBtn
+										android:layout_width="wrap_content" android:layout_height="wrap_content"
+										flex:image_normal_src="@drawable/btn_common_mark_20"
+										flex:image_pressed_src="@drawable/btn_common_mark_20_2"
+										flex:btn_value="110020" />
+								</com.flextronics.cn.ui.LinearLayoutBtnGroup>
+								<!-- end of COMMON MARKS -->
+							</LinearLayout>
+						</HorizontalScrollView>
+					</LinearLayout>
+
+					<LinearLayout android:id="@+id/ContentShape"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:orientation="vertical">
+						<!--
+							分割线 <TextView android:layout_width="780dip"
+							android:layout_height="2dip"
+							android:background="@drawable/ui_param_panel_content_line" />
+						-->
+
+					</LinearLayout>
+				</LinearLayout>
+			</com.flextronics.cn.ui.ParamPanel>
+
+
+			<!-- 题目数 -->
+			<com.flextronics.cn.ui.ParamPanel
+				android:id="@+id/ParamPanel04" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_marginTop="40dip"
+				flex:content="@+id/ImageViewBtnGroup04" flex:text="@string/question_count"
+				flex:animation_on_click="false">
+				<com.flextronics.cn.ui.ImageViewBtnGroup
+					android:id="@+id/ImageViewBtnGroup04" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:background="@drawable/ui_param_panel_content_backgd"
+					flex:selected_child_index="0" android:layout_marginTop="-8dip"
+					android:layout_marginLeft="6dip" android:layout_marginRight="8dip"
+					flex:animation_on_click="false">
+					<TextView android:layout_width="50dip"
+						android:layout_height="wrap_content" android:visibility="invisible" />
+					<com.flextronics.cn.ui.ImageViewBtn
+						android:id="@+id/ImageViewBtn11" android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						flex:normal_src="@drawable/cs_choose_params_questioncount_15_1"
+						flex:pressing_src="@drawable/cs_choose_params_questioncount_15_2"
+						flex:pressed_src="@drawable/cs_choose_params_questioncount_15_3"
+						flex:value="15" android:layout_weight="1" />
+					<com.flextronics.cn.ui.ImageViewBtn
+						android:id="@+id/ImageViewBtn12" android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						flex:normal_src="@drawable/cs_choose_params_questioncount_30_1"
+						flex:pressing_src="@drawable/cs_choose_params_questioncount_30_2"
+						flex:pressed_src="@drawable/cs_choose_params_questioncount_30_3"
+						flex:value="30" android:layout_weight="1" />
+					<com.flextronics.cn.ui.ImageViewBtn
+						android:id="@+id/ImageViewBtn13" android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						flex:normal_src="@drawable/cs_choose_params_questioncount_45_1"
+						flex:pressing_src="@drawable/cs_choose_params_questioncount_45_2"
+						flex:pressed_src="@drawable/cs_choose_params_questioncount_45_3"
+						flex:value="45" android:layout_weight="1" />
+					<com.flextronics.cn.ui.ImageViewBtn
+						android:id="@+id/ImageViewBtn14" android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						flex:normal_src="@drawable/cs_choose_params_questioncount_60_1"
+						flex:pressing_src="@drawable/cs_choose_params_questioncount_60_2"
+						flex:pressed_src="@drawable/cs_choose_params_questioncount_60_3"
+						flex:value="60" android:layout_weight="1" />
+					<TextView android:layout_width="50dip"
+						android:layout_height="wrap_content" android:visibility="invisible" />
+				</com.flextronics.cn.ui.ImageViewBtnGroup>
+			</com.flextronics.cn.ui.ParamPanel>
+		</LinearLayout>
+	</ScrollView>
+</RelativeLayout>

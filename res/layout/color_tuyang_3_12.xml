@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+ 	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content"
+   	android:layout_height="wrap_content">
+	<RelativeLayout
+		android:layout_width="wrap_content"
+	   	android:layout_height="wrap_content"
+	   	android:layout_centerInParent="true">
+	   	
+	    <ImageView 
+	    	android:id="@+id/ImageView01"   		
+			android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_alignParentTop="true"
+	    	android:layout_marginLeft="9dip"
+	    	android:layout_marginTop="9dip"
+	    	android:src="@drawable/cs_tuyang_item_3_0"/>
+	    <ImageView 
+	    	android:id="@+id/ImageView02"   		
+			android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_alignTop="@+id/ImageView01"
+	    	android:layout_toRightOf="@+id/ImageView01"
+	    	android:layout_marginLeft="6dip"
+	    	android:src="@drawable/cs_tuyang_item_3_0"/>
+	    <ImageView 
+	    	android:id="@+id/ImageView03"   		
+			android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_alignTop="@+id/ImageView01"
+	    	android:layout_toRightOf="@+id/ImageView02"
+	    	android:layout_marginLeft="6dip"
+	    	android:src="@drawable/cs_tuyang_item_3_0"/>
+	    <ImageView 
+	    	android:id="@+id/ImageView04"   		
+			android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_alignTop="@+id/ImageView01"
+	    	android:layout_toRightOf="@+id/ImageView03"
+	    	android:layout_marginLeft="6dip"
+	    	android:src="@drawable/cs_tuyang_item_3_0"/>
+	    	
+	    
+	    <ImageView 
+	    	android:id="@+id/ImageView05"   		
+			android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_below="@+id/ImageView01"
+	    	android:layout_alignLeft="@+id/ImageView01"
+	    	android:layout_marginTop="5dip"
+	    	android:src="@drawable/cs_tuyang_item_3_0"/>
+	    <ImageView 
+	    	android:id="@+id/ImageView06"   		
+			android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_below="@+id/ImageView04"
+	    	android:layout_alignLeft="@+id/ImageView04"
+	    	android:layout_alignTop="@+id/ImageView05"
+	    	android:src="@drawable/cs_tuyang_item_3_0"/>
+	    	
+	    	
+	    <ImageView 
+	    	android:id="@+id/ImageView07"   		
+			android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_below="@+id/ImageView05"
+	    	android:layout_alignLeft="@+id/ImageView01"
+	    	android:layout_marginTop="6dip"
+	    	android:src="@drawable/cs_tuyang_item_3_0"/>
+	    <ImageView 
+	    	android:id="@+id/ImageView08"   		
+			android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_below="@+id/ImageView06"
+	    	android:layout_alignLeft="@+id/ImageView04"
+	    	android:layout_alignTop="@+id/ImageView07"
+	    	android:src="@drawable/cs_tuyang_item_3_0"/>
+	    		    	
+	    
+	    <ImageView 
+	    	android:id="@+id/ImageView09"   		
+			android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_below="@+id/ImageView07"
+	    	android:layout_alignLeft="@+id/ImageView01"
+	    	android:layout_marginTop="6dip"
+	    	android:src="@drawable/cs_tuyang_item_3_0"/>
+	    <ImageView 
+	    	android:id="@+id/ImageView10"   		
+			android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_alignTop="@+id/ImageView09"
+	    	android:layout_alignLeft="@+id/ImageView02"
+	    	android:src="@drawable/cs_tuyang_item_3_0"/>
+	    <ImageView 
+	    	android:id="@+id/ImageView11"   		
+			android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_alignTop="@+id/ImageView09"
+	    	android:layout_alignLeft="@+id/ImageView03"
+	    	android:src="@drawable/cs_tuyang_item_3_0"/>
+	    <ImageView 
+	    	android:id="@+id/ImageView12"   		
+			android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_alignTop="@+id/ImageView09"
+	    	android:layout_alignLeft="@+id/ImageView04"
+	    	android:src="@drawable/cs_tuyang_item_3_0"/>
+	    
+	    
+	    <ImageView 			
+			android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"	
+		   	android:layout_centerInParent="true"
+	   		android:src="@drawable/cs_tuyang_board_3_12"/>
+	</RelativeLayout>
+</RelativeLayout>

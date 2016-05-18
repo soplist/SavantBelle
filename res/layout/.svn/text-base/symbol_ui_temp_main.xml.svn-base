@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:flex="http://schemas.android.com/apk/res/com.flextronics.cn.activity"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<include android:id="@+id/background" layout="@layout/included_transparent_border" />
+	<ScrollView android:layout_width="wrap_content"
+		android:layout_height="450dip" android:layout_centerInParent="true">
+		<LinearLayout android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:orientation="vertical"
+			android:layout_gravity="top">
+			<!-- 选择受测样本集-->
+			<com.flextronics.cn.ui.ParamPanel
+				android:id="@+id/trainingSettingPanel" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" flex:content="@+id/Content01"
+				flex:text="训练类型" flex:animation_on_click="false">
+				<LinearLayout android:id="@+id/Content01"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:background="@drawable/ui_param_panel_content_backgd"
+					android:orientation="vertical" android:layout_marginTop="-8dip"
+					android:layout_marginLeft="6dip" android:layout_marginRight="8dip">
+					<com.flextronics.cn.ui.ImageViewBtnGroup
+						android:id="@+id/trainingSelector" android:layout_width="fill_parent"
+						android:layout_height="wrap_content" flex:selected_child_index="0" flex:animation_on_click = "false">
+						<TextView android:layout_width="20dip"
+							android:layout_height="wrap_content" android:visibility="invisible" />
+						<com.flextronics.cn.ui.ImageViewBtn
+							android:layout_width="wrap_content" android:layout_height="wrap_content"
+							android:layout_weight="1" flex:normal_src="@drawable/cs_choose_params_btn1_1"
+							flex:pressing_src="@drawable/cs_choose_params_btn1_2"
+							flex:pressed_src="@drawable/cs_choose_params_btn1_3" flex:value="RESPONSE"
+							flex:img_text_color_normal="#3B3D4E" flex:img_text_color_pressed="#FFFFFF"
+							flex:img_text_color_pressing="#636472" flex:img_text="反应训练"
+							flex:img_text_normal_size="18" />
+						<com.flextronics.cn.ui.ImageViewBtn
+							android:layout_width="wrap_content" android:layout_height="wrap_content"
+							android:layout_weight="1" flex:normal_src="@drawable/cs_choose_params_btn1_1"
+							flex:pressing_src="@drawable/cs_choose_params_btn1_2"
+							flex:pressed_src="@drawable/cs_choose_params_btn1_3" flex:value="MEMORY"
+							flex:img_text_color_normal="#3B3D4E" flex:img_text_color_pressed="#FFFFFF"
+							flex:img_text_color_pressing="#636472" flex:img_text="记忆训练"
+							flex:img_text_normal_size="18" />
+						<TextView android:layout_width="20dip"
+							android:layout_height="wrap_content" android:visibility="invisible" />
+					</com.flextronics.cn.ui.ImageViewBtnGroup>
+				</LinearLayout>
+			</com.flextronics.cn.ui.ParamPanel>
+		</LinearLayout>
+	</ScrollView>
+</RelativeLayout>

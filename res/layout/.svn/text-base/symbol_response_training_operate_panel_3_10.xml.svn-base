@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content" android:layout_height="wrap_content">
+	<TableRow>
+		<ImageView android:id="@+id/ImageView0"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:src="@drawable/number_0" android:clickable="true"></ImageView>
+		<ImageView android:id="@+id/ImageView1"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:src="@drawable/number_1"></ImageView>
+		<ImageView android:id="@+id/ImageView2"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:src="@drawable/number_2"></ImageView>
+		<ImageView android:id="@+id/ImageView3"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:src="@drawable/number_3"></ImageView>
+		<ImageView android:id="@+id/ImageView4"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:src="@drawable/number_4"></ImageView>
+		<ImageView android:id="@+id/ImageView5"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:src="@drawable/number_5"></ImageView>
+		<ImageView android:id="@+id/ImageView6"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:src="@drawable/number_6"></ImageView>
+		<ImageView android:id="@+id/ImageView7"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:src="@drawable/number_7"></ImageView>
+		<ImageView android:id="@+id/ImageView8"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:src="@drawable/number_8"></ImageView>
+		<ImageView android:id="@+id/ImageView9"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:src="@drawable/number_9"></ImageView>
+	</TableRow>
+	<TableRow>
+		<ImageView android:id="@+id/ImageView10"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:src="@drawable/number_9"></ImageView>
+		<ImageView android:id="@+id/ImageView11"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:src="@drawable/number_9"></ImageView>
+		<ImageView android:id="@+id/ImageView12"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:src="@drawable/number_9"></ImageView>
+		<ImageView android:id="@+id/ImageView13"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:src="@drawable/number_0" android:clickable="true"></ImageView>
+		<ImageView android:id="@+id/ImageView14"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:src="@drawable/number_0" android:clickable="true"></ImageView>
+		<ImageView android:id="@+id/ImageView15"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:src="@drawable/number_1"></ImageView>
+		<ImageView android:id="@+id/ImageView16"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:src="@drawable/number_2"></ImageView>
+		<ImageView android:id="@+id/ImageView17"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:src="@drawable/number_3"></ImageView>
+		<ImageView android:id="@+id/ImageView18"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:src="@drawable/number_4"></ImageView>
+		<ImageView android:id="@+id/ImageView19"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:src="@drawable/number_5"></ImageView>
+	</TableRow>
+	<TableRow>
+		<ImageView android:id="@+id/ImageView20"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:src="@drawable/number_6"></ImageView>
+		<ImageView android:id="@+id/ImageView21"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:src="@drawable/number_7"></ImageView>
+		<ImageView android:id="@+id/ImageView22"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:src="@drawable/number_8"></ImageView>
+		<ImageView android:id="@+id/ImageView23"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:src="@drawable/number_9"></ImageView>
+		<ImageView android:id="@+id/ImageView24"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:src="@drawable/number_9"></ImageView>
+		<ImageView android:id="@+id/ImageView25"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:src="@drawable/number_9"></ImageView>
+	</TableRow>
+</TableLayout>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:flex="http://schemas.android.com/apk/res/com.flextronics.cn.activity"
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent">
+	
+	<include android:id="@+id/line1" layout="@layout/included_line1" />
+	
+	<RelativeLayout 
+		android:layout_width="fill_parent" 
+		android:layout_height="fill_parent">
+		<com.flextronics.cn.ui.StartFlagImageView 
+			android:id="@+id/StartFlagImageView_VHT"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentTop="true"
+			android:layout_alignParentLeft="true"
+			android:layout_marginTop="160dip"
+			android:layout_marginLeft="80dip"
+			android:src="@drawable/red"
+			flex:startImage="@drawable/red"
+			flex:endImage="@drawable/green"
+			flex:time="2000"/>
+			
+		<ImageView 
+			android:id="@+id/ImageView_VHT_01"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:src="@drawable/touch1" 
+			android:layout_alignLeft="@+id/ImageView_VHT_07"
+			android:layout_alignParentTop="true"
+			android:layout_marginTop="225dip"/>
+			
+		<ImageView 
+			android:id="@+id/ImageView_VHT_06"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:src="@drawable/touch6" 
+			android:layout_alignParentTop="true"
+			android:layout_toLeftOf="@+id/ImageView_VHT_07"
+			android:layout_marginRight="55dip"
+			android:layout_marginTop="310dip"/>
+			
+		<ImageView 
+			android:id="@+id/ImageView_VHT_02"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:src="@drawable/touch2" 
+			android:layout_toRightOf="@+id/ImageView_VHT_07"
+			android:layout_alignTop="@+id/ImageView_VHT_06" 
+			android:layout_marginLeft="55dip"/>
+			
+		<ImageView 
+			android:id="@+id/ImageView_VHT_07"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:src="@drawable/touch7" 
+			android:layout_centerHorizontal="true"
+			android:layout_alignParentTop="true"
+			android:layout_marginTop="380dip"/>
+	
+		<ImageView 
+			android:id="@+id/ImageView_VHT_05"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:src="@drawable/touch5" 
+			android:layout_alignRight="@+id/ImageView_VHT_06"
+			android:layout_toLeftOf="@+id/ImageView_VHT_07" 
+			android:layout_below="@+id/ImageView_VHT_07"
+			android:layout_marginTop="-5dip"/>
+	
+		<ImageView 
+			android:id="@+id/ImageView_VHT_04"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:src="@drawable/touch4" 
+			android:layout_alignLeft="@+id/ImageView_VHT_07"
+			android:layout_below="@+id/ImageView_VHT_07" 
+			android:layout_marginTop="75dip"/>
+	
+		<ImageView 
+			android:id="@+id/ImageView_VHT_03"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:src="@drawable/touch3" 
+			android:layout_alignRight="@+id/ImageView_VHT_02"
+			android:layout_alignTop="@+id/ImageView_VHT_05"/>
+			
+		<!--<RelativeLayout 
+			android:id="@+id/RelativeLayout01"
+			android:layout_width="fill_parent" 
+			android:layout_height="350px"
+			android:layout_below="@+id/StartFlagImageView_VHT">
+			<ImageView 
+				android:id="@+id/ImageView_VHT_01"
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:src="@drawable/touch1" 
+				android:layout_above="@+id/ImageView_VHT_07"
+				android:layout_alignLeft="@+id/ImageView_VHT_07"
+				android:layout_marginBottom="60px"/>	
+			<ImageView 
+				android:id="@+id/ImageView_VHT_06"
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:src="@drawable/touch6" 
+				android:layout_toLeftOf="@+id/ImageView_VHT_07"
+				android:layout_above="@+id/ImageView_VHT_07"
+				android:layout_marginRight="50px" 
+				android:layout_marginBottom="17px"/>	
+			<ImageView 
+				android:id="@+id/ImageView_VHT_02"
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:src="@drawable/touch2" 
+				android:layout_toRightOf="@+id/ImageView_VHT_07"
+				android:layout_alignTop="@+id/ImageView_VHT_06"
+				android:layout_marginLeft="50px"/>	
+			<ImageView 
+				android:id="@+id/ImageView_VHT_07"
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:src="@drawable/touch7" 
+				android:layout_centerInParent="true"/>	
+			<ImageView 
+				android:id="@+id/ImageView_VHT_05"
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:src="@drawable/touch5" 
+				android:layout_alignRight="@+id/ImageView_VHT_06"
+				android:layout_toLeftOf="@+id/ImageView_VHT_07" 
+				android:layout_below="@+id/ImageView_VHT_07"
+				android:layout_marginTop="17px"/>	
+			<ImageView 
+				android:id="@+id/ImageView_VHT_04"
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:src="@drawable/touch4" 
+				android:layout_alignLeft="@+id/ImageView_VHT_07"
+				android:layout_below="@+id/ImageView_VHT_07"
+				android:layout_marginTop="60px"/>	
+			<ImageView 
+				android:id="@+id/ImageView_VHT_03"
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:src="@drawable/touch3" 
+				android:layout_alignRight="@+id/ImageView_VHT_02"
+				android:layout_alignTop="@+id/ImageView_VHT_05"/>
+		</RelativeLayout>
+		
+		
+		--><com.flextronics.cn.ui.TimerView 
+			android:id="@+id/TimerView_VHT"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:layout_alignParentBottom="true"
+			android:layout_alignParentLeft="true"
+			android:layout_marginLeft="80dip"
+			android:layout_marginBottom="80dip"
+			flex:formatText="mm:ss" 
+			flex:start="0" 
+			flex:asc="true" 
+	  		android:textSize="23sp"
+	  		android:textColor="#fff"/>
+	</RelativeLayout>
+</RelativeLayout>

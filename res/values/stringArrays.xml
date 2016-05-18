@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="color_names">
+		<item>红</item>
+		<item>橙</item>
+		<item>黄</item>
+		<item>绿</item>
+		<item>蓝</item>
+		<item>靛</item>
+		<item>紫</item>
+		<item>黑</item>
+		<item>咖啡</item>
+	</string-array>
+	
+	<string-array name="sample_names">
+		<item>白光</item>
+		<item>颜色 </item>
+		<item>阿拉伯数字</item>
+		<item>罗马数字</item>
+		<item>英文字母</item>
+		<item>形状</item>
+		<item>一般符号</item>
+		<item>音乐符号</item>
+		<item>西洋乐</item>
+		<item>民族乐</item>
+		<item>打击乐</item>
+	</string-array>
+	
+	<string-array name="foreigh_music_names">
+		<item>钢琴</item>
+		<item>小号 </item>
+		<item>小提琴</item>
+		<item>竖琴</item>
+		<item>长号</item>
+		<item>中提琴</item>		
+		<item>教堂风琴</item>
+		<item>法国号</item>
+		<item>大提琴</item>
+		<item>木吉他</item>
+		<item>长笛</item>		
+		<item>手风琴</item>
+		<item>电吉他</item>
+		<item>萨克斯</item>
+		<item>铁琴</item>
+	</string-array>
+	
+	<string-array name="folk_music_names">
+		<item>琵琶</item>
+		<item>二胡 </item>
+		<item>唢呐</item>
+		<item>古筝</item>
+		<item>马头琴</item>
+		<item>爱尔兰风笛</item>
+		<item>扬琴</item>
+		<item>西塔琴</item>
+		<item>尺八</item>		
+		<item>柳琴</item>
+		<item>斑鸠琴</item>		
+		<item>笛子</item>		
+		<item>阮</item>
+		<item>三味线</item>
+		<item>笙</item>
+	</string-array>
+	
+	<string-array name="percussion_instrument_names">
+		<item>大鼓</item>
+		<item>木鱼</item>
+		<item>三角铁</item>
+		<item>小鼓</item>
+		<item>铃鼓</item>
+		<item>小锣</item>		
+		<item>太鼓</item>
+		<item>邦哥鼓</item>
+		<item>鈸</item>		
+		<item>定音鼓</item>
+		<item>廷巴鼓</item>		
+		<item>沙铃</item>		
+		<item>中国鼓</item>
+		<item>康加鼓</item>
+		<item>牛铃</item>
+	</string-array>
+</resources>

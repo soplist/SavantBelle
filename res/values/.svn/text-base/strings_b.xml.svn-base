@@ -1,0 +1,1142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 此文件用于保存B模块的所用到的字符串 ，公用字符串在strings.xml中定义， 其余模块均定义在相应的strings_x.xml文件中。
+	 字符串的命名请严格遵循以下约定:
+		1.尽量用英文命名; 2.所有单词均小写; 3.单词之间用下划线相隔; 4.所有字符串请按首字母(仅限首字母)升序排列。
+	如下所示：
+		<string name="an_qing">安庆</string>
+		<string name="an_hui">安徽</string>
+		<string name="an_yang">安阳</string>
+		<string name="bei_jing">北京</string>
+		<string name="bei_fang">北方</string>
+		<string name="cheng_du">成都</string>
+		<string name="chong_qing">重庆</string>
+		<string name="hello_world">你好，世界！</string>
+-->
+<resources>
+	<!-- 字体颜色 -->
+	<color name="hearing_system_gray">#58595B</color>
+	<color name="hearing_system_green">#2d791f</color>
+	
+	<!-- 按钮描述 -->
+	<string name="hearing_system_error">系统错误</string>
+	<string name="hearing_system_answer_error">回答错误！</string>
+	<string name="hearing_system_answer_right">正确答案：</string>
+	<string name="hearing_system_choosed_training">选择训练方式</string>
+	<string name="hearing_system_choosed_smaple">选择样本</string>
+	<string name="hearing_system_choosed_element">选择元素</string>
+	<string name="hearing_system_choosed_musical_instruments">选择乐器</string>
+	<string name="hearing_system_choosed_scale">选择音阶</string>
+	<string name="hearing_system_choosed_bit">选择位元</string>
+	<string name="hearing_system_choosed_rhythm">选择小节</string>
+	<string name="hearing_system_one_bar_three_beat">一小节三拍</string>
+	<string name="hearing_system_one_bar_four_beat">一小节四拍</string>
+	<string name="hearing_system_all_beat">一小节三拍+一小节四拍</string>
+	<string name="hearing_system_identification_training">辨识训练</string>
+	<string name="hearing_system_response_training">反应训练</string>
+	<string name="hearing_system_memory_training">记忆训练</string>
+	<string name="hearing_system_musical_instruments">乐器</string>
+	<string name="hearing_system_scale">音阶</string>
+	<string name="hearing_system_rhythm">节奏</string>
+	<string name="hearing_system_foreign_music">西洋乐</string>
+	<string name="hearing_system_folk_music">民族乐</string>
+	<string name="hearing_system_percussion">打击乐</string>
+	<string name="hearing_system_response_beat">按节拍回应</string>
+	<string name="hearing_system_response_measure">按小节回应</string>
+	<string name="hearing_system_set_many_musical_instruments">设定多种乐器</string>
+	<string name="hearing_system_set_single_musical_instruments">设定单一乐器</string>
+	<string name="hearing_system_optional_many_musical_instruments">自选多种乐器</string>
+	<string name="hearing_system_optional_single_musical_instruments">自选多单一乐器</string>
+	<string name="hearing_system_random_musical_instruments">随机乐器</string>
+	<string name="hearing_system_set_musical_instruments_bit">设定乐器位元数</string>
+	<string name="hearing_system_optional_musical_instruments_bit">自选乐器位元数</string>
+	<string name="hearing_system_continue_musical_instruments_bit">连续乐器位元数</string>
+	<string name="hearing_system_set_many_scale">设定复数音阶</string>
+	<string name="hearing_system_set_single_scale">设定单一音阶</string>
+	<string name="hearing_system_optional_many_scale">自选复数音阶</string>
+	<string name="hearing_system_optional_single_scale">自选单一音阶</string>
+	<string name="hearing_system_random_scale">随机音阶</string>
+	<string name="hearing_system_set_scale_bit">设定音阶位元数</string>
+	<string name="hearing_system_optional_scale_bit">自选音阶位元数</string>
+	<string name="hearing_system_continue_scale_bit">连续音阶位元数</string>
+	<string name="hearing_system_set_many_measure">设定复数小节</string>
+	<string name="hearing_system_set_single_measure">设定单一小节</string>
+	<string name="hearing_system_optional_many_measure">自选复数小节</string>
+	<string name="hearing_system_optional_single_measure">自选单一小节</string>
+	<string name="hearing_system_set_bit_measure">设定小节位元数</string>
+	<string name="hearing_system_optional_bit_measure">自选小节位元数</string>
+	<string name="hearing_system_cotinued_bit_measure">连续小节位元数</string>
+	<string name="hearing_system_random_measure">随机小节</string>
+	<string name="hearing_system_answer_number">题目编号：</string>
+	<string name="hearing_system_response_answer">回应答案：</string>
+	
+
+	<!-- 辨识训练 -->
+	<string name="hearing_system_identification_training_musical_instruments">辨识训练¦乐器</string>
+	<string name="hearing_system_identification_training_musical_instruments_foreign_music">辨识训练¦乐器¦西洋乐</string>
+	<string name="hearing_system_identification_training_musical_instruments_folk_music">辨识训练¦乐器¦民族乐</string>
+	<string name="hearing_system_identification_training_musical_instruments_percussion">辨识训练¦乐器¦打击乐</string>
+	<string name="hearing_system_identification_training_scale">辨识训练¦音阶</string>
+	<string name="hearing_system_identification_training_scale_foreign_music">辨识训练¦音阶¦西洋乐</string>
+	<string name="hearing_system_identification_training_scale_folk_music">辨识训练¦音阶¦民族乐</string>
+	<string name="hearing_system_identification_training_rhythm">辨识训练¦节奏</string>
+	<string name="hearing_system_identification_training_rhythm_percussion">辨识训练¦节奏¦打击乐</string>
+	
+	<!-- 反应训练 -->
+	<string name="hearing_system_response_training_musical_instruments">反应训练¦乐器</string>
+	<string name="hearing_system_response_training_musical_instruments_foreign_music">反应训练¦乐器¦西洋乐</string>
+	<string name="hearing_system_response_training_musical_instruments_folk_music">反应训练¦乐器¦民族乐</string>
+	<string name="hearing_system_response_training_musical_instruments_percussion">反应训练¦乐器¦打击乐</string>
+	<string name="hearing_system_response_training_scale">反应训练¦音阶</string>
+	<string name="hearing_system_response_training_scale_foreign_music">反应训练¦音阶¦西洋乐</string>
+	<string name="hearing_system_response_training_scale_folk_music">反应训练¦音阶¦民族乐</string>
+	<string name="hearing_system_response_training_rhythm">反应训练¦节奏</string>
+	<string name="hearing_system_response_training_rhythm_percussion">反应训练¦节奏¦打击乐</string>
+	
+	<!-- 记忆训练 -->
+	<string name="hearing_system_memory_training_musical_instruments">记忆训练¦乐器</string>
+	<string name="hearing_system_memory_training_musical_instruments_foreign_music">记忆训练¦乐器¦西洋乐</string>
+	<string name="hearing_system_memory_training_musical_instruments_folk_music">记忆训练¦乐器¦民族乐</string>
+	<string name="hearing_system_memory_training_musical_instruments_percussion">记忆训练¦乐器¦打击乐</string>
+	<string name="hearing_system_memory_training_scale">记忆训练¦音阶</string>
+	<string name="hearing_system_memory_training_scale_foreign_music">记忆训练¦音阶¦西洋乐</string>
+	<string name="hearing_system_memory_training_scale_folk_music">记忆训练¦音阶¦民族乐</string>
+	<string name="hearing_system_memory_training_rhythm">记忆训练¦节奏</string>
+	<string name="hearing_system_memory_training_rhythm_percussion">记忆训练¦节奏¦打击乐</string>
+	
+	<!-- 乐器名称数组-->
+	<string-array name="MusicalInstrumentsNameArray">
+	<item>手风琴</item>
+	<item>木吉他</item>
+	<item>低音管</item>
+	<item>大提琴</item>
+	<item>教堂风琴</item>
+	<item>单簧管</item>
+	<item>电贝司</item>
+	<item>电吉他</item>
+	<item>电子琴</item>
+	<item>长笛</item>
+	<item>法国号</item>
+	<item>铁琴</item>
+	<item>竖琴</item>
+	<item>大建琴</item>
+	<item>双簧管</item>
+	<item>钢琴</item>
+	<item>短笛</item>
+	<item>萨克斯</item>
+	<item>长号</item>
+	<item>小号</item>
+	<item>低音号</item>
+	<item>管钟</item>
+	<item>中提琴</item>
+	<item>小提琴</item>
+	<item>木琴</item>
+	<item>斑鸠琴</item>
+	<item>笛子</item>
+	<item>扬琴</item>
+	<item>二胡</item>
+	<item>古筝</item>
+	<item>爱尔兰风笛</item>
+	<item>柳琴</item>
+	<item>马头琴</item>
+	<item>曼陀铃</item>
+	<item>琵琶</item>
+	<item>阮</item>
+	<item>尺八</item>
+	<item>三味线</item>
+	<item>笙</item>
+	<item>西塔琴</item>
+	<item>唢呐</item>
+	<item>苏格兰风笛</item>
+	<item>箫</item>
+	<item>钟</item>
+	
+	<item>板</item>
+	<item>邦哥鼓</item>
+	<item>沙铃</item>
+	<item>康加鼓</item>
+	<item>牛铃</item>
+	<item>鈸</item>
+	<item>大锣</item>
+	<item>中国鼓</item>
+	<item>大鼓</item>
+	<item>小鼓</item>
+	<item>太鼓</item>
+	<item>铃鼓</item>
+	<item>廷巴鼓</item>
+	<item>定音鼓</item>
+	<item>三角铁</item>
+	<item>木鱼</item>
+	<item>小锣</item>
+	</string-array>
+	
+	<string-array name="BeatNmaeArray">
+	<item>一拍</item>
+	<item>半拍</item>
+	</string-array>
+	
+	<!-- 乐器名称 -->
+	<string name="hearing_system_accordian">手风琴</string>
+	<string name="hearing_system_acoustic_guitar">木吉他</string>
+	<string name="hearing_system_bassoon">低音管</string>
+	<string name="hearing_system_cello">大提琴</string>
+	<string name="hearing_system_church_organ">教堂风琴</string>
+	<string name="hearing_system_clarinet">单簧管</string>
+	<string name="hearing_system_electric_bass">电贝司</string>
+	<string name="hearing_system_electric_guitar">电吉他</string>
+	<string name="hearing_system_electric_piano">电子琴</string>
+	<string name="hearing_system_flute">长笛</string>
+	<string name="hearing_system_french_horn">法国号</string>
+	<string name="hearing_system_glock">铁琴</string>
+	<string name="hearing_system_harp">竖琴</string>
+	<string name="hearing_system_harpsichord">大建琴</string>
+	<string name="hearing_system_oboe">双簧管</string>
+	<string name="hearing_system_piano">钢琴</string>
+	<string name="hearing_system_piccolo">短笛</string>
+	<string name="hearing_system_sax">萨克斯</string>
+	<string name="hearing_system_trombone">长号</string>
+	<string name="hearing_system_trumpet">小号</string>
+	<string name="hearing_system_tuba">低音号</string>
+	<string name="hearing_system_tubular_bells">管钟</string>
+	<string name="hearing_system_viola">中提琴</string>
+	<string name="hearing_system_violin">小提琴</string>
+	<string name="hearing_system_xylophone">木琴</string>
+	<string name="hearing_system_banjo">斑鸠琴</string>
+	<string name="hearing_system_di_zi">笛子</string>
+	<string name="hearing_system_dulcimer">扬琴</string>
+	<string name="hearing_system_er_hu">二胡</string>
+	<string name="hearing_system_gu_zheng">古筝</string>
+	<string name="hearing_system_irish_whistle">爱尔兰风笛</string>
+	<string name="hearing_system_liu_qin">柳琴</string>
+	<string name="hearing_system_ma_tou_qin">马头琴</string>
+	<string name="hearing_system_mandolin">曼陀铃</string>
+	<string name="hearing_system_pi_pa">琵琶</string>
+	<string name="hearing_system_ruan">阮</string>
+	<string name="hearing_system_shakuhachi">尺八</string>
+	<string name="hearing_system_shamisen">三味线</string>
+	<string name="hearing_system_sheng">笙</string>
+	<string name="hearing_system_sitar">西塔琴</string>
+	<string name="hearing_system_suo_na">唢呐</string>
+	<string name="hearing_system_uilleann_bagpipe">苏格兰风笛</string>
+	<string name="hearing_system_xiao">箫</string>
+	<string name="hearing_system_zhong">钟</string>
+	<string name="hearing_system_ban">板</string>
+	<string name="hearing_system_bongo">邦哥鼓</string>
+	<string name="hearing_system_cymbals">鈸</string>
+	<string name="hearing_system_kick">大鼓</string>
+	<string name="hearing_system_timpani">定音鼓</string>
+	<string name="hearing_system_conga">康加鼓</string>
+	<string name="hearing_system_tambourine">铃鼓</string>
+	<string name="hearing_system_xiao_luo">小锣</string>
+	<string name="hearing_system_da_luo">大锣</string>
+	<string name="hearing_system_woodblock">木鱼</string>
+	<string name="hearing_system_cow_bell">牛铃</string>
+	<string name="hearing_system_triangle">三角铁</string>
+	<string name="hearing_system_cabasa">沙铃</string>
+	<string name="hearing_system_taiko_drums">太鼓</string>
+	<string name="hearing_system_timbales">廷巴鼓</string>
+	<string name="hearing_system_snare">小鼓</string>
+	<string name="hearing_system_guo">中国鼓</string>
+	
+	<!-- 音阶名称 -->
+	<string-array name="ScaleNameArray">
+	<item>DO</item>
+	<item>RE</item>
+	<item>MI</item>
+	<item>FA</item>
+	<item>SOL</item>
+	<item>LA</item>
+	<item>SI</item>
+	<item>High-DO</item>
+	</string-array>
+	
+	<!-- 乐器名称数组-->
+	<string-array name="RhythmNameArray">
+	<item>一小节三拍①</item>
+	<item>一小节三拍②</item>
+	<item>一小节三拍③</item>
+	<item>一小节三拍④</item>
+	<item>一小节三拍⑤</item>
+	<item>一小节三拍⑥</item>
+	<item>一小节三拍⑦</item>
+	<item>一小节三拍⑧</item>
+	<item>一小节四拍①</item>
+	<item>一小节四拍②</item>
+	<item>一小节四拍③</item>
+	<item>一小节四拍④</item>
+	<item>一小节四拍⑤</item>
+	<item>一小节四拍⑥</item>
+	<item>一小节四拍⑦</item>
+	<item>一小节四拍⑧</item>
+	<item>一小节四拍⑨</item>
+	<item>一小节四拍⑩</item>
+	<item>一小节四拍①①</item>
+	<item>一小节四拍①②</item>
+	<item>一小节四拍①③</item>
+	<item>一小节四拍①④</item>
+	<item>一小节四拍①⑤</item>
+	<item>一小节四拍①⑥</item>
+	</string-array>
+	
+	<!-- 音阶和节奏数组 -->
+	<string-array name="PianoScaleFilePath">
+	<item>hearing_system_music/foreign_music_scale/piano/piano_scale_01.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/piano/piano_scale_02.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/piano/piano_scale_03.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/piano/piano_scale_04.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/piano/piano_scale_05.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/piano/piano_scale_06.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/piano/piano_scale_07.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/piano/piano_scale_08.mp3</item>
+	</string-array>
+	
+	<string-array name="AccordianScaleFilePath">
+	<item>hearing_system_music/foreign_music_scale/accordian/accordian_scale_01.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/accordian/accordian_scale_02.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/accordian/accordian_scale_03.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/accordian/accordian_scale_04.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/accordian/accordian_scale_05.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/accordian/accordian_scale_06.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/accordian/accordian_scale_07.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/accordian/accordian_scale_08.mp3</item>
+	</string-array>
+	
+	<string-array name="AcousticGuitarScaleFilePath">
+	<item>hearing_system_music/foreign_music_scale/acoustic_guitar/acoustic_guitar_scale_01.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/acoustic_guitar/acoustic_guitar_scale_02.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/acoustic_guitar/acoustic_guitar_scale_03.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/acoustic_guitar/acoustic_guitar_scale_04.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/acoustic_guitar/acoustic_guitar_scale_05.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/acoustic_guitar/acoustic_guitar_scale_06.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/acoustic_guitar/acoustic_guitar_scale_07.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/acoustic_guitar/acoustic_guitar_scale_08.mp3</item>
+	</string-array>
+	
+	<string-array name="BassoonScaleFilePath">
+	<item>hearing_system_music/foreign_music_scale/bassoon/bassoon_scale_01.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/bassoon/bassoon_scale_02.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/bassoon/bassoon_scale_03.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/bassoon/bassoon_scale_04.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/bassoon/bassoon_scale_05.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/bassoon/bassoon_scale_06.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/bassoon/bassoon_scale_07.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/bassoon/bassoon_scale_08.mp3</item>
+	</string-array>
+	
+	<string-array name="CelloScaleFilePath">
+	<item>hearing_system_music/foreign_music_scale/cello/cello_scale_01.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/cello/cello_scale_02.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/cello/cello_scale_03.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/cello/cello_scale_04.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/cello/cello_scale_05.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/cello/cello_scale_06.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/cello/cello_scale_07.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/cello/cello_scale_08.mp3</item>
+	</string-array>
+	
+	<string-array name="ChurchOrganScaleFilePath">
+	<item>hearing_system_music/foreign_music_scale/church_organ/church_organ_scale_01.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/church_organ/church_organ_scale_02.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/church_organ/church_organ_scale_03.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/church_organ/church_organ_scale_04.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/church_organ/church_organ_scale_05.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/church_organ/church_organ_scale_06.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/church_organ/church_organ_scale_07.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/church_organ/church_organ_scale_08.mp3</item>
+	</string-array>
+	
+	<string-array name="ClarinetScaleFilePath">
+	<item>hearing_system_music/foreign_music_scale/clarinet/clarinet_scale_01.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/clarinet/clarinet_scale_02.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/clarinet/clarinet_scale_03.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/clarinet/clarinet_scale_04.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/clarinet/clarinet_scale_05.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/clarinet/clarinet_scale_06.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/clarinet/clarinet_scale_07.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/clarinet/clarinet_scale_08.mp3</item>
+	</string-array>
+	
+	<string-array name="ElectricBassScaleFilePath">
+	<item>hearing_system_music/foreign_music_scale/electric_bass/electric_bass_scale_01.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/electric_bass/electric_bass_scale_02.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/electric_bass/electric_bass_scale_03.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/electric_bass/electric_bass_scale_04.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/electric_bass/electric_bass_scale_05.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/electric_bass/electric_bass_scale_06.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/electric_bass/electric_bass_scale_07.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/electric_bass/electric_bass_scale_08.mp3</item>
+	</string-array>
+	
+	<string-array name="ElectricGuitarScaleFilePath">
+	<item>hearing_system_music/foreign_music_scale/electric_guitar/electric_guitar_scale_01.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/electric_guitar/electric_guitar_scale_02.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/electric_guitar/electric_guitar_scale_03.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/electric_guitar/electric_guitar_scale_04.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/electric_guitar/electric_guitar_scale_05.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/electric_guitar/electric_guitar_scale_06.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/electric_guitar/electric_guitar_scale_07.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/electric_guitar/electric_guitar_scale_08.mp3</item>
+	</string-array>
+	
+	<string-array name="ElectricPianoScaleFilePath">
+	<item>hearing_system_music/foreign_music_scale/electric_piano/electric_piano_scale_01.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/electric_piano/electric_piano_scale_02.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/electric_piano/electric_piano_scale_03.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/electric_piano/electric_piano_scale_04.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/electric_piano/electric_piano_scale_05.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/electric_piano/electric_piano_scale_06.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/electric_piano/electric_piano_scale_07.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/electric_piano/electric_piano_scale_08.mp3</item>
+	</string-array>
+	
+	<string-array name="FluteScaleFilePath">
+	<item>hearing_system_music/foreign_music_scale/flute/flute_scale_01.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/flute/flute_scale_02.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/flute/flute_scale_03.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/flute/flute_scale_04.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/flute/flute_scale_05.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/flute/flute_scale_06.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/flute/flute_scale_07.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/flute/flute_scale_08.mp3</item>
+	</string-array>
+	
+	<string-array name="FrenchHornScaleFilePath">
+	<item>hearing_system_music/foreign_music_scale/french_horn/french_horn_scale_01.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/french_horn/french_horn_scale_02.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/french_horn/french_horn_scale_03.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/french_horn/french_horn_scale_04.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/french_horn/french_horn_scale_05.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/french_horn/french_horn_scale_06.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/french_horn/french_horn_scale_07.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/french_horn/french_horn_scale_08.mp3</item>
+	</string-array>
+	<string-array name="GlockScaleFilePath">
+	<item>hearing_system_music/foreign_music_scale/glock/glock_scale_01.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/glock/glock_scale_02.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/glock/glock_scale_03.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/glock/glock_scale_04.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/glock/glock_scale_05.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/glock/glock_scale_06.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/glock/glock_scale_07.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/glock/glock_scale_08.mp3</item>
+	</string-array>
+	<string-array name="HarpScaleFilePath">
+	<item>hearing_system_music/foreign_music_scale/harp/harp_scale_01.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/harp/harp_scale_02.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/harp/harp_scale_03.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/harp/harp_scale_04.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/harp/harp_scale_05.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/harp/harp_scale_06.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/harp/harp_scale_07.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/harp/harp_scale_08.mp3</item>
+	</string-array>
+	<string-array name="HarpsichordScaleFilePath">
+	<item>hearing_system_music/foreign_music_scale/harpsichord/harpsichord_scale_01.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/harpsichord/harpsichord_scale_02.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/harpsichord/harpsichord_scale_03.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/harpsichord/harpsichord_scale_04.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/harpsichord/harpsichord_scale_05.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/harpsichord/harpsichord_scale_06.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/harpsichord/harpsichord_scale_07.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/harpsichord/harpsichord_scale_08.mp3</item>
+	</string-array>
+	<string-array name="OboeBassScaleFilePath">
+	<item>hearing_system_music/foreign_music_scale/oboe/oboe_scale_01.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/oboe/oboe_scale_02.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/oboe/oboe_scale_03.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/oboe/oboe_scale_04.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/oboe/oboe_scale_05.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/oboe/oboe_scale_06.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/oboe/oboe_scale_07.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/oboe/oboe_scale_08.mp3</item>
+	</string-array>
+	<string-array name="PiccoloScaleFilePath">
+	<item>hearing_system_music/foreign_music_scale/piccolo/piccolo_scale_01.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/piccolo/piccolo_scale_02.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/piccolo/piccolo_scale_03.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/piccolo/piccolo_scale_04.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/piccolo/piccolo_scale_05.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/piccolo/piccolo_scale_06.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/piccolo/piccolo_scale_07.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/piccolo/piccolo_scale_08.mp3</item>
+	</string-array>
+	
+	<string-array name="SaxScaleFilePath">
+	<item>hearing_system_music/foreign_music_scale/sax/sax_scale_01.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/sax/sax_scale_02.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/sax/sax_scale_03.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/sax/sax_scale_04.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/sax/sax_scale_05.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/sax/sax_scale_06.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/sax/sax_scale_07.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/sax/sax_scale_08.mp3</item>
+	</string-array>
+	
+	<string-array name="TromboneScaleFilePath">
+	<item>hearing_system_music/foreign_music_scale/trombone/trombone_scale_01.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/trombone/trombone_scale_02.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/trombone/trombone_scale_03.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/trombone/trombone_scale_04.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/trombone/trombone_scale_05.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/trombone/trombone_scale_06.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/trombone/trombone_scale_07.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/trombone/trombone_scale_08.mp3</item>
+	</string-array>
+	
+	<string-array name="TrumpetScaleFilePath">
+	<item>hearing_system_music/foreign_music_scale/trumpet/trumpet_scale_01.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/trumpet/trumpet_scale_02.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/trumpet/trumpet_scale_03.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/trumpet/trumpet_scale_04.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/trumpet/trumpet_scale_05.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/trumpet/trumpet_scale_06.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/trumpet/trumpet_scale_07.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/trumpet/trumpet_scale_08.mp3</item>
+	</string-array>
+	
+	<string-array name="TubaScaleFilePath">
+	<item>hearing_system_music/foreign_music_scale/tuba/tuba_scale_01.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/tuba/tuba_scale_02.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/tuba/tuba_scale_03.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/tuba/tuba_scale_04.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/tuba/tuba_scale_05.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/tuba/tuba_scale_06.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/tuba/tuba_scale_07.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/tuba/tuba_scale_08.mp3</item>
+	</string-array>
+	
+	<string-array name="TubularBellsScaleFilePath">
+	<item>hearing_system_music/foreign_music_scale/tubular_bells/tubular_bells_scale_01.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/tubular_bells/tubular_bells_scale_02.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/tubular_bells/tubular_bells_scale_03.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/tubular_bells/tubular_bells_scale_04.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/tubular_bells/tubular_bells_scale_05.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/tubular_bells/tubular_bells_scale_06.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/tubular_bells/tubular_bells_scale_07.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/tubular_bells/tubular_bells_scale_08.mp3</item>
+	</string-array>
+	
+	<string-array name="ViolaScaleFilePath">
+	<item>hearing_system_music/foreign_music_scale/viola/viola_scale_01.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/viola/viola_scale_02.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/viola/viola_scale_03.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/viola/viola_scale_04.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/viola/viola_scale_05.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/viola/viola_scale_06.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/viola/viola_scale_07.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/viola/viola_scale_08.mp3</item>
+	</string-array>
+	
+	<string-array name="ViolinScaleFilePath">
+	<item>hearing_system_music/foreign_music_scale/violin/violin_scale_01.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/violin/violin_scale_02.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/violin/violin_scale_03.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/violin/violin_scale_04.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/violin/violin_scale_05.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/violin/violin_scale_06.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/violin/violin_scale_07.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/violin/violin_scale_08.mp3</item>
+	</string-array>
+	
+	<string-array name="XylophoneScaleFilePath">
+	<item>hearing_system_music/foreign_music_scale/xylophone/xylophone_scale_01.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/xylophone/xylophone_scale_02.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/xylophone/xylophone_scale_03.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/xylophone/xylophone_scale_04.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/xylophone/xylophone_scale_05.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/xylophone/xylophone_scale_06.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/xylophone/xylophone_scale_07.mp3</item>
+	<item>hearing_system_music/foreign_music_scale/xylophone/xylophone_scale_08.mp3</item>
+	</string-array>
+	
+	<string-array name="BanjoScaleFilePath">
+	<item>hearing_system_music/folk_music_scale/banjo/banjo_scale_01.mp3</item>
+	<item>hearing_system_music/folk_music_scale/banjo/banjo_scale_02.mp3</item>
+	<item>hearing_system_music/folk_music_scale/banjo/banjo_scale_03.mp3</item>
+	<item>hearing_system_music/folk_music_scale/banjo/banjo_scale_04.mp3</item>
+	<item>hearing_system_music/folk_music_scale/banjo/banjo_scale_05.mp3</item>
+	<item>hearing_system_music/folk_music_scale/banjo/banjo_scale_06.mp3</item>
+	<item>hearing_system_music/folk_music_scale/banjo/banjo_scale_07.mp3</item>
+	<item>hearing_system_music/folk_music_scale/banjo/banjo_scale_08.mp3</item>
+	</string-array>
+	
+	<string-array name="DiZiScaleFilePath">
+	<item>hearing_system_music/folk_music_scale/di_zi/di_zi_scale_01.mp3</item>
+	<item>hearing_system_music/folk_music_scale/di_zi/di_zi_scale_02.mp3</item>
+	<item>hearing_system_music/folk_music_scale/di_zi/di_zi_scale_03.mp3</item>
+	<item>hearing_system_music/folk_music_scale/di_zi/di_zi_scale_04.mp3</item>
+	<item>hearing_system_music/folk_music_scale/di_zi/di_zi_scale_05.mp3</item>
+	<item>hearing_system_music/folk_music_scale/di_zi/di_zi_scale_06.mp3</item>
+	<item>hearing_system_music/folk_music_scale/di_zi/di_zi_scale_07.mp3</item>
+	<item>hearing_system_music/folk_music_scale/di_zi/di_zi_scale_08.mp3</item>
+	</string-array>
+	
+	<string-array name="DulcimerScaleFilePath">
+	<item>hearing_system_music/folk_music_scale/dulcimer/dulcimer_scale_01.mp3</item>
+	<item>hearing_system_music/folk_music_scale/dulcimer/dulcimer_scale_02.mp3</item>
+	<item>hearing_system_music/folk_music_scale/dulcimer/dulcimer_scale_03.mp3</item>
+	<item>hearing_system_music/folk_music_scale/dulcimer/dulcimer_scale_04.mp3</item>
+	<item>hearing_system_music/folk_music_scale/dulcimer/dulcimer_scale_05.mp3</item>
+	<item>hearing_system_music/folk_music_scale/dulcimer/dulcimer_scale_06.mp3</item>
+	<item>hearing_system_music/folk_music_scale/dulcimer/dulcimer_scale_07.mp3</item>
+	<item>hearing_system_music/folk_music_scale/dulcimer/dulcimer_scale_08.mp3</item>
+	</string-array>
+	
+	<string-array name="ErHuScaleFilePath">
+	<item>hearing_system_music/folk_music_scale/er_hu/er_hu_scale_01.mp3</item>
+	<item>hearing_system_music/folk_music_scale/er_hu/er_hu_scale_02.mp3</item>
+	<item>hearing_system_music/folk_music_scale/er_hu/er_hu_scale_03.mp3</item>
+	<item>hearing_system_music/folk_music_scale/er_hu/er_hu_scale_04.mp3</item>
+	<item>hearing_system_music/folk_music_scale/er_hu/er_hu_scale_05.mp3</item>
+	<item>hearing_system_music/folk_music_scale/er_hu/er_hu_scale_06.mp3</item>
+	<item>hearing_system_music/folk_music_scale/er_hu/er_hu_scale_07.mp3</item>
+	<item>hearing_system_music/folk_music_scale/er_hu/er_hu_scale_08.mp3</item>
+	</string-array>
+	
+	<string-array name="GuZhengScaleFilePath">
+	<item>hearing_system_music/folk_music_scale/gu_zheng/gu_zheng_scale_01.mp3</item>
+	<item>hearing_system_music/folk_music_scale/gu_zheng/gu_zheng_scale_02.mp3</item>
+	<item>hearing_system_music/folk_music_scale/gu_zheng/gu_zheng_scale_03.mp3</item>
+	<item>hearing_system_music/folk_music_scale/gu_zheng/gu_zheng_scale_04.mp3</item>
+	<item>hearing_system_music/folk_music_scale/gu_zheng/gu_zheng_scale_05.mp3</item>
+	<item>hearing_system_music/folk_music_scale/gu_zheng/gu_zheng_scale_06.mp3</item>
+	<item>hearing_system_music/folk_music_scale/gu_zheng/gu_zheng_scale_07.mp3</item>
+	<item>hearing_system_music/folk_music_scale/gu_zheng/gu_zheng_scale_08.mp3</item>
+	</string-array>
+	
+	<string-array name="IrishWhistleScaleFilePath">
+	<item>hearing_system_music/folk_music_scale/irish_whistle/irish_whistle_scale_01.mp3</item>
+	<item>hearing_system_music/folk_music_scale/irish_whistle/irish_whistle_scale_02.mp3</item>
+	<item>hearing_system_music/folk_music_scale/irish_whistle/irish_whistle_scale_03.mp3</item>
+	<item>hearing_system_music/folk_music_scale/irish_whistle/irish_whistle_scale_04.mp3</item>
+	<item>hearing_system_music/folk_music_scale/irish_whistle/irish_whistle_scale_05.mp3</item>
+	<item>hearing_system_music/folk_music_scale/irish_whistle/irish_whistle_scale_06.mp3</item>
+	<item>hearing_system_music/folk_music_scale/irish_whistle/irish_whistle_scale_07.mp3</item>
+	<item>hearing_system_music/folk_music_scale/irish_whistle/irish_whistle_scale_08.mp3</item>
+	</string-array>
+	
+	<string-array name="LiuQinScaleFilePath">
+	<item>hearing_system_music/folk_music_scale/liu_qin/liu_qin_scale_01.mp3</item>
+	<item>hearing_system_music/folk_music_scale/liu_qin/liu_qin_scale_02.mp3</item>
+	<item>hearing_system_music/folk_music_scale/liu_qin/liu_qin_scale_03.mp3</item>
+	<item>hearing_system_music/folk_music_scale/liu_qin/liu_qin_scale_04.mp3</item>
+	<item>hearing_system_music/folk_music_scale/liu_qin/liu_qin_scale_05.mp3</item>
+	<item>hearing_system_music/folk_music_scale/liu_qin/liu_qin_scale_06.mp3</item>
+	<item>hearing_system_music/folk_music_scale/liu_qin/liu_qin_scale_07.mp3</item>
+	<item>hearing_system_music/folk_music_scale/liu_qin/liu_qin_scale_08.mp3</item>
+	</string-array>
+	
+	<string-array name="MaTouQinScaleFilePath">
+	<item>hearing_system_music/folk_music_scale/ma_tou_qin/ma_tou_qin_scale_01.mp3</item>
+	<item>hearing_system_music/folk_music_scale/ma_tou_qin/ma_tou_qin_scale_02.mp3</item>
+	<item>hearing_system_music/folk_music_scale/ma_tou_qin/ma_tou_qin_scale_03.mp3</item>
+	<item>hearing_system_music/folk_music_scale/ma_tou_qin/ma_tou_qin_scale_04.mp3</item>
+	<item>hearing_system_music/folk_music_scale/ma_tou_qin/ma_tou_qin_scale_05.mp3</item>
+	<item>hearing_system_music/folk_music_scale/ma_tou_qin/ma_tou_qin_scale_06.mp3</item>
+	<item>hearing_system_music/folk_music_scale/ma_tou_qin/ma_tou_qin_scale_07.mp3</item>
+	<item>hearing_system_music/folk_music_scale/ma_tou_qin/ma_tou_qin_scale_08.mp3</item>
+	</string-array>
+	
+	<string-array name="MandolinScaleFilePath">
+	<item>hearing_system_music/folk_music_scale/mandolin/mandolin_scale_01.mp3</item>
+	<item>hearing_system_music/folk_music_scale/mandolin/mandolin_scale_02.mp3</item>
+	<item>hearing_system_music/folk_music_scale/mandolin/mandolin_scale_03.mp3</item>
+	<item>hearing_system_music/folk_music_scale/mandolin/mandolin_scale_04.mp3</item>
+	<item>hearing_system_music/folk_music_scale/mandolin/mandolin_scale_05.mp3</item>
+	<item>hearing_system_music/folk_music_scale/mandolin/mandolin_scale_06.mp3</item>
+	<item>hearing_system_music/folk_music_scale/mandolin/mandolin_scale_07.mp3</item>
+	<item>hearing_system_music/folk_music_scale/mandolin/mandolin_scale_08.mp3</item>
+	</string-array>
+	
+	<string-array name="PiPaScaleFilePath">
+	<item>hearing_system_music/folk_music_scale/pi_pa/pi_pa_scale_01.mp3</item>
+	<item>hearing_system_music/folk_music_scale/pi_pa/pi_pa_scale_02.mp3</item>
+	<item>hearing_system_music/folk_music_scale/pi_pa/pi_pa_scale_03.mp3</item>
+	<item>hearing_system_music/folk_music_scale/pi_pa/pi_pa_scale_04.mp3</item>
+	<item>hearing_system_music/folk_music_scale/pi_pa/pi_pa_scale_05.mp3</item>
+	<item>hearing_system_music/folk_music_scale/pi_pa/pi_pa_scale_06.mp3</item>
+	<item>hearing_system_music/folk_music_scale/pi_pa/pi_pa_scale_07.mp3</item>
+	<item>hearing_system_music/folk_music_scale/pi_pa/pi_pa_scale_08.mp3</item>
+	</string-array>
+	
+	<string-array name="RuanScaleFilePath">
+	<item>hearing_system_music/folk_music_scale/ruan/ruan_scale_01.mp3</item>
+	<item>hearing_system_music/folk_music_scale/ruan/ruan_scale_02.mp3</item>
+	<item>hearing_system_music/folk_music_scale/ruan/ruan_scale_03.mp3</item>
+	<item>hearing_system_music/folk_music_scale/ruan/ruan_scale_04.mp3</item>
+	<item>hearing_system_music/folk_music_scale/ruan/ruan_scale_05.mp3</item>
+	<item>hearing_system_music/folk_music_scale/ruan/ruan_scale_06.mp3</item>
+	<item>hearing_system_music/folk_music_scale/ruan/ruan_scale_07.mp3</item>
+	<item>hearing_system_music/folk_music_scale/ruan/ruan_scale_08.mp3</item>
+	</string-array>
+	
+	<string-array name="ShakuhachiScaleFilePath">
+	<item>hearing_system_music/folk_music_scale/shakuhachi/shakuhachi_scale_01.mp3</item>
+	<item>hearing_system_music/folk_music_scale/shakuhachi/shakuhachi_scale_02.mp3</item>
+	<item>hearing_system_music/folk_music_scale/shakuhachi/shakuhachi_scale_03.mp3</item>
+	<item>hearing_system_music/folk_music_scale/shakuhachi/shakuhachi_scale_04.mp3</item>
+	<item>hearing_system_music/folk_music_scale/shakuhachi/shakuhachi_scale_05.mp3</item>
+	<item>hearing_system_music/folk_music_scale/shakuhachi/shakuhachi_scale_06.mp3</item>
+	<item>hearing_system_music/folk_music_scale/shakuhachi/shakuhachi_scale_07.mp3</item>
+	<item>hearing_system_music/folk_music_scale/shakuhachi/shakuhachi_scale_08.mp3</item>
+	</string-array>
+	
+	<string-array name="ShamisenScaleFilePath">
+	<item>hearing_system_music/folk_music_scale/shamisen/shamisen_scale_01.mp3</item>
+	<item>hearing_system_music/folk_music_scale/shamisen/shamisen_scale_02.mp3</item>
+	<item>hearing_system_music/folk_music_scale/shamisen/shamisen_scale_03.mp3</item>
+	<item>hearing_system_music/folk_music_scale/shamisen/shamisen_scale_04.mp3</item>
+	<item>hearing_system_music/folk_music_scale/shamisen/shamisen_scale_05.mp3</item>
+	<item>hearing_system_music/folk_music_scale/shamisen/shamisen_scale_06.mp3</item>
+	<item>hearing_system_music/folk_music_scale/shamisen/shamisen_scale_07.mp3</item>
+	<item>hearing_system_music/folk_music_scale/shamisen/shamisen_scale_08.mp3</item>
+	</string-array>
+	
+	<string-array name="ShengScaleFilePath">
+	<item>hearing_system_music/folk_music_scale/sheng/sheng_scale_01.mp3</item>
+	<item>hearing_system_music/folk_music_scale/sheng/sheng_scale_02.mp3</item>
+	<item>hearing_system_music/folk_music_scale/sheng/sheng_scale_03.mp3</item>
+	<item>hearing_system_music/folk_music_scale/sheng/sheng_scale_04.mp3</item>
+	<item>hearing_system_music/folk_music_scale/sheng/sheng_scale_05.mp3</item>
+	<item>hearing_system_music/folk_music_scale/sheng/sheng_scale_06.mp3</item>
+	<item>hearing_system_music/folk_music_scale/sheng/sheng_scale_07.mp3</item>
+	<item>hearing_system_music/folk_music_scale/sheng/sheng_scale_08.mp3</item>
+	</string-array>
+	
+	<string-array name="SitarScaleFilePath">
+	<item>hearing_system_music/folk_music_scale/sitar/sitar_scale_01.mp3</item>
+	<item>hearing_system_music/folk_music_scale/sitar/sitar_scale_02.mp3</item>
+	<item>hearing_system_music/folk_music_scale/sitar/sitar_scale_03.mp3</item>
+	<item>hearing_system_music/folk_music_scale/sitar/sitar_scale_04.mp3</item>
+	<item>hearing_system_music/folk_music_scale/sitar/sitar_scale_05.mp3</item>
+	<item>hearing_system_music/folk_music_scale/sitar/sitar_scale_06.mp3</item>
+	<item>hearing_system_music/folk_music_scale/sitar/sitar_scale_07.mp3</item>
+	<item>hearing_system_music/folk_music_scale/sitar/sitar_scale_08.mp3</item>
+	</string-array>
+	
+	<string-array name="SuoNaScaleFilePath">
+	<item>hearing_system_music/folk_music_scale/suo_na/suo_na_scale_01.mp3</item>
+	<item>hearing_system_music/folk_music_scale/suo_na/suo_na_scale_02.mp3</item>
+	<item>hearing_system_music/folk_music_scale/suo_na/suo_na_scale_03.mp3</item>
+	<item>hearing_system_music/folk_music_scale/suo_na/suo_na_scale_04.mp3</item>
+	<item>hearing_system_music/folk_music_scale/suo_na/suo_na_scale_05.mp3</item>
+	<item>hearing_system_music/folk_music_scale/suo_na/suo_na_scale_06.mp3</item>
+	<item>hearing_system_music/folk_music_scale/suo_na/suo_na_scale_07.mp3</item>
+	<item>hearing_system_music/folk_music_scale/suo_na/suo_na_scale_08.mp3</item>
+	</string-array>
+	
+	<string-array name="UilleannBagpipeScaleFilePath">
+	<item>hearing_system_music/folk_music_scale/uilleann_bagpipe/uilleann_bagpipe_scale_01.mp3</item>
+	<item>hearing_system_music/folk_music_scale/uilleann_bagpipe/uilleann_bagpipe_scale_02.mp3</item>
+	<item>hearing_system_music/folk_music_scale/uilleann_bagpipe/uilleann_bagpipe_scale_03.mp3</item>
+	<item>hearing_system_music/folk_music_scale/uilleann_bagpipe/uilleann_bagpipe_scale_04.mp3</item>
+	<item>hearing_system_music/folk_music_scale/uilleann_bagpipe/uilleann_bagpipe_scale_05.mp3</item>
+	<item>hearing_system_music/folk_music_scale/uilleann_bagpipe/uilleann_bagpipe_scale_06.mp3</item>
+	<item>hearing_system_music/folk_music_scale/uilleann_bagpipe/uilleann_bagpipe_scale_07.mp3</item>
+	<item>hearing_system_music/folk_music_scale/uilleann_bagpipe/uilleann_bagpipe_scale_08.mp3</item>
+	</string-array>
+	
+	<string-array name="XiaoScaleFilePath">
+	<item>hearing_system_music/folk_music_scale/xiao/xiao_scale_01.mp3</item>
+	<item>hearing_system_music/folk_music_scale/xiao/xiao_scale_02.mp3</item>
+	<item>hearing_system_music/folk_music_scale/xiao/xiao_scale_03.mp3</item>
+	<item>hearing_system_music/folk_music_scale/xiao/xiao_scale_04.mp3</item>
+	<item>hearing_system_music/folk_music_scale/xiao/xiao_scale_05.mp3</item>
+	<item>hearing_system_music/folk_music_scale/xiao/xiao_scale_06.mp3</item>
+	<item>hearing_system_music/folk_music_scale/xiao/xiao_scale_07.mp3</item>
+	<item>hearing_system_music/folk_music_scale/xiao/xiao_scale_08.mp3</item>
+	</string-array>
+	
+	<string-array name="ZhongScaleFilePath">
+	<item>hearing_system_music/folk_music_scale/zhong/zhong_scale_01.mp3</item>
+	<item>hearing_system_music/folk_music_scale/zhong/zhong_scale_02.mp3</item>
+	<item>hearing_system_music/folk_music_scale/zhong/zhong_scale_03.mp3</item>
+	<item>hearing_system_music/folk_music_scale/zhong/zhong_scale_04.mp3</item>
+	<item>hearing_system_music/folk_music_scale/zhong/zhong_scale_05.mp3</item>
+	<item>hearing_system_music/folk_music_scale/zhong/zhong_scale_06.mp3</item>
+	<item>hearing_system_music/folk_music_scale/zhong/zhong_scale_07.mp3</item>
+	<item>hearing_system_music/folk_music_scale/zhong/zhong_scale_08.mp3</item>
+	</string-array>
+	
+	<string-array name="BanScaleFilePath">
+	<item>hearing_system_music/percussion_scale/ban/ban_scale_01.mp3</item>
+	</string-array>
+	
+	<string-array name="BongoScaleFilePath">
+	<item>hearing_system_music/percussion_scale/bongo/bongo_scale_01.mp3</item>
+	</string-array>
+	
+	<string-array name="CabasaScaleFilePath">
+	<item>hearing_system_music/percussion_scale/cabasa/cabasa_scale_01.mp3</item>
+	</string-array>
+	
+	<string-array name="CongaScaleFilePath">
+	<item>hearing_system_music/percussion_scale/conga/conga_scale_01.mp3</item>
+	</string-array>
+	
+	<string-array name="CowBellScaleFilePath">
+	<item>hearing_system_music/percussion_scale/cow_bell/cow_bell_scale_01.mp3</item>
+	</string-array>
+	
+	<string-array name="CymbalsScaleFilePath">
+	<item>hearing_system_music/percussion_scale/cymbals/cymbals_scale_01.mp3</item>
+	</string-array>
+	
+	<string-array name="DaLuoScaleFilePath">
+	<item>hearing_system_music/percussion_scale/da_luo/</item>
+	</string-array>
+	
+	<string-array name="GuoScaleFilePath">
+	<item>hearing_system_music/percussion_scale/guo/guo_scale_01.mp3</item>
+	</string-array>
+	
+	<string-array name="KickScaleFilePath">
+	<item>hearing_system_music/percussion_scale/kick/kick_scale_01.mp3</item>
+	</string-array>
+	
+	<string-array name="SnareScaleFilePath">
+	<item>hearing_system_music/percussion_scale/snare/snare_scale_01.mp3</item>
+	</string-array>
+	
+	<string-array name="TaikoDrumsScaleFilePath">
+	<item>hearing_system_music/percussion_scale/taiko_drums/taiko_drums_scale_01.mp3</item>
+	</string-array>
+	
+	<string-array name="TambourineScaleFilePath">
+	<item>hearing_system_music/percussion_scale/tambourine/tambourine_scale_01.mp3</item>
+	</string-array>
+	
+	<string-array name="TimbalesScaleFilePath">
+	<item>hearing_system_music/percussion_scale/timbales/timbales_scale_01.mp3</item>
+	</string-array>
+	
+	<string-array name="TimpaniScaleFilePath">
+	<item>hearing_system_music/percussion_scale/timpani/timpani_scale_01.mp3</item>
+	</string-array>
+	
+	<string-array name="TriangleScaleFilePath">
+	<item>hearing_system_music/percussion_scale/triangle/triangle_scale_01.mp3</item>
+	</string-array>
+	
+	<string-array name="WoodblockScaleFilePath">
+	<item>hearing_system_music/percussion_scale/woodblock/woodblock_scale_01.mp3</item>
+	</string-array>
+	
+	<string-array name="XiaoLuoScaleFilePath">
+	<item>hearing_system_music/percussion_scale/xiao_luo/xiao_luo_scale_01.mp3</item>
+	</string-array>
+	
+	<string-array name="CymbalsRhythmFilePath">
+	<item>hearing_system_music/percussion_rhythm/cymbals/cymbals_rhythm_01.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/cymbals/cymbals_rhythm_02.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/cymbals/cymbals_rhythm_03.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/cymbals/cymbals_rhythm_04.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/cymbals/cymbals_rhythm_05.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/cymbals/cymbals_rhythm_06.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/cymbals/cymbals_rhythm_07.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/cymbals/cymbals_rhythm_08.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/cymbals/cymbals_rhythm_09.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/cymbals/cymbals_rhythm_10.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/cymbals/cymbals_rhythm_11.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/cymbals/cymbals_rhythm_12.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/cymbals/cymbals_rhythm_13.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/cymbals/cymbals_rhythm_14.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/cymbals/cymbals_rhythm_15.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/cymbals/cymbals_rhythm_16.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/cymbals/cymbals_rhythm_17.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/cymbals/cymbals_rhythm_18.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/cymbals/cymbals_rhythm_19.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/cymbals/cymbals_rhythm_20.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/cymbals/cymbals_rhythm_21.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/cymbals/cymbals_rhythm_22.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/cymbals/cymbals_rhythm_23.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/cymbals/cymbals_rhythm_24.mp3</item>
+	</string-array>
+	
+	<string-array name="GlockRhythmFilePath">
+	<item>hearing_system_music/percussion_rhythm/glock/glock_rhythm_01.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/glock/glock_rhythm_02.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/glock/glock_rhythm_03.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/glock/glock_rhythm_04.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/glock/glock_rhythm_05.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/glock/glock_rhythm_06.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/glock/glock_rhythm_07.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/glock/glock_rhythm_08.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/glock/glock_rhythm_09.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/glock/glock_rhythm_10.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/glock/glock_rhythm_11.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/glock/glock_rhythm_12.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/glock/glock_rhythm_13.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/glock/glock_rhythm_14.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/glock/glock_rhythm_15.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/glock/glock_rhythm_16.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/glock/glock_rhythm_17.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/glock/glock_rhythm_18.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/glock/glock_rhythm_19.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/glock/glock_rhythm_20.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/glock/glock_rhythm_21.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/glock/glock_rhythm_22.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/glock/glock_rhythm_23.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/glock/glock_rhythm_24.mp3</item>
+	</string-array>
+	
+	<string-array name="GuoRhythmFilePath">
+	<item>hearing_system_music/percussion_rhythm/guo/guo_rhythm_01.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/guo/guo_rhythm_02.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/guo/guo_rhythm_03.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/guo/guo_rhythm_04.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/guo/guo_rhythm_05.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/guo/guo_rhythm_06.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/guo/guo_rhythm_07.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/guo/guo_rhythm_08.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/guo/guo_rhythm_09.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/guo/guo_rhythm_10.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/guo/guo_rhythm_11.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/guo/guo_rhythm_12.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/guo/guo_rhythm_13.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/guo/guo_rhythm_14.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/guo/guo_rhythm_15.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/guo/guo_rhythm_16.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/guo/guo_rhythm_17.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/guo/guo_rhythm_18.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/guo/guo_rhythm_19.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/guo/guo_rhythm_20.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/guo/guo_rhythm_21.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/guo/guo_rhythm_22.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/guo/guo_rhythm_23.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/guo/guo_rhythm_24.mp3</item>
+	</string-array>
+	
+	<string-array name="KickRhythmFilePath">
+	<item>hearing_system_music/percussion_rhythm/kick/kick_rhythm_01.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/kick/kick_rhythm_02.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/kick/kick_rhythm_03.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/kick/kick_rhythm_04.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/kick/kick_rhythm_05.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/kick/kick_rhythm_06.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/kick/kick_rhythm_07.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/kick/kick_rhythm_08.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/kick/kick_rhythm_09.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/kick/kick_rhythm_10.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/kick/kick_rhythm_11.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/kick/kick_rhythm_12.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/kick/kick_rhythm_13.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/kick/kick_rhythm_14.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/kick/kick_rhythm_15.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/kick/kick_rhythm_16.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/kick/kick_rhythm_17.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/kick/kick_rhythm_18.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/kick/kick_rhythm_19.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/kick/kick_rhythm_20.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/kick/kick_rhythm_21.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/kick/kick_rhythm_22.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/kick/kick_rhythm_23.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/kick/kick_rhythm_24.mp3</item>
+	</string-array>
+	
+	<string-array name="PianoRhythmFilePath">
+	<item>hearing_system_music/percussion_rhythm/piano/piano_rhythm_01.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/piano/piano_rhythm_02.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/piano/piano_rhythm_03.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/piano/piano_rhythm_04.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/piano/piano_rhythm_05.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/piano/piano_rhythm_06.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/piano/piano_rhythm_07.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/piano/piano_rhythm_08.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/piano/piano_rhythm_09.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/piano/piano_rhythm_10.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/piano/piano_rhythm_11.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/piano/piano_rhythm_12.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/piano/piano_rhythm_13.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/piano/piano_rhythm_14.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/piano/piano_rhythm_15.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/piano/piano_rhythm_16.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/piano/piano_rhythm_17.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/piano/piano_rhythm_18.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/piano/piano_rhythm_19.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/piano/piano_rhythm_20.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/piano/piano_rhythm_21.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/piano/piano_rhythm_22.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/piano/piano_rhythm_23.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/piano/piano_rhythm_24.mp3</item>
+	</string-array>
+	
+	<string-array name="SnareRhythmFilePath">
+	<item>hearing_system_music/percussion_rhythm/snare/snare_rhythm_01.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/snare/snare_rhythm_02.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/snare/snare_rhythm_03.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/snare/snare_rhythm_04.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/snare/snare_rhythm_05.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/snare/snare_rhythm_06.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/snare/snare_rhythm_07.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/snare/snare_rhythm_08.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/snare/snare_rhythm_09.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/snare/snare_rhythm_10.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/snare/snare_rhythm_11.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/snare/snare_rhythm_12.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/snare/snare_rhythm_13.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/snare/snare_rhythm_14.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/snare/snare_rhythm_15.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/snare/snare_rhythm_16.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/snare/snare_rhythm_17.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/snare/snare_rhythm_18.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/snare/snare_rhythm_19.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/snare/snare_rhythm_20.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/snare/snare_rhythm_21.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/snare/snare_rhythm_22.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/snare/snare_rhythm_23.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/snare/snare_rhythm_24.mp3</item>
+	</string-array>
+	
+	<string-array name="TriangleRhythmFilePath">
+	<item>hearing_system_music/percussion_rhythm/triangle/triangle_rhythm_01.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/triangle/triangle_rhythm_02.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/triangle/triangle_rhythm_03.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/triangle/triangle_rhythm_04.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/triangle/triangle_rhythm_05.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/triangle/triangle_rhythm_06.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/triangle/triangle_rhythm_07.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/triangle/triangle_rhythm_08.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/triangle/triangle_rhythm_09.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/triangle/triangle_rhythm_10.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/triangle/triangle_rhythm_11.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/triangle/triangle_rhythm_12.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/triangle/triangle_rhythm_13.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/triangle/triangle_rhythm_14.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/triangle/triangle_rhythm_15.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/triangle/triangle_rhythm_16.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/triangle/triangle_rhythm_17.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/triangle/triangle_rhythm_18.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/triangle/triangle_rhythm_19.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/triangle/triangle_rhythm_20.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/triangle/triangle_rhythm_21.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/triangle/triangle_rhythm_22.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/triangle/triangle_rhythm_23.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/triangle/triangle_rhythm_24.mp3</item>
+	</string-array>
+	
+	<string-array name="TrumpetRhythmFilePath">
+	<item>hearing_system_music/percussion_rhythm/trumpet/trumpet_rhythm_01.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/trumpet/trumpet_rhythm_02.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/trumpet/trumpet_rhythm_03.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/trumpet/trumpet_rhythm_04.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/trumpet/trumpet_rhythm_05.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/trumpet/trumpet_rhythm_06.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/trumpet/trumpet_rhythm_07.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/trumpet/trumpet_rhythm_08.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/trumpet/trumpet_rhythm_09.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/trumpet/trumpet_rhythm_10.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/trumpet/trumpet_rhythm_11.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/trumpet/trumpet_rhythm_12.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/trumpet/trumpet_rhythm_13.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/trumpet/trumpet_rhythm_14.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/trumpet/trumpet_rhythm_15.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/trumpet/trumpet_rhythm_16.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/trumpet/trumpet_rhythm_17.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/trumpet/trumpet_rhythm_18.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/trumpet/trumpet_rhythm_19.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/trumpet/trumpet_rhythm_20.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/trumpet/trumpet_rhythm_21.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/trumpet/trumpet_rhythm_22.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/trumpet/trumpet_rhythm_23.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/trumpet/trumpet_rhythm_24.mp3</item>
+	</string-array>
+	
+	<string-array name="WoodblockRhythmFilePath">
+	<item>hearing_system_music/percussion_rhythm/woodblock/woodblock_rhythm_01.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/woodblock/woodblock_rhythm_02.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/woodblock/woodblock_rhythm_03.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/woodblock/woodblock_rhythm_04.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/woodblock/woodblock_rhythm_05.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/woodblock/woodblock_rhythm_06.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/woodblock/woodblock_rhythm_07.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/woodblock/woodblock_rhythm_08.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/woodblock/woodblock_rhythm_09.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/woodblock/woodblock_rhythm_10.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/woodblock/woodblock_rhythm_11.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/woodblock/woodblock_rhythm_12.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/woodblock/woodblock_rhythm_13.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/woodblock/woodblock_rhythm_14.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/woodblock/woodblock_rhythm_15.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/woodblock/woodblock_rhythm_16.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/woodblock/woodblock_rhythm_17.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/woodblock/woodblock_rhythm_18.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/woodblock/woodblock_rhythm_19.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/woodblock/woodblock_rhythm_20.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/woodblock/woodblock_rhythm_21.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/woodblock/woodblock_rhythm_22.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/woodblock/woodblock_rhythm_23.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/woodblock/woodblock_rhythm_24.mp3</item>
+	</string-array>
+	
+	<string-array name="MetronomeRhythmFilePath">
+	<item>hearing_system_music/percussion_rhythm/metronome/metronome_rhythm_2.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/metronome/metronome_rhythm_3.mp3</item>
+	<item>hearing_system_music/percussion_rhythm/metronome/metronome_rhythm_4.mp3</item>
+	</string-array>
+	
+	<string-array name="MelodyFilePath">
+	<item>hearing_system_music/melody/accordian.mp3</item>
+	<item>hearing_system_music/melody/acoustic_guitar.mp3</item>
+	<item>hearing_system_music/melody/bassoon.mp3</item>
+	<item>hearing_system_music/melody/cello.mp3</item>
+	<item>hearing_system_music/melody/church_organ.mp3</item>
+	<item>hearing_system_music/melody/clarinet.mp3</item>
+	<item>hearing_system_music/melody/electric_bass.mp3</item>
+	<item>hearing_system_music/melody/electric_guitar.mp3</item>
+	<item>hearing_system_music/melody/electric_piano.mp3</item>
+	<item>hearing_system_music/melody/flute.mp3</item>
+	<item>hearing_system_music/melody/french_horn.mp3</item>
+	<item>hearing_system_music/melody/glock.mp3</item>
+	<item>hearing_system_music/melody/harp.mp3</item>
+	<item>hearing_system_music/melody/harpsichord.mp3</item>
+	<item>hearing_system_music/melody/oboe.mp3</item>
+	<item>hearing_system_music/melody/piano.mp3</item>
+	<item>hearing_system_music/melody/piccolo.mp3</item>
+	<item>hearing_system_music/melody/sax.mp3</item>
+	<item>hearing_system_music/melody/trombone.mp3</item>
+	<item>hearing_system_music/melody/trumpet.mp3</item>
+	<item>hearing_system_music/melody/tuba.mp3</item>
+	<item>hearing_system_music/melody/tubular_bells.mp3</item>
+	<item>hearing_system_music/melody/viola.mp3</item>
+	<item>hearing_system_music/melody/violin.mp3</item>
+	<item>hearing_system_music/melody/xylophone.mp3</item>
+	
+	<item>hearing_system_music/melody/banjo.mp3</item>
+	<item>hearing_system_music/melody/dizi.mp3</item>
+	<item>hearing_system_music/melody/dulcimer.mp3</item>
+	<item>hearing_system_music/melody/erhu.mp3</item>
+	<item>hearing_system_music/melody/gu_zheng.mp3</item>
+	<item>hearing_system_music/melody/irish_whistle.mp3</item>
+	<item>hearing_system_music/melody/liu_qin.mp3</item>
+	<item>hearing_system_music/melody/ma_tou_qin.mp3</item>
+	<item>hearing_system_music/melody/mandolin.mp3</item>
+	<item>hearing_system_music/melody/pi_pa.mp3</item>
+	<item>hearing_system_music/melody/ruan.mp3</item>
+	<item>hearing_system_music/melody/shakuhachi.mp3</item>
+	<item>hearing_system_music/melody/shamisen.mp3</item>
+	<item>hearing_system_music/melody/sheng.mp3</item>
+	<item>hearing_system_music/melody/sitar.mp3</item>
+	<item>hearing_system_music/melody/suo_na.mp3</item>
+	<item>hearing_system_music/melody/uilleann_bagpipe.mp3</item>
+	<item>hearing_system_music/melody/xiao.mp3</item>
+	<item>hearing_system_music/melody/zhong.mp3</item>
+	
+	<item>hearing_system_music/melody/ban.mp3</item>
+	<item>hearing_system_music/melody/bongo.mp3</item>
+	<item>hearing_system_music/melody/cabasa.mp3</item>
+	<item>hearing_system_music/melody/conga.mp3</item>
+	<item>hearing_system_music/melody/cow_bell.mp3</item>
+	<item>hearing_system_music/melody/cymbals.mp3</item>
+	<item>hearing_system_music/melody/da_luo.mp3</item>
+	<item>hearing_system_music/melody/guo.mp3</item>
+	<item>hearing_system_music/melody/kick.mp3</item>
+	<item>hearing_system_music/melody/snare.mp3</item>
+	<item>hearing_system_music/melody/taiko_drums.mp3</item>
+	<item>hearing_system_music/melody/tambourine.mp3</item>
+	<item>hearing_system_music/melody/timbales.mp3</item>
+	<item>hearing_system_music/melody/timpani.mp3</item>
+	<item>hearing_system_music/melody/triangle.mp3</item>
+	<item>hearing_system_music/melody/woodblock.mp3</item>
+	<item>hearing_system_music/melody/xiao_luo.mp3</item>
+	</string-array>
+</resources>

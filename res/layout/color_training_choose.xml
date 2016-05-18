@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:flex="http://schemas.android.com/apk/res/com.flextronics.cn.activity"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+  	<include android:id="@+id/line1" layout="@layout/included_line1" />
+  	
+  	<TextView 
+		android:text="@string/choose_testing_type" 
+		android:id="@+id/TextView101" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentTop="true"
+		android:layout_marginTop="180dip"
+		android:layout_marginLeft="80dip"
+		android:textSize="20sp"/>
+	<com.flextronics.cn.ui.LinearLayoutBtnGroup
+		android:id="@+id/LinearLayoutBtnGroup01"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerInParent="true"
+		flex:selected_index="0">
+	  	<com.flextronics.cn.ui.LinearLayoutBtn
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			flex:image_normal_src="@drawable/ui_linearlayout_btn_1"
+			flex:image_pressing_src="@drawable/ui_linearlayout_btn_backgd"
+			flex:image_pressed_src="@drawable/ui_linearlayout_btn_3"
+			flex:btn_value="RESPONSE_TRAINING"
+			flex:btn_text_color_normal="#666666"
+			flex:btn_text_color_pressed="#FFFFFF"
+			flex:btn_text_normal_size="20"
+			flex:btn_text="@string/response_training"/>
+	  	<com.flextronics.cn.ui.LinearLayoutBtn
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="50dip"
+			flex:image_normal_src="@drawable/ui_linearlayout_btn_1"
+			flex:image_pressing_src="@drawable/ui_linearlayout_btn_backgd"
+			flex:image_pressed_src="@drawable/ui_linearlayout_btn_3"
+			flex:btn_value="MEMORY_TRAINING"
+			flex:btn_text_color_normal="#666666"
+			flex:btn_text_color_pressed="#FFFFFF"
+			flex:btn_text_normal_size="20"
+			flex:btn_text="@string/memory_training"/>
+	</com.flextronics.cn.ui.LinearLayoutBtnGroup>
+	
+	<include layout="@layout/included_left_bottom"/>
+</RelativeLayout>

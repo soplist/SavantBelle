@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/background_crystal</item>
+    </style>
+    <style name="cs_choose_bit_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/cs_choose_params_dialog_backgd</item>
+    </style>
+</resources> 

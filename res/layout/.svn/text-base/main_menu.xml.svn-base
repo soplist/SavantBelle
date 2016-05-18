@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+  
+  	<RelativeLayout
+		android:layout_width="840dip" 
+		android:layout_height="470dip"
+		android:background="@drawable/white_border_2"
+		android:layout_centerInParent="true"/> 	
+		
+	<LinearLayout 		
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerInParent="true"
+		android:orientation="vertical">
+		<LinearLayout 		
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">			
+			<ImageView 
+				android:id="@+id/ImageView_MainMenu_1"
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical"
+				android:src="@drawable/menu1"
+				android:layout_margin="15dip" />		
+			<ImageView 
+				android:id="@+id/ImageView_MainMenu_2"
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical"
+				android:src="@drawable/menu2"
+				android:layout_margin="15dip"/>		
+			<ImageView 
+				android:id="@+id/ImageView_MainMenu_3"
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical"
+				android:src="@drawable/menu3"
+				android:layout_margin="15dip"/>		
+			<ImageView 
+				android:id="@+id/ImageView_MainMenu_4"
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical"
+				android:src="@drawable/menu4"
+				android:layout_margin="15dip"/>
+		</LinearLayout>
+		
+		<LinearLayout 		
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">			
+			<ImageView 
+				android:id="@+id/ImageView_MainMenu_5"
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical"
+				android:src="@drawable/menu5"
+				android:layout_margin="15dip"/>		
+			<ImageView 
+				android:id="@+id/ImageView_MainMenu_6"
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical"
+				android:src="@drawable/menu6"
+				android:layout_margin="15dip"/>		
+			<ImageView 
+				android:id="@+id/ImageView_MainMenu_7"
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical"
+				android:src="@drawable/menu7"
+				android:layout_margin="15dip"/>		
+			<ImageView 
+				android:id="@+id/ImageView_MainMenu_8"
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical"
+				android:src="@drawable/menu8"
+				android:layout_margin="15dip"/>
+		</LinearLayout>
+		
+		<TextView
+			android:id="@+id/TextView_MenuComments"
+	  		android:layout_width="match_parent" 
+	  		android:layout_height="wrap_content"
+	  		android:textColor="#fff"
+			android:layout_marginTop="20dip"
+			android:layout_marginBottom="10dip"
+			android:gravity="center_horizontal"/>
+		
+		<ImageView 
+			android:layout_width="match_parent" 
+			android:layout_height="wrap_content"
+			android:gravity="center_horizontal"
+			android:src="@drawable/menu_block"/>
+	</LinearLayout>
+</RelativeLayout>

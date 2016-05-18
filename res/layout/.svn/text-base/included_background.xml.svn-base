@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+	android:id="@+id/included_relative_layout"
+  	xmlns:android="http://schemas.android.com/apk/res/android"
+  	android:layout_width="fill_parent"
+  	android:layout_height="fill_parent" 
+  	android:background="@drawable/base_background">
+	<RelativeLayout
+		android:id="@+id/RelativeLayout_01"
+		android:layout_width="940dip" 
+		android:layout_height="660dip"
+		android:background="@drawable/white_border_1"
+		android:layout_centerInParent="true"/>	
+</RelativeLayout>

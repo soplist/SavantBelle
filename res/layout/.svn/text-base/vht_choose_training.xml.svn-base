@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:flex="http://schemas.android.com/apk/res/com.flextronics.cn.activity"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+	<include android:id="@+id/line1" layout="@layout/included_line1" />
+	
+	<ScrollView		
+		android:layout_width="wrap_content"
+		android:layout_height="450dip"
+		android:layout_centerInParent="true">
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:layout_gravity="top">
+			<!-- 选择感官类型 -->
+		  	<com.flextronics.cn.ui.ParamPanel 
+				android:id="@+id/ParamPanel01"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				flex:content="@+id/LinearLayoutBtnGroup01"
+				flex:text="@string/sense_type">
+				<!-- 视觉 听觉 触觉 ..... -->				
+			    <com.flextronics.cn.ui.LinearLayoutBtnGroup
+					android:id="@+id/LinearLayoutBtnGroup01"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					flex:selected_index="0"
+					android:background="@drawable/ui_param_panel_content_backgd"
+					android:layout_marginTop="-8dip"
+					android:layout_marginLeft="6dip"
+					android:layout_marginRight="8dip">
+				  	<com.flextronics.cn.ui.LinearLayoutBtn
+						android:layout_width="wrap_content" 
+						android:layout_height="wrap_content"
+						flex:image_normal_src="@drawable/ui_linearlayout_btn_1"
+						flex:image_pressing_src="@drawable/ui_linearlayout_btn_backgd"
+						flex:image_pressed_src="@drawable/ui_linearlayout_btn_3"
+						flex:btn_value="VISION_TOUCH"
+						flex:btn_text_color_normal="#B2B2B2"
+						flex:btn_text_color_pressed="#FFFFFF"
+						flex:btn_text_normal_size="17"
+						flex:btn_text="@string/vision_touch"/>
+				  	<com.flextronics.cn.ui.LinearLayoutBtn
+						android:layout_width="wrap_content" 
+						android:layout_height="wrap_content"
+						flex:image_normal_src="@drawable/ui_linearlayout_btn_1"
+						flex:image_pressing_src="@drawable/ui_linearlayout_btn_backgd"
+						flex:image_pressed_src="@drawable/ui_linearlayout_btn_3"
+						flex:btn_value="HEARING_TOUCH"
+						flex:btn_text_color_normal="#B2B2B2"
+						flex:btn_text_color_pressed="#FFFFFF"
+						flex:btn_text_normal_size="17"
+						flex:btn_text="@string/hearing_touch"/>	
+				  	<com.flextronics.cn.ui.LinearLayoutBtn
+						android:layout_width="wrap_content" 
+						android:layout_height="wrap_content"
+						flex:image_normal_src="@drawable/ui_linearlayout_btn_1"
+						flex:image_pressing_src="@drawable/ui_linearlayout_btn_backgd"
+						flex:image_pressed_src="@drawable/ui_linearlayout_btn_3"
+						flex:btn_value="VISION_HEARING_TOUCH"
+						flex:btn_text_color_normal="#B2B2B2"
+						flex:btn_text_color_pressed="#FFFFFF"
+						flex:btn_text_normal_size="17"
+						flex:btn_text="@string/vision_hearing_touch"/>
+				</com.flextronics.cn.ui.LinearLayoutBtnGroup>
+			</com.flextronics.cn.ui.ParamPanel>
+			
+			
+			<!-- 反应训练/记忆训练 ..... -->
+			<com.flextronics.cn.ui.ParamPanel 
+				android:id="@+id/ParamPanel02"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="40dip"
+				flex:content="@+id/LinearLayoutBtnGroup02"
+				flex:text="@string/training_type">
+				<!-- 视觉 听觉 触觉 ..... -->				
+			    <com.flextronics.cn.ui.LinearLayoutBtnGroup
+					android:id="@+id/LinearLayoutBtnGroup02"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					flex:selected_index="0"
+					android:background="@drawable/ui_param_panel_content_backgd"
+					android:layout_marginTop="-8dip"
+					android:layout_marginLeft="6dip"
+					android:layout_marginRight="8dip">
+				  	<com.flextronics.cn.ui.LinearLayoutBtn
+						android:layout_width="wrap_content" 
+						android:layout_height="wrap_content"
+						flex:image_normal_src="@drawable/ui_linearlayout_btn_1"
+						flex:image_pressing_src="@drawable/ui_linearlayout_btn_backgd"
+						flex:image_pressed_src="@drawable/ui_linearlayout_btn_3"
+						flex:btn_value="RESPONSE_TRAINING"
+						flex:btn_text_color_normal="#B2B2B2"
+						flex:btn_text_color_pressed="#FFFFFF"
+						flex:btn_text_normal_size="17"
+						flex:btn_text="@string/response_training"/>
+				  	<com.flextronics.cn.ui.LinearLayoutBtn
+						android:layout_width="wrap_content" 
+						android:layout_height="wrap_content"
+						flex:image_normal_src="@drawable/ui_linearlayout_btn_1"
+						flex:image_pressing_src="@drawable/ui_linearlayout_btn_backgd"
+						flex:image_pressed_src="@drawable/ui_linearlayout_btn_3"
+						flex:btn_value="MEMORY_TRAINING"
+						flex:btn_text_color_normal="#B2B2B2"
+						flex:btn_text_color_pressed="#FFFFFF"
+						flex:btn_text_normal_size="17"
+						flex:btn_text="@string/memory_training"/>
+				</com.flextronics.cn.ui.LinearLayoutBtnGroup>
+			</com.flextronics.cn.ui.ParamPanel>
+			
+			
+			<!-- 选择操作模式 -->
+		  	<com.flextronics.cn.ui.ParamPanel 
+				android:id="@+id/ParamPanel03"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="40dip"
+				flex:content="@+id/LinearLayoutBtnGroup03"
+				flex:text="@string/operation_mode">
+				<!-- 按键 + 触摸屏  ..... -->				
+			    <com.flextronics.cn.ui.LinearLayoutBtnGroup
+					android:id="@+id/LinearLayoutBtnGroup03"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					flex:selected_index="0"
+					android:background="@drawable/ui_param_panel_content_backgd"
+					android:layout_marginTop="-8dip"
+					android:layout_marginLeft="6dip"
+					android:layout_marginRight="8dip">
+				  	<com.flextronics.cn.ui.LinearLayoutBtn
+						android:layout_width="wrap_content" 
+						android:layout_height="wrap_content"
+						flex:image_normal_src="@drawable/ui_linearlayout_btn_1"
+						flex:image_pressing_src="@drawable/ui_linearlayout_btn_backgd"
+						flex:image_pressed_src="@drawable/ui_linearlayout_btn_3"
+						flex:btn_value="TOUCH_SCREEN"
+						flex:btn_text_color_normal="#B2B2B2"
+						flex:btn_text_color_pressed="#FFFFFF"
+						flex:btn_text_normal_size="17"
+						flex:btn_text="@string/touch_screen"/>
+				  	<com.flextronics.cn.ui.LinearLayoutBtn
+						android:layout_width="wrap_content" 
+						android:layout_height="wrap_content"
+						flex:image_normal_src="@drawable/ui_linearlayout_btn_1"
+						flex:image_pressing_src="@drawable/ui_linearlayout_btn_backgd"
+						flex:image_pressed_src="@drawable/ui_linearlayout_btn_3"
+						flex:btn_value="KEYSTOKE"
+						flex:btn_text_color_normal="#B2B2B2"
+						flex:btn_text_color_pressed="#FFFFFF"
+						flex:btn_text_normal_size="17"
+						flex:btn_text="@string/keystoke"/>	
+				  	<com.flextronics.cn.ui.LinearLayoutBtn
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						flex:image_normal_src="@drawable/ui_linearlayout_btn_1"
+						flex:image_pressing_src="@drawable/ui_linearlayout_btn_backgd"
+						flex:image_pressed_src="@drawable/ui_linearlayout_btn_3"
+						flex:btn_value="TOUCH_SCREEN_KEYSTOKE"
+						flex:btn_text_color_normal="#B2B2B2"
+						flex:btn_text_color_pressed="#FFFFFF"
+						flex:btn_text_normal_size="17"
+						flex:btn_text="@string/touch_screen_keystoke"/>
+				</com.flextronics.cn.ui.LinearLayoutBtnGroup>
+			</com.flextronics.cn.ui.ParamPanel>
+		</LinearLayout>
+	</ScrollView>
+	
+	<include layout="@layout/included_left_bottom"/>
+</RelativeLayout>

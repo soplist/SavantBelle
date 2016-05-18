@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 此文件用于保存A模块的所用到的字符串 ，公用字符串在strings.xml中定义， 其余模块均定义在相应的strings_x.xml文件中。
+	 字符串的命名请严格遵循以下约定:
+		1.尽量用英文命名; 2.所有单词均小写; 3.单词之间用下划线相隔; 4.所有字符串请按首字母(仅限首字母)升序排列。
+	如下所示：
+		<string name="an_qing">安庆</string>
+		<string name="an_hui">安徽</string>
+		<string name="an_yang">安阳</string>
+		<string name="bei_jing">北京</string>
+		<string name="bei_fang">北方</string>
+		<string name="cheng_du">成都</string>
+		<string name="chong_qing">重庆</string>
+		<string name="hello_world">你好，世界！</string>
+-->
+<resources>
+	<string name="answer_type">回应类型</string>
+	<string name="colors">颜色</string>		
+	<string name="choose_testing_type">选择测试类型</string>
+	<string name="common_marks">一般记号</string>
+    <string name="dominant_hand">优势手</string>
+    <string name="english_letters">英文字母</string>		
+    <string name="fixed_point">定点回应</string>
+	<string name="fore_finger">食指键</string>
+	<string name="hearing_touch">听觉+触觉</string>
+	<string name="hearing_touch_memory_training_key">听觉+触觉｜记忆训练｜控制键操作</string>
+	<string name="hearing_touch_response_training_key">听觉+触觉｜反应训练｜控制键操作</string>
+	<string name="hearing_touch_sample_choose">听觉+触觉部分 受测样本选择</string>	
+	<string name="instead">替代回应</string>
+	<string name="keystoke">按键</string>
+	<string name="left_bottom_line_vtmt_touch">────────────────────────────────────────────</string>
+    <string name="left_hand">左手</string>
+    <string name="memory_training">记忆训练</string>
+    <string name="numbers">阿拉伯数字</string>		
+	<string name="music_type">乐器类型</string>
+    <string name="music_count">乐器数量</string>    
+    <string name="music_marks">音乐记号</string>		
+    <string name="middle_finger">中指键</string>
+    <string name="operation_mode">操作方式</string>
+    <string name="original_key">原始键反应</string>
+	<string name="opposite_key">对应键反应</string>
+    <string name="reflect">反射回应</string>
+    <string name="response_training">反应训练</string>
+    <string name="rome_numbers">罗马数字</string>
+    <string name="right_hand">右手</string>   	
+   	<string name="redom_music">随机乐器</string>
+    <string name="redom_scale">随机音阶</string>
+    <string name="response_type">反应类型</string>
+   	<string name="redom_sample">随机多种样本</string>
+    <string name="sample">受测样本</string>			
+   	<string name="setting_single_sample">设定单一样本</string>
+   	<string name="self_choose_single_sample">自选单一样本</string>
+   	<string name="setting_multi_sample">设定多种样本</string>
+   	<string name="self_choose_multi_sample">自选多种样本</string>
+    <string name="second">秒</string>
+    <string name="sense_type">感官类型</string>
+    <string name="setting">设定</string>
+   	<string name="setting_single_scale">设定单一音阶</string>
+   	<string name="self_choose_single_scale">自选单一音阶</string>
+   	<string name="setting_multi_scale">设定多种音阶</string>
+   	<string name="self_choose_multi_scale">自选多种音阶</string>
+   	<string name="setting_single_music">设定单一乐器</string>
+   	<string name="self_choose_single_music">自选单一乐器</string>
+   	<string name="setting_multi_music">设定多种乐器</string>
+   	<string name="self_choose_multi_music">自选多种乐器</string>
+   	<string name="setting_two_sample">设定2种样本</string>
+   	<string name="setting_two_scale">设定2种音阶</string>
+   	<string name="self_choose_two_scale">自选2种音阶</string>
+   	<string name="self_choose_two_sample">自选2种样本</string>
+   	<string name="setting_three_scale">设定3种音阶</string>
+   	<string name="self_choose_three_scale">自选3种音阶</string>
+   	<string name="scale_count">音阶数</string>   	
+   	<string name="shapes">形状</string>		
+   	<string name="testing_time">测试时间</string>
+   	<string name="third_finger">无名指键</string>
+   	<string name="touch_screen">触摸屏</string>
+   	<string name="touch_screen_keystoke">触摸屏+按键</string>
+   	<string name="training_type">训练类型</string>
+   	<string name="vision_touch">视觉+触觉</string>
+   	<string name="vision_hearing_touch">视觉+听觉+触觉</string>
+   	<string name="vision_touch_sample_choose">视觉+触觉部分 受测样本选择</string>
+	<string name="vision_touch_response_training_touch_screen">视觉+触觉｜反应训练｜触摸屏操作</string>
+	<string name="vision_touch_response_training_key">视觉+触觉｜反应训练｜控制键操作</string>
+	<string name="vision_touch_memory_training_touch_screen">视觉+触觉｜记忆训练｜触摸屏操作</string>
+	<string name="vision_touch_memory_training_key">视觉+触觉｜记忆训练｜控制键操作</string>
+	<string name="vision_hearing_touch_integration_training">视觉•听觉•触觉 整合训练</string>
+	<string name="white">白光</string>		
+	<string name="yue_qi">乐器</string>
+	<string name="yin_jie">音阶</string>
+    <string name="zhong">种</string>
+</resources>

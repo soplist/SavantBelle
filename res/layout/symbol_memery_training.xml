@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:flex="http://schemas.android.com/apk/res/com.flextronics.cn.activity"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+	<include android:id="@+id/line1" layout="@layout/included_line1" />
+	<RelativeLayout 
+		android:layout_width="fill_parent" 
+		android:layout_height="fill_parent">
+				
+		<com.flextronics.cn.ui.StartFlagImageView 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:id="@+id/StartFlagImageView17"
+			android:layout_alignParentTop="true"
+			android:layout_alignParentLeft="true"
+			android:layout_marginTop="160dip"
+			android:layout_marginLeft="80dip"
+			android:src="@drawable/red"
+			flex:startImage="@drawable/red" 
+			flex:endImage="@drawable/green"
+			flex:time="2000"/>
+	</RelativeLayout>
+</RelativeLayout>

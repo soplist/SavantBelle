@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 此文件用于保存G模块的所用到的字符串 ，公用字符串在strings.xml中定义， 其余模块均定义在相应的strings_x.xml文件中。
+	 字符串的命名请严格遵循以下约定:
+		1.尽量用英文命名; 2.所有单词均小写; 3.单词之间用下划线相隔; 4.所有字符串请按首字母(仅限首字母)升序排列。
+	如下所示：
+		<string name="an_qing">安庆</string>
+		<string name="an_hui">安徽</string>
+		<string name="an_yang">安阳</string>
+		<string name="bei_jing">北京</string>
+		<string name="bei_fang">北方</string>
+		<string name="cheng_du">成都</string>
+		<string name="chong_qing">重庆</string>
+		<string name="hello_world">你好，世界！</string>
+-->
+<resources>
+        <string name="previou_page">上一页</string>
+        <string name="next_page">下一页</string>
+        <string name="show_result">显示结果</string>
+        <string name="trajectory_1">飞机</string>
+        <string name="result_display">训练结果显示</string>
+        <string name="finger_stability_training">手指稳定度训练</string>
+        <string name="trajectory_2">trajectory_2</string>
+        <string name="trajectory_3">trajectory_3</string>
+        <string name="trajectory_4">trajectory_4</string>
+        <string name="trajectory_5">trajectory_5</string>
+        <string name="trajectory_6">trajectory_6</string>
+        <string name="trajectory_7">trajectory_7</string>
+        <string name="trajectory_8">trajectory_8</string>
+        <string name="trajectory_9">trajectory_9</string>
+        <string name="trajectory_10">trajectory_10</string>
+        <string name="trajectory_11">trajectory_11</string>
+        <string name="trajectory_12">trajectory_12</string>
+        <string name="trajectory_13">trajectory_13</string>
+        <string name="trajectory_14">trajectory_14</string>
+        <string name="trajectory_15">trajectory_15</string>
+        <string name="trajectory_16">trajectory_16</string>
+</resources>

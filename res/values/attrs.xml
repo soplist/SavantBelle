@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>	
+
+	<declare-styleable name="TimerView"><!-- 控件名称-->
+		<attr name="formatText" format="string" /><!-- 显示格式-->
+		<attr name="start" format="integer" /><!-- 开始时间,毫秒形式-->
+		<attr name="end" format="integer" /><!-- 开始时间,毫秒形式-->
+		<attr name="asc" format="boolean" /><!-- 升序或逆序-->
+	</declare-styleable>	
+	<declare-styleable name="StartFlagImageView">
+		<attr name="startImage" format="reference"/>
+		<attr name="endImage" format="reference"/>
+		<attr name="time" format="integer"/>
+	</declare-styleable>
+	
+	
+	<declare-styleable name="ButtonGroup">
+		<attr name="buttonBackground" format="reference" />
+		<attr name="buttonBackgroundClicked" format="reference" />
+		<attr name="buttonBackgroundUnclicked" format="reference" />
+		<attr name="buttonNums" format="integer" />
+		<attr name="buttonsText" format="string" />
+		<attr name="buttonsTextColor" format="reference" />
+		<attr name="buttonsTextSize" format="float" />
+		<attr name="buttonsValue" format="string" />		
+		<attr name="buttonPaddingLeft" format="integer" />
+		<attr name="buttonPaddingTop" format="integer" />
+		<attr name="buttonPaddingBottom" format="integer" />
+		<attr name="buttonPaddingRight" format="integer" />
+		<attr name="buttonMarginLeft" format="integer" />
+		<attr name="buttonMarginTop" format="integer" />
+		<attr name="buttonMarginBottom" format="integer" />
+		<attr name="buttonMarginRight" format="integer" />		
+		<attr name="buttonIsFocusCircular" format="boolean" />
+		<attr name="buttonFocusPosition" format="integer" />		
+	</declare-styleable>
+	<declare-styleable name="MyDigitalClock">
+		<attr name="m12" format="string" />
+		<attr name="m24" format="string" />
+		<attr name="is24" format="boolean" />
+	</declare-styleable>
+	
+    <declare-styleable name="ParamPanel">
+        <attr name="btn_text_color" format="reference|color" />
+        <attr name="btn_text_size" format="integer" />
+        <attr name="result_text_color" format="reference|color" />
+        <attr name="result_text_size" format="integer" />
+        <attr name="src" format="reference|color" />
+        <attr name="content" format="reference" />
+        <attr name="text" format="string" />
+        <attr name="result_text" format="string" />
+    </declare-styleable>
+    <declare-styleable name="ImageViewBtn">
+        <!-- Defines the normal image for button. -->
+        <attr name="normal_src" format="reference" />
+        <attr name="pressing_src" format="reference" />
+        <attr name="pressed_src" format="reference" />
+        <attr name="value" format="string" />
+        <attr name="img_text" format="string" />
+        <attr name="img_text_color_normal" format="reference|color" />
+        <attr name="img_text_color_pressed" format="reference|color" />
+        <attr name="img_text_color_pressing" format="reference|color" />
+        <attr name="img_text_normal_size" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="ImageViewBtnGroup">
+        <!-- Defines whether start animation when click any ImageViewBtn. -->
+        <attr name="animation_on_click" format="boolean"/>
+        <!-- Defines whether show background for each ImageViewBtn. -->
+        <attr name="show_botton_background" format="boolean"/>
+        <!-- The background for each button. -->
+        <attr name="botton_background" format="reference"/>
+        <attr name="selected_child_index" format="integer"/>
+    </declare-styleable>
+    <declare-styleable name="LinearLayoutBtn">
+        <!-- Defines the normal image for button. -->
+        <attr name="image_normal_src" format="reference" />
+        <attr name="image_pressing_src" format="reference" />
+        <attr name="image_pressed_src" format="reference" />
+        <attr name="btn_value" format="string" />
+        <attr name="btn_text" format="string" />
+        <attr name="btn_text_color_normal" format="reference|color" />
+        <attr name="btn_text_color_pressed" format="reference|color" />
+        <attr name="btn_text_normal_size" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="LinearLayoutBtnGroup">
+        <attr name="selected_index" format="integer"/>
+    </declare-styleable>
+    <declare-styleable name="LinearLayoutCheckBoxGroup">
+        <attr name="single_choose" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="LinearLayoutCheckBox">
+        <!-- Defines the normal image for button. -->
+        <attr name="check_box_image_normal_src" format="reference" />
+        <attr name="check_box_image_pressing_src" format="reference" />
+        <attr name="check_box_image_pressed_src" format="reference" />
+        <attr name="check_box_btn_value" format="string" />
+        <attr name="check_box_btn_text" format="string" />
+        <attr name="check_box_btn_text_color_normal" format="reference|color" />
+        <attr name="check_box_btn_text_color_pressed" format="reference|color" />
+        <attr name="check_box_btn_text_normal_size" format="integer" />
+        <attr name="check_box_checked" format="boolean" />
+        <attr name="check_box_hold_pressing_backgd" format="boolean" />
+    </declare-styleable>
+</resources>

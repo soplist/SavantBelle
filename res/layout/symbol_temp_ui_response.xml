@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content" android:layout_height="wrap_content"
+	android:orientation="vertical">
+	<TextView android:text="选择受测符号." android:id="@+id/TextView01"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+	<RadioGroup android:id="@+id/RadioGroup01"
+		android:orientation="horizontal" android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+		<RadioButton android:id="@+id/radio_button_sampleSetting_default"
+			android:text="设定." android:checked="true" />
+		<RadioButton android:id="@+id/radio_button_sampleSetting_random"
+			android:text="随机." />
+		<RadioButton android:id="@+id/radio_button_sampleSetting_manual"
+			android:text="自选." />
+	</RadioGroup>
+	<Gallery android:id="@+id/gallery_sample_elements_selector"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:gravity="left">
+	</Gallery>
+</LinearLayout>

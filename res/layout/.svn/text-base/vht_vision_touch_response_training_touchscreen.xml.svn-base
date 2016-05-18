@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:flex="http://schemas.android.com/apk/res/com.flextronics.cn.activity"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"><!--
+  
+  	<include android:id="@+id/background" layout="@layout/included_background2" />
+  	<include android:id="@+id/top" layout="@layout/included_top2" />
+  	
+	-->
+	<include android:id="@+id/line1" layout="@layout/included_line1" />
+	<RelativeLayout 
+		android:layout_width="fill_parent" 
+		android:layout_height="fill_parent">
+				
+		<com.flextronics.cn.ui.StartFlagImageView 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:id="@+id/StartFlagImageView_VTRT_TouchScreen7"
+			android:layout_alignParentTop="true"
+			android:layout_alignParentLeft="true"
+			android:layout_marginTop="160dip"
+			android:layout_marginLeft="80dip"
+			android:src="@drawable/red"
+			flex:startImage="@drawable/red" 
+			flex:endImage="@drawable/green"
+			flex:time="2000"/>
+			
+		<ImageView 
+			android:id="@+id/ImageView01"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:src="@drawable/touch1" 
+			android:layout_alignLeft="@+id/ImageView07"
+			android:layout_alignParentTop="true"
+			android:layout_marginTop="225dip"/>
+			
+		<ImageView 
+			android:id="@+id/ImageView06"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:src="@drawable/touch6" 
+			android:layout_alignParentTop="true"
+			android:layout_toLeftOf="@+id/ImageView07"
+			android:layout_marginRight="55dip"
+			android:layout_marginTop="310dip"/>
+			
+		<ImageView 
+			android:id="@+id/ImageView02"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:src="@drawable/touch2" 
+			android:layout_toRightOf="@+id/ImageView07"
+			android:layout_alignTop="@+id/ImageView06" 
+			android:layout_marginLeft="55dip"/>
+			
+		<ImageView 
+			android:id="@+id/ImageView07"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:src="@drawable/touch7" 
+			android:layout_centerHorizontal="true"
+			android:layout_alignParentTop="true"
+			android:layout_marginTop="380dip"/>
+	
+		<ImageView 
+			android:id="@+id/ImageView05"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:src="@drawable/touch5" 
+			android:layout_alignRight="@+id/ImageView06"
+			android:layout_toLeftOf="@+id/ImageView07" 
+			android:layout_below="@+id/ImageView07"
+			android:layout_marginTop="-5dip"/>
+	
+		<ImageView 
+			android:id="@+id/ImageView04"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:src="@drawable/touch4" 
+			android:layout_alignLeft="@+id/ImageView07"
+			android:layout_below="@+id/ImageView07" 
+			android:layout_marginTop="75dip"/>
+	
+		<ImageView 
+			android:id="@+id/ImageView03"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:src="@drawable/touch3" 
+			android:layout_alignRight="@+id/ImageView02"
+			android:layout_alignTop="@+id/ImageView05"/>	
+			
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+	  		android:textSize="10sp"
+	  		android:textColor="#fff"
+	  		android:text="@string/testTime"
+	  		android:layout_above="@+id/TimerView_VTRT_TouchScreen"
+	  		android:layout_alignLeft="@+id/TimerView_VTRT_TouchScreen"/>
+		<com.flextronics.cn.ui.TimerView 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:id="@+id/TimerView_VTRT_TouchScreen"
+			android:layout_alignParentBottom="true"
+			android:layout_alignParentLeft="true"
+			android:layout_marginLeft="80dip"
+			android:layout_marginBottom="80dip"
+			flex:formatText="mm:ss" 
+			flex:start="0" 
+			flex:asc="true" 
+	  		android:textSize="23sp"
+	  		android:textColor="#fff"/>	  	
+	</RelativeLayout>
+
+</RelativeLayout>

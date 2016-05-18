@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical">
+	<TextView android:text="符号位元数." android:id="@+id/TextView01"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+	<RadioGroup android:id="@+id/RadioGroup01"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:orientation="horizontal">
+		<RadioButton android:text="设定." android:layout_height="wrap_content"
+			android:layout_width="wrap_content" android:id="@+id/radio_button_default"></RadioButton>
+		<RadioButton android:text="连续." android:layout_height="wrap_content"
+			android:layout_width="wrap_content" android:id="@+id/radio_button_seqencial"></RadioButton>
+		<RadioButton android:text="自选." android:layout_height="wrap_content"
+			android:layout_width="wrap_content" android:id="@+id/radio_button_manual"></RadioButton>
+		<Spinner android:id="@+id/spinner_unit_count_selector"
+			android:layout_width="wrap_content" android:layout_height="wrap_content" />
+	</RadioGroup>
+
+	<TextView android:text="显示方式." android:id="@+id/TextView01"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+	<RadioGroup android:id="@+id/RadioGroup02"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:orientation="horizontal">
+		<RadioButton android:text="一般显示." android:layout_height="wrap_content"
+			android:layout_width="wrap_content" android:id="@+id/radio_button_display_common"></RadioButton>
+		<RadioButton android:text="图样显示(按顺序)."
+			android:layout_height="wrap_content" android:layout_width="wrap_content"
+			android:id="@+id/radio_button_display_pattern_seqential"></RadioButton>
+		<RadioButton android:text="图样显示(不按顺序)"
+			android:layout_height="wrap_content" android:layout_width="wrap_content"
+			android:id="@+id/radio_button_display_pattern_random"></RadioButton>
+	</RadioGroup>
+	<TextView android:text="选择图样类型." android:id="@+id/TextView01"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+	<Spinner android:id="@+id/spinner_pattern_selector"
+		android:layout_width="wrap_content" android:layout_height="wrap_content" />
+	<TextView android:text="动画方式." android:id="@+id/TextView01"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+	<RadioGroup android:id="@+id/RadioGroup03"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:orientation="horizontal">
+		<RadioButton android:text="显示后保留." android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:id="@+id/radio_button_animation_single_fadein_same_fadeout"></RadioButton>
+		<RadioButton android:text="显示后消失." android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:id="@+id/radio_button_animation_single_fadein_fadeout"></RadioButton>
+		<RadioButton android:text="同时显示同时消失"
+			android:layout_height="wrap_content" android:layout_width="wrap_content"
+			android:id="@+id/radio_button_animation_same_fadein_fadeout"></RadioButton>
+	</RadioGroup>
+
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.flextronics.cn.ui.LinearLayoutCheckBox
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:flex="http://schemas.android.com/apk/res/com.flextronics.cn.activity"	
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"	
+	flex:check_box_hold_pressing_backgd="true"	
+	flex:check_box_image_normal_src="@drawable/ui_linearlayout_btn_1"
+	flex:check_box_image_pressing_src="@drawable/ui_linearlayout_btn_backgd"
+	flex:check_box_image_pressed_src="@drawable/ui_linearlayout_btn_3"/>

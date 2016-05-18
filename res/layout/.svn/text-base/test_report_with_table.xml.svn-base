@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	Owner: ZhangGuoYin
+-->
+<RelativeLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent">
+	
+  	<include android:id="@+id/background" layout="@layout/included_transparent_border_short" />
+  	
+  	<TextView 
+			android:text="@string/yourTestReport" 
+			android:id="@+id/TextView_YourResult"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:layout_alignParentTop="true" 
+			android:layout_alignParentLeft="true" 
+			android:layout_marginTop="170dip"
+			android:layout_marginLeft="140dip"
+			android:textColor="#fff"/>			
+	<TextView 
+		android:text="" 
+		android:id="@+id/TextView_TestResult"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/TextView_YourResult" 
+		android:layout_alignTop="@+id/TextView_YourResult"
+		android:textColor="#fff"
+		android:layout_marginLeft="10dip"/>
+		
+	<GridView 
+		android:id="@+id/GridView01"
+		android:layout_height="335dip"
+		android:layout_width="740dip" 		
+		android:layout_centerHorizontal="true"
+		android:layout_below="@+id/TextView_TestResult"
+		android:layout_marginTop="5dip"
+		android:numColumns="7"/>
+			
+	<Button 
+		android:text="@string/doAgain" 
+		android:id="@+id/ButtonDoAgain"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_marginBottom="180dip"
+		android:layout_centerHorizontal="true" 
+		android:textSize="13sp"/>
+		
+		
+	<include layout="@layout/included_left_bottom"/>
+</RelativeLayout>

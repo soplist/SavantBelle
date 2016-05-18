@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:flex="http://schemas.android.com/apk/res/com.flextronics.cn.activity"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<include android:id="@+id/background" layout="@layout/included_transparent_border" />
+	<ScrollView android:layout_width="wrap_content"
+		android:layout_height="450dip" android:layout_centerInParent="true">
+		<LinearLayout android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:orientation="vertical"
+			android:layout_gravity="top">
+			<!-- 选择训练类型-->
+			<com.flextronics.cn.ui.ParamPanel
+				android:id="@+id/trainingTypePanel" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" flex:content="@+id/Content01"
+				flex:text="训练类型" flex:animation_on_click = "false">
+				<LinearLayout android:id="@+id/Content01"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:background="@drawable/ui_param_panel_content_backgd"
+					android:orientation="vertical" android:layout_marginTop="-8dip"
+					android:layout_marginLeft="6dip" android:layout_marginRight="8dip">
+					<com.flextronics.cn.ui.ImageViewBtnGroup
+						android:id="@+id/trainingTypeSelector" android:layout_width="fill_parent"
+						android:layout_height="wrap_content" flex:selected_child_index="0" flex:animation_on_click = "false">
+						<TextView android:layout_width="20dip"
+							android:layout_height="wrap_content" android:visibility="invisible" />
+						<com.flextronics.cn.ui.ImageViewBtn
+							android:layout_width="wrap_content" android:layout_height="wrap_content"
+							android:layout_weight="1" flex:normal_src="@drawable/cs_choose_params_btn1_1"
+							flex:pressing_src="@drawable/cs_choose_params_btn1_2"
+							flex:pressed_src="@drawable/cs_choose_params_btn1_3" flex:value="YUE_QI"
+							flex:img_text_color_normal="#3B3D4E" flex:img_text_color_pressed="#FFFFFF"
+							flex:img_text_color_pressing="#636472" flex:img_text="乐器"
+							flex:img_text_normal_size="18" />
+						<com.flextronics.cn.ui.ImageViewBtn
+							android:layout_width="wrap_content" android:layout_height="wrap_content"
+							android:layout_weight="1" flex:normal_src="@drawable/cs_choose_params_btn1_1"
+							flex:pressing_src="@drawable/cs_choose_params_btn1_2"
+							flex:pressed_src="@drawable/cs_choose_params_btn1_3" flex:value="YIN_JIE"
+							flex:img_text_color_normal="#3B3D4E" flex:img_text_color_pressed="#FFFFFF"
+							flex:img_text_color_pressing="#636472" flex:img_text="音阶"
+							flex:img_text_normal_size="18" />
+						<TextView android:layout_width="20dip"
+							android:layout_height="wrap_content" android:visibility="invisible" />
+					</com.flextronics.cn.ui.ImageViewBtnGroup>
+				</LinearLayout>
+			</com.flextronics.cn.ui.ParamPanel><!-- end of 训练类型 -->
+
+
+			<!-- 选择乐器种类 -->
+			<com.flextronics.cn.ui.ParamPanel
+				android:id="@+id/instrumentTypePanel" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_marginTop="40dip"
+				flex:content="@+id/Content00" flex:text="乐器种类" flex:animation_on_click="false">
+				<LinearLayout android:id="@+id/Content00"
+					android:orientation="vertical" android:layout_width="wrap_content"
+					android:layout_height="wrap_content">
+					<LinearLayout android:id="@+id/Content02"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:background="@drawable/ui_param_panel_content_backgd"
+						android:orientation="vertical" android:layout_marginTop="-8dip"
+						android:layout_marginLeft="6dip" android:layout_marginRight="8dip">
+						<com.flextronics.cn.ui.ImageViewBtnGroup
+							android:id="@+id/instrumentTypeSelector" android:layout_width="fill_parent"
+							android:layout_height="wrap_content" flex:selected_child_index="0" flex:animation_on_click = "false">
+							<TextView android:layout_width="30dip"
+								android:layout_height="wrap_content" android:visibility="invisible" />
+							<com.flextronics.cn.ui.ImageViewBtn
+								android:layout_width="wrap_content" android:layout_height="wrap_content"
+								android:layout_weight="1" flex:normal_src="@drawable/cs_choose_params_btn1_1"
+								flex:pressing_src="@drawable/cs_choose_params_btn1_2"
+								flex:pressed_src="@drawable/cs_choose_params_btn1_3" flex:value="XI_YANG_YUE"
+								flex:img_text_color_normal="#3B3D4E"
+								flex:img_text_color_pressed="#FFFFFF"
+								flex:img_text_color_pressing="#636472" flex:img_text="西洋乐"
+								flex:img_text_normal_size="18" />
+							<com.flextronics.cn.ui.ImageViewBtn
+								android:layout_width="wrap_content" android:layout_height="wrap_content"
+								android:layout_weight="1" flex:normal_src="@drawable/cs_choose_params_btn1_1"
+								flex:pressing_src="@drawable/cs_choose_params_btn1_2"
+								flex:pressed_src="@drawable/cs_choose_params_btn1_3" flex:value="DA_JI_YUE"
+								flex:img_text_color_normal="#3B3D4E"
+								flex:img_text_color_pressed="#FFFFFF"
+								flex:img_text_color_pressing="#636472" flex:img_text="打击乐"
+								flex:img_text_normal_size="18" />
+							<com.flextronics.cn.ui.ImageViewBtn
+								android:layout_width="wrap_content" android:layout_height="wrap_content"
+								android:layout_weight="1" flex:normal_src="@drawable/cs_choose_params_btn1_1"
+								flex:pressing_src="@drawable/cs_choose_params_btn1_2"
+								flex:pressed_src="@drawable/cs_choose_params_btn1_3" flex:value="MIN_ZU_YUE"
+								flex:img_text_color_normal="#3B3D4E"
+								flex:img_text_color_pressed="#FFFFFF"
+								flex:img_text_color_pressing="#636472" flex:img_text="民族乐"
+								flex:img_text_normal_size="18" />
+							<TextView android:layout_width="30dip"
+								android:layout_height="wrap_content" android:visibility="invisible" />
+						</com.flextronics.cn.ui.ImageViewBtnGroup>
+						<!-- 西洋乐 -->
+						<LinearLayout android:id="@+id/xiyangyuePanel"
+							android:layout_width="wrap_content" android:layout_height="wrap_content"
+							android:orientation="vertical">
+							<!-- 分割线 -->
+							<TextView android:layout_width="780dip"
+								android:layout_height="2dip" android:background="@drawable/ui_param_panel_content_line" />
+							<HorizontalScrollView android:layout_width="780dip"
+								android:layout_height="wrap_content" android:scrollbars="horizontal">
+								<!-- 具体乐器 -->
+								<LinearLayout android:id="@+id/LinearLayoutXingZhuang"
+									android:layout_width="wrap_content" android:layout_height="wrap_content">
+									<com.flextronics.cn.ui.LinearLayoutCheckBox
+										android:id="@+id/gang_qin" android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										flex:check_box_image_normal_src="@drawable/cs_choose_params_checkbox_1"
+										flex:check_box_image_pressing_src="@drawable/ui_linearlayout_btn_backgd"
+										flex:check_box_image_pressed_src="@drawable/cs_choose_params_checkbox_2"
+										flex:check_box_btn_value="gang_qin"
+										flex:check_box_btn_text_color_normal="#B2B2B2"
+										flex:check_box_btn_text_color_pressed="#FFFFFF"
+										flex:check_box_btn_text_normal_size="17"
+										flex:check_box_btn_text="钢琴" flex:check_box_checked="true" />
+									<com.flextronics.cn.ui.LinearLayoutCheckBox
+										android:id="@+id/xiao_hao" android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										flex:check_box_image_normal_src="@drawable/cs_choose_params_checkbox_1"
+										flex:check_box_image_pressing_src="@drawable/ui_linearlayout_btn_backgd"
+										flex:check_box_image_pressed_src="@drawable/cs_choose_params_checkbox_2"
+										flex:check_box_btn_value="xiao_hao"
+										flex:check_box_btn_text_color_normal="#B2B2B2"
+										flex:check_box_btn_text_color_pressed="#FFFFFF"
+										flex:check_box_btn_text_normal_size="17"
+										flex:check_box_btn_text="小号" flex:check_box_checked="false" />
+									<com.flextronics.cn.ui.LinearLayoutCheckBox
+										android:id="@+id/xiao_ti_qin" android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										flex:check_box_image_normal_src="@drawable/cs_choose_params_checkbox_1"
+										flex:check_box_image_pressing_src="@drawable/ui_linearlayout_btn_backgd"
+										flex:check_box_image_pressed_src="@drawable/cs_choose_params_checkbox_2"
+										flex:check_box_btn_value="xiao_ti_qin"
+										flex:check_box_btn_text_color_normal="#B2B2B2"
+										flex:check_box_btn_text_color_pressed="#FFFFFF"
+										flex:check_box_btn_text_normal_size="17"
+										flex:check_box_btn_text="小提琴" flex:check_box_checked="false" />
+									<com.flextronics.cn.ui.LinearLayoutCheckBox
+										android:id="@+id/shu_qin" android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										flex:check_box_image_normal_src="@drawable/cs_choose_params_checkbox_1"
+										flex:check_box_image_pressing_src="@drawable/ui_linearlayout_btn_backgd"
+										flex:check_box_image_pressed_src="@drawable/cs_choose_params_checkbox_2"
+										flex:check_box_btn_value="YI_XU_HAO"
+										flex:check_box_btn_text_color_normal="#B2B2B2"
+										flex:check_box_btn_text_color_pressed="#FFFFFF"
+										flex:check_box_btn_text_normal_size="17"
+										flex:check_box_btn_text="竖琴" flex:check_box_checked="false" />
+									<com.flextronics.cn.ui.LinearLayoutCheckBox
+										android:id="@+id/chang_hao" android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										flex:check_box_image_normal_src="@drawable/cs_choose_params_checkbox_1"
+										flex:check_box_image_pressing_src="@drawable/ui_linearlayout_btn_backgd"
+										flex:check_box_image_pressed_src="@drawable/cs_choose_params_checkbox_2"
+										flex:check_box_btn_value="YI_XU_HAO"
+										flex:check_box_btn_text_color_normal="#B2B2B2"
+										flex:check_box_btn_text_color_pressed="#FFFFFF"
+										flex:check_box_btn_text_normal_size="17"
+										flex:check_box_btn_text="长号" flex:check_box_checked="false" />
+									<com.flextronics.cn.ui.LinearLayoutCheckBox
+										android:id="@+id/zhong_ti_qin" android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										flex:check_box_image_normal_src="@drawable/cs_choose_params_checkbox_1"
+										flex:check_box_image_pressing_src="@drawable/ui_linearlayout_btn_backgd"
+										flex:check_box_image_pressed_src="@drawable/cs_choose_params_checkbox_2"
+										flex:check_box_btn_value="YI_XU_HAO"
+										flex:check_box_btn_text_color_normal="#B2B2B2"
+										flex:check_box_btn_text_color_pressed="#FFFFFF"
+										flex:check_box_btn_text_normal_size="17"
+										flex:check_box_btn_text="中提琴" flex:check_box_checked="false" />
+									<com.flextronics.cn.ui.LinearLayoutCheckBox
+										android:id="@+id/jiao_tang_feng_qin" android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										flex:check_box_image_normal_src="@drawable/cs_choose_params_checkbox_1"
+										flex:check_box_image_pressing_src="@drawable/ui_linearlayout_btn_backgd"
+										flex:check_box_image_pressed_src="@drawable/cs_choose_params_checkbox_2"
+										flex:check_box_btn_value="YI_XU_HAO"
+										flex:check_box_btn_text_color_normal="#B2B2B2"
+										flex:check_box_btn_text_color_pressed="#FFFFFF"
+										flex:check_box_btn_text_normal_size="17"
+										flex:check_box_btn_text="教堂风琴" flex:check_box_checked="false" />
+								</LinearLayout>
+							</HorizontalScrollView>
+						</LinearLayout><!-- end of 西洋乐 -->
+
+						<!-- 民族乐 -->
+						<LinearLayout android:id="@+id/minzuyuePanel"
+							android:layout_width="wrap_content" android:layout_height="wrap_content"
+							android:orientation="vertical">
+							<!-- 分割线 -->
+							<TextView android:layout_width="780dip"
+								android:layout_height="2dip" android:background="@drawable/ui_param_panel_content_line" />
+							<HorizontalScrollView android:layout_width="780dip"
+								android:layout_height="wrap_content" android:scrollbars="horizontal">
+								<!-- 具体乐器 -->
+								<LinearLayout android:id="@+id/LinearLayoutXingZhuang"
+									android:layout_width="wrap_content" android:layout_height="wrap_content">
+									<com.flextronics.cn.ui.LinearLayoutCheckBox
+										android:id="@+id/pi_pa" android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										flex:check_box_image_normal_src="@drawable/cs_choose_params_checkbox_1"
+										flex:check_box_image_pressing_src="@drawable/ui_linearlayout_btn_backgd"
+										flex:check_box_image_pressed_src="@drawable/cs_choose_params_checkbox_2"
+										flex:check_box_btn_value="pi_pa"
+										flex:check_box_btn_text_color_normal="#B2B2B2"
+										flex:check_box_btn_text_color_pressed="#FFFFFF"
+										flex:check_box_btn_text_normal_size="17"
+										flex:check_box_btn_text="琵琶" flex:check_box_checked="true" />
+									<com.flextronics.cn.ui.LinearLayoutCheckBox
+										android:id="@+id/er_hu" android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										flex:check_box_image_normal_src="@drawable/cs_choose_params_checkbox_1"
+										flex:check_box_image_pressing_src="@drawable/ui_linearlayout_btn_backgd"
+										flex:check_box_image_pressed_src="@drawable/cs_choose_params_checkbox_2"
+										flex:check_box_btn_value="er_hu"
+										flex:check_box_btn_text_color_normal="#B2B2B2"
+										flex:check_box_btn_text_color_pressed="#FFFFFF"
+										flex:check_box_btn_text_normal_size="17"
+										flex:check_box_btn_text="二胡" flex:check_box_checked="false" />
+									<com.flextronics.cn.ui.LinearLayoutCheckBox
+										android:id="@+id/suo_na" android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										flex:check_box_image_normal_src="@drawable/cs_choose_params_checkbox_1"
+										flex:check_box_image_pressing_src="@drawable/ui_linearlayout_btn_backgd"
+										flex:check_box_image_pressed_src="@drawable/cs_choose_params_checkbox_2"
+										flex:check_box_btn_value="suo_na"
+										flex:check_box_btn_text_color_normal="#B2B2B2"
+										flex:check_box_btn_text_color_pressed="#FFFFFF"
+										flex:check_box_btn_text_normal_size="17"
+										flex:check_box_btn_text="唢呐" flex:check_box_checked="false" />
+									<com.flextronics.cn.ui.LinearLayoutCheckBox
+										android:id="@+id/gu_zheng" android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										flex:check_box_image_normal_src="@drawable/cs_choose_params_checkbox_1"
+										flex:check_box_image_pressing_src="@drawable/ui_linearlayout_btn_backgd"
+										flex:check_box_image_pressed_src="@drawable/cs_choose_params_checkbox_2"
+										flex:check_box_btn_value="gu_zheng"
+										flex:check_box_btn_text_color_normal="#B2B2B2"
+										flex:check_box_btn_text_color_pressed="#FFFFFF"
+										flex:check_box_btn_text_normal_size="17"
+										flex:check_box_btn_text="古筝" flex:check_box_checked="false" />
+									<com.flextronics.cn.ui.LinearLayoutCheckBox
+										android:id="@+id/ma_tou_qin" android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										flex:check_box_image_normal_src="@drawable/cs_choose_params_checkbox_1"
+										flex:check_box_image_pressing_src="@drawable/ui_linearlayout_btn_backgd"
+										flex:check_box_image_pressed_src="@drawable/cs_choose_params_checkbox_2"
+										flex:check_box_btn_value="ma_tou_qin"
+										flex:check_box_btn_text_color_normal="#B2B2B2"
+										flex:check_box_btn_text_color_pressed="#FFFFFF"
+										flex:check_box_btn_text_normal_size="17"
+										flex:check_box_btn_text="马头琴" flex:check_box_checked="false" />
+									<com.flextronics.cn.ui.LinearLayoutCheckBox
+										android:id="@+id/ai_er_lan_feng_di" android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										flex:check_box_image_normal_src="@drawable/cs_choose_params_checkbox_1"
+										flex:check_box_image_pressing_src="@drawable/ui_linearlayout_btn_backgd"
+										flex:check_box_image_pressed_src="@drawable/cs_choose_params_checkbox_2"
+										flex:check_box_btn_value="ai_er_lan_feng_di"
+										flex:check_box_btn_text_color_normal="#B2B2B2"
+										flex:check_box_btn_text_color_pressed="#FFFFFF"
+										flex:check_box_btn_text_normal_size="17"
+										flex:check_box_btn_text="爱尔兰风笛" flex:check_box_checked="false" />
+									<com.flextronics.cn.ui.LinearLayoutCheckBox
+										android:id="@+id/yang_qin" android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										flex:check_box_image_normal_src="@drawable/cs_choose_params_checkbox_1"
+										flex:check_box_image_pressing_src="@drawable/ui_linearlayout_btn_backgd"
+										flex:check_box_image_pressed_src="@drawable/cs_choose_params_checkbox_2"
+										flex:check_box_btn_value="yang_qin"
+										flex:check_box_btn_text_color_normal="#B2B2B2"
+										flex:check_box_btn_text_color_pressed="#FFFFFF"
+										flex:check_box_btn_text_normal_size="17"
+										flex:check_box_btn_text="扬琴" flex:check_box_checked="false" />
+								</LinearLayout>
+							</HorizontalScrollView>
+						</LinearLayout><!-- end of 民族乐 -->
+
+						<!-- 打击乐 -->
+						<LinearLayout android:id="@+id/dajiyuePanel"
+							android:layout_width="wrap_content" android:layout_height="wrap_content"
+							android:orientation="vertical">
+							<!-- 分割线 -->
+							<TextView android:layout_width="780dip"
+								android:layout_height="2dip" android:background="@drawable/ui_param_panel_content_line" />
+							<HorizontalScrollView android:layout_width="780dip"
+								android:layout_height="wrap_content" android:scrollbars="horizontal">
+								<!-- 具体乐器 -->
+								<LinearLayout android:id="@+id/LinearLayoutXingZhuang"
+									android:layout_width="wrap_content" android:layout_height="wrap_content">
+									<com.flextronics.cn.ui.LinearLayoutCheckBox
+										android:id="@+id/da_gu" android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										flex:check_box_image_normal_src="@drawable/cs_choose_params_checkbox_1"
+										flex:check_box_image_pressing_src="@drawable/ui_linearlayout_btn_backgd"
+										flex:check_box_image_pressed_src="@drawable/cs_choose_params_checkbox_2"
+										flex:check_box_btn_value="da_gu"
+										flex:check_box_btn_text_color_normal="#B2B2B2"
+										flex:check_box_btn_text_color_pressed="#FFFFFF"
+										flex:check_box_btn_text_normal_size="17"
+										flex:check_box_btn_text="大鼓" flex:check_box_checked="true" />
+									<com.flextronics.cn.ui.LinearLayoutCheckBox
+										android:id="@+id/mu_yu" android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										flex:check_box_image_normal_src="@drawable/cs_choose_params_checkbox_1"
+										flex:check_box_image_pressing_src="@drawable/ui_linearlayout_btn_backgd"
+										flex:check_box_image_pressed_src="@drawable/cs_choose_params_checkbox_2"
+										flex:check_box_btn_value="mu_yu"
+										flex:check_box_btn_text_color_normal="#B2B2B2"
+										flex:check_box_btn_text_color_pressed="#FFFFFF"
+										flex:check_box_btn_text_normal_size="17"
+										flex:check_box_btn_text="木鱼" flex:check_box_checked="false" />
+									<com.flextronics.cn.ui.LinearLayoutCheckBox
+										android:id="@+id/san_jiao_tie" android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										flex:check_box_image_normal_src="@drawable/cs_choose_params_checkbox_1"
+										flex:check_box_image_pressing_src="@drawable/ui_linearlayout_btn_backgd"
+										flex:check_box_image_pressed_src="@drawable/cs_choose_params_checkbox_2"
+										flex:check_box_btn_value="san_jiao_tie"
+										flex:check_box_btn_text_color_normal="#B2B2B2"
+										flex:check_box_btn_text_color_pressed="#FFFFFF"
+										flex:check_box_btn_text_normal_size="17"
+										flex:check_box_btn_text="三角铁" flex:check_box_checked="false" />
+									<com.flextronics.cn.ui.LinearLayoutCheckBox
+										android:id="@+id/xiao_gu" android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										flex:check_box_image_normal_src="@drawable/cs_choose_params_checkbox_1"
+										flex:check_box_image_pressing_src="@drawable/ui_linearlayout_btn_backgd"
+										flex:check_box_image_pressed_src="@drawable/cs_choose_params_checkbox_2"
+										flex:check_box_btn_value="xiao_gu"
+										flex:check_box_btn_text_color_normal="#B2B2B2"
+										flex:check_box_btn_text_color_pressed="#FFFFFF"
+										flex:check_box_btn_text_normal_size="17"
+										flex:check_box_btn_text="小鼓" flex:check_box_checked="false" />
+									<com.flextronics.cn.ui.LinearLayoutCheckBox
+										android:id="@+id/ling_gu" android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										flex:check_box_image_normal_src="@drawable/cs_choose_params_checkbox_1"
+										flex:check_box_image_pressing_src="@drawable/ui_linearlayout_btn_backgd"
+										flex:check_box_image_pressed_src="@drawable/cs_choose_params_checkbox_2"
+										flex:check_box_btn_value="ling_gu"
+										flex:check_box_btn_text_color_normal="#B2B2B2"
+										flex:check_box_btn_text_color_pressed="#FFFFFF"
+										flex:check_box_btn_text_normal_size="17"
+										flex:check_box_btn_text="铃鼓" flex:check_box_checked="false" />
+									<com.flextronics.cn.ui.LinearLayoutCheckBox
+										android:id="@+id/tai_gu" android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										flex:check_box_image_normal_src="@drawable/cs_choose_params_checkbox_1"
+										flex:check_box_image_pressing_src="@drawable/ui_linearlayout_btn_backgd"
+										flex:check_box_image_pressed_src="@drawable/cs_choose_params_checkbox_2"
+										flex:check_box_btn_value="tai_gu"
+										flex:check_box_btn_text_color_normal="#B2B2B2"
+										flex:check_box_btn_text_color_pressed="#FFFFFF"
+										flex:check_box_btn_text_normal_size="17"
+										flex:check_box_btn_text="太鼓" flex:check_box_checked="false" />
+									<com.flextronics.cn.ui.LinearLayoutCheckBox
+										android:id="@+id/bang_ge_gu" android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										flex:check_box_image_normal_src="@drawable/cs_choose_params_checkbox_1"
+										flex:check_box_image_pressing_src="@drawable/ui_linearlayout_btn_backgd"
+										flex:check_box_image_pressed_src="@drawable/cs_choose_params_checkbox_2"
+										flex:check_box_btn_value="bang_ge_gu"
+										flex:check_box_btn_text_color_normal="#B2B2B2"
+										flex:check_box_btn_text_color_pressed="#FFFFFF"
+										flex:check_box_btn_text_normal_size="17"
+										flex:check_box_btn_text="邦哥鼓" flex:check_box_checked="false" />
+								</LinearLayout>
+							</HorizontalScrollView>
+						</LinearLayout><!-- end of 打击乐 -->
+
+					</LinearLayout>
+				</LinearLayout>
+			</com.flextronics.cn.ui.ParamPanel><!-- end of 乐器类型 -->
+
+
+			<!-- 音阶 -->
+			<com.flextronics.cn.ui.ParamPanel
+				android:id="@+id/yinjiePanel" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_marginTop="40dip"
+				flex:content="@+id/Content10" flex:text="音阶" flex:animation_on_click="false">
+				<!-- 各个音阶-->
+				<LinearLayout android:id="@+id/Content10"
+					android:layout_width="wrap_content" android:layout_height="wrap_content">
+					<com.flextronics.cn.ui.LinearLayoutCheckBox
+						android:id="@+id/one" android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						flex:check_box_image_normal_src="@drawable/cs_choose_params_checkbox_1"
+						flex:check_box_image_pressing_src="@drawable/ui_linearlayout_btn_backgd"
+						flex:check_box_image_pressed_src="@drawable/cs_choose_params_checkbox_2"
+						flex:check_box_btn_value="1" flex:check_box_btn_text_color_normal="#B2B2B2"
+						flex:check_box_btn_text_color_pressed="#FFFFFF"
+						flex:check_box_btn_text_normal_size="17" flex:check_box_btn_text="1"
+						flex:check_box_checked="true" />
+					<com.flextronics.cn.ui.LinearLayoutCheckBox
+						android:id="@+id/two" android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						flex:check_box_image_normal_src="@drawable/cs_choose_params_checkbox_1"
+						flex:check_box_image_pressing_src="@drawable/ui_linearlayout_btn_backgd"
+						flex:check_box_image_pressed_src="@drawable/cs_choose_params_checkbox_2"
+						flex:check_box_btn_value="2" flex:check_box_btn_text_color_normal="#B2B2B2"
+						flex:check_box_btn_text_color_pressed="#FFFFFF"
+						flex:check_box_btn_text_normal_size="17" flex:check_box_btn_text="2"
+						flex:check_box_checked="false" />
+					<com.flextronics.cn.ui.LinearLayoutCheckBox
+						android:id="@+id/three" android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						flex:check_box_image_normal_src="@drawable/cs_choose_params_checkbox_1"
+						flex:check_box_image_pressing_src="@drawable/ui_linearlayout_btn_backgd"
+						flex:check_box_image_pressed_src="@drawable/cs_choose_params_checkbox_2"
+						flex:check_box_btn_value="3" flex:check_box_btn_text_color_normal="#B2B2B2"
+						flex:check_box_btn_text_color_pressed="#FFFFFF"
+						flex:check_box_btn_text_normal_size="17" flex:check_box_btn_text="3"
+						flex:check_box_checked="false" />
+					<com.flextronics.cn.ui.LinearLayoutCheckBox
+						android:id="@+id/four" android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						flex:check_box_image_normal_src="@drawable/cs_choose_params_checkbox_1"
+						flex:check_box_image_pressing_src="@drawable/ui_linearlayout_btn_backgd"
+						flex:check_box_image_pressed_src="@drawable/cs_choose_params_checkbox_2"
+						flex:check_box_btn_value="4" flex:check_box_btn_text_color_normal="#B2B2B2"
+						flex:check_box_btn_text_color_pressed="#FFFFFF"
+						flex:check_box_btn_text_normal_size="17" flex:check_box_btn_text="4"
+						flex:check_box_checked="false" />
+					<com.flextronics.cn.ui.LinearLayoutCheckBox
+						android:id="@+id/five" android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						flex:check_box_image_normal_src="@drawable/cs_choose_params_checkbox_1"
+						flex:check_box_image_pressing_src="@drawable/ui_linearlayout_btn_backgd"
+						flex:check_box_image_pressed_src="@drawable/cs_choose_params_checkbox_2"
+						flex:check_box_btn_value="5" flex:check_box_btn_text_color_normal="#B2B2B2"
+						flex:check_box_btn_text_color_pressed="#FFFFFF"
+						flex:check_box_btn_text_normal_size="17" flex:check_box_btn_text="5"
+						flex:check_box_checked="false" />
+					<com.flextronics.cn.ui.LinearLayoutCheckBox
+						android:id="@+id/six" android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						flex:check_box_image_normal_src="@drawable/cs_choose_params_checkbox_1"
+						flex:check_box_image_pressing_src="@drawable/ui_linearlayout_btn_backgd"
+						flex:check_box_image_pressed_src="@drawable/cs_choose_params_checkbox_2"
+						flex:check_box_btn_value="6" flex:check_box_btn_text_color_normal="#B2B2B2"
+						flex:check_box_btn_text_color_pressed="#FFFFFF"
+						flex:check_box_btn_text_normal_size="17" flex:check_box_btn_text="6"
+						flex:check_box_checked="false" />
+					<com.flextronics.cn.ui.LinearLayoutCheckBox
+						android:id="@+id/seven" android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						flex:check_box_image_normal_src="@drawable/cs_choose_params_checkbox_1"
+						flex:check_box_image_pressing_src="@drawable/ui_linearlayout_btn_backgd"
+						flex:check_box_image_pressed_src="@drawable/cs_choose_params_checkbox_2"
+						flex:check_box_btn_value="7" flex:check_box_btn_text_color_normal="#B2B2B2"
+						flex:check_box_btn_text_color_pressed="#FFFFFF"
+						flex:check_box_btn_text_normal_size="17" flex:check_box_btn_text="7"
+						flex:check_box_checked="false" />
+					<com.flextronics.cn.ui.LinearLayoutCheckBox
+						android:id="@+id/eight" android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						flex:check_box_image_normal_src="@drawable/cs_choose_params_checkbox_1"
+						flex:check_box_image_pressing_src="@drawable/ui_linearlayout_btn_backgd"
+						flex:check_box_image_pressed_src="@drawable/cs_choose_params_checkbox_2"
+						flex:check_box_btn_value="8" flex:check_box_btn_text_color_normal="#B2B2B2"
+						flex:check_box_btn_text_color_pressed="#FFFFFF"
+						flex:check_box_btn_text_normal_size="17" flex:check_box_btn_text="8"
+						flex:check_box_checked="false" />
+				</LinearLayout>
+			</com.flextronics.cn.ui.ParamPanel><!-- end of 音阶 -->
+
+			<!-- 手类型 -->
+			<com.flextronics.cn.ui.ParamPanel
+				android:id="@+id/handPanel" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" flex:content="@+id/Content01"
+				flex:text="手类型" flex:animation_on_click="false">
+				<LinearLayout android:id="@+id/Content01"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:background="@drawable/ui_param_panel_content_backgd"
+					android:orientation="vertical" android:layout_marginTop="-8dip"
+					android:layout_marginLeft="6dip" android:layout_marginRight="8dip">
+					<com.flextronics.cn.ui.ImageViewBtnGroup
+						android:id="@+id/handSelector" android:layout_width="fill_parent"
+						android:layout_height="wrap_content" flex:selected_child_index="0" flex:animation_on_click = "false">
+						<TextView android:layout_width="20dip"
+							android:layout_height="wrap_content" android:visibility="invisible" />
+						<com.flextronics.cn.ui.ImageViewBtn
+							android:layout_width="wrap_content" android:layout_height="wrap_content"
+							android:layout_weight="1" flex:normal_src="@drawable/cs_choose_params_btn1_1"
+							flex:pressing_src="@drawable/cs_choose_params_btn1_2"
+							flex:pressed_src="@drawable/cs_choose_params_btn1_3" flex:value="left"
+							flex:img_text_color_normal="#3B3D4E" flex:img_text_color_pressed="#FFFFFF"
+							flex:img_text_color_pressing="#636472" flex:img_text="左手"
+							flex:img_text_normal_size="18" />
+						<com.flextronics.cn.ui.ImageViewBtn
+							android:layout_width="wrap_content" android:layout_height="wrap_content"
+							android:layout_weight="1" flex:normal_src="@drawable/cs_choose_params_btn1_1"
+							flex:pressing_src="@drawable/cs_choose_params_btn1_2"
+							flex:pressed_src="@drawable/cs_choose_params_btn1_3" flex:value="right"
+							flex:img_text_color_normal="#3B3D4E" flex:img_text_color_pressed="#FFFFFF"
+							flex:img_text_color_pressing="#636472" flex:img_text="右手"
+							flex:img_text_normal_size="18" />
+						<TextView android:layout_width="20dip"
+							android:layout_height="wrap_content" android:visibility="invisible" />
+					</com.flextronics.cn.ui.ImageViewBtnGroup>
+				</LinearLayout>
+			</com.flextronics.cn.ui.ParamPanel><!-- end of 手类型 -->
+
+		</LinearLayout>
+	</ScrollView>
+</RelativeLayout>

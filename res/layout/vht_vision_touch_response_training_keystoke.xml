@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+	android:id="@+id/RelativeLayout01"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:flex="http://schemas.android.com/apk/res/com.flextronics.cn.activity"
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent">
+	
+	<include android:id="@+id/line1" layout="@layout/included_line1" />
+	
+	<RelativeLayout 
+		android:layout_width="fill_parent" 
+		android:layout_height="fill_parent">
+		<com.flextronics.cn.ui.StartFlagImageView 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:id="@+id/StartFlagImageView_VTRT_KeyStoke"
+			android:layout_alignParentTop="true"
+			android:layout_alignParentLeft="true"
+			android:layout_marginTop="160dip"
+			android:layout_marginLeft="80dip"
+			android:src="@drawable/red"
+			flex:startImage="@drawable/red" 
+			flex:endImage="@drawable/green"
+			flex:time="2000"/>
+			
+		<ImageView 
+			android:id="@+id/ImageViewLeft"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:layout_toLeftOf="@+id/ImageViewMiddle"
+			android:layout_alignTop="@+id/ImageViewMiddle" 
+			android:src="@drawable/left_key"
+			android:layout_marginRight="50px"/>
+		<ImageView 
+			android:id="@+id/ImageViewMiddle"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true" 
+			android:src="@drawable/middle_key"/>
+		<ImageView 
+			android:id="@+id/ImageViewRight"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:layout_toRightOf="@+id/ImageViewMiddle" 
+			android:layout_alignTop="@+id/ImageViewMiddle" 
+			android:src="@drawable/right_key"
+			android:layout_marginLeft="50px"/>
+			
+		<com.flextronics.cn.ui.TimerView 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:id="@+id/TimerView_VTRT_KeyStoke"
+			android:layout_alignParentBottom="true"
+			android:layout_alignParentLeft="true"
+			android:layout_marginLeft="80dip"
+			android:layout_marginBottom="80dip"
+			flex:formatText="mm:ss" 
+			flex:start="0" 
+			flex:asc="true" 
+	  		android:textSize="23sp"
+	  		android:textColor="#fff"/>
+	</RelativeLayout>
+</RelativeLayout>

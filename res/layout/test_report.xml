@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	Owner: ZhangGuoYin
+-->
+<RelativeLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent">
+	
+  	<include android:id="@+id/background" layout="@layout/included_transparent_border_short" />
+  	
+	<RelativeLayout 
+		android:id="@+id/RelativeLayout01"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"		
+		android:layout_centerInParent="true">
+		
+		<TextView 
+			android:text="@string/yourTestReport" 
+			android:id="@+id/TextView_YourResult"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:layout_alignParentTop="true" 
+			android:textColor="#fff"
+			android:layout_marginLeft="17px"/>
+			
+		<TextView 
+			android:text="" 
+			android:id="@+id/TextView_TestResult"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:layout_toRightOf="@+id/TextView_YourResult" 
+			android:layout_alignTop="@+id/TextView_YourResult"
+			android:textColor="#fff"
+			android:layout_marginLeft="15px"/>
+			
+		<LinearLayout			
+			android:id="@+id/LinearLayout_Chart"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/TextView_TestResult"
+			android:layout_marginTop="10dip"
+			android:layout_centerHorizontal="true"  >
+		</LinearLayout>
+		
+		<Button 
+			android:text="@string/doAgain" 
+			android:id="@+id/ButtonDoAgain"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/LinearLayout_Chart"
+			android:layout_centerHorizontal="true" 
+			android:textSize="13sp"/>
+	</RelativeLayout>	
+	
+	<include layout="@layout/included_left_bottom"/>
+</RelativeLayout>

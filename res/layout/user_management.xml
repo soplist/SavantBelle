@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/RelativeLayout_01"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent" 
+  android:background="@drawable/base_background">  
+	<RelativeLayout
+		android:id="@+id/RelativeLayout_01"
+		android:layout_width="940dip" 
+		android:layout_height="660dip"
+		android:background="@drawable/white_border_1"
+		android:layout_centerInParent="true"/>
+	<Button 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" 
+		android:layout_toLeftOf="@+id/Button02"
+		android:layout_alignTop="@+id/Button02"
+		android:layout_marginRight="55dip"
+		android:background="@drawable/button_user_management_1"
+		android:text="@string/load" 
+		android:id="@+id/Button01"/>
+	<Button 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" 
+		android:layout_alignParentBottom="true"
+		android:layout_centerHorizontal="true"
+		android:layout_marginBottom="120dip"
+		android:background="@drawable/button_user_management_1"
+		android:text="@string/newUser" 
+		android:id="@+id/Button02"/>
+	<Button 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" 
+		android:layout_toRightOf="@+id/Button02"
+		android:layout_alignTop="@+id/Button02"
+		android:layout_marginLeft="55dip"
+		android:background="@drawable/button_user_management_1"
+		android:text="@string/exit_system" 
+		android:id="@+id/Button03"/>
+	<include layout="@layout/included_line2"/>
+</RelativeLayout>
